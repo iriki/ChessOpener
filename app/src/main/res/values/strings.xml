@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChessOpener</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_library_name">Openings Library</string>
+    <string name="activity_chessboard_name">Chess Board</string>
+
+
+
+    <!-- Strings da API -->
+    <string name="state_play">in play</string>
+    <string name="state_draw">draw</string>
+    <string name="state_draw_material">draw (material)</string>
+    <string name="state_draw_50">draw (50 move rule)</string>
+    <string name="state_draw_stalemate">draw (stalemate)</string>
+    <string name="state_draw_repeat">draw (3-fold repetition)</string>
+    <string name="state_mate">mate</string>
+    <string name="state_check">check</string>
+    <string name="state_time">time</string>
+    <string name="state_resigned">resigned</string>
+    <string name="state_aborted">aborted</string>
+    <string name="state_adjourned">adjourned</string>
+    <string name="msg_wait">Please wait...</string>
+    <string name="msg_illegal_move">Illegal move</string>
+    <string name="msg_state_format">%1$s</string>
+    <string name="title_pick_promo">Pick promotion piece</string>
+    <string name="title_castle">Castle?</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_no">No</string>
+    <string name="alert_cancel">Cancel</string>
+    <string name="alert_ok">OK</string>
+    <string name="choice_queen">Queen</string>
+    <string name="choice_rook">Rook</string>
+    <string name="choice_bishop">Bishop</string>
+    <string name="choice_knight">Knight</string>
+    <string name="button_ok">OK</string>
+    <string name="title_annotate">Annotate</string>
+    <string name="title_create_new_line">Create new line?</string>
+    <string name="err_load_fen">FEN chess position could not be loaded</string>
+    <string name="err_load_pgn">PGN chess history could not be loaded</string>
+    <string name="err_no_clip_text">There is no text on the clip board</string>
+    <string name="chess960_position_nr">"Chess 960 position nr %d"</string>
+    <string name="title_activity_biblioteca">BibliotecaActivity</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+
+</resources>
