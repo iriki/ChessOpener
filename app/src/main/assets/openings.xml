@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item>
+        <id>0</id>
+        <name>Sicilian defense</name>
+        <description></description>
+        <youtubeId>G0ctAe7bGzs</youtubeId>
+        <history>Single cheese topping</history>
+        <imageUrl></imageUrl>
+    </item>
+    <item>
+        <id>1</id>
+        <name>Alekhine defense</name>
+        <description></description>
+        <youtubeId>G0ctAe7bGzs</youtubeId>
+        <history>Single cheese topping</history>
+        <imageUrl></imageUrl>
+    </item>
+    <item>
+        <id>2</id>
+        <name>Caro-Kann</name>
+        <description></description>
+        <youtubeId>uLfrt7Atldo</youtubeId>
+        <history>Loaded with Extra Cheese</history>
+        <imageUrl></imageUrl>
+    </item>
+    <item>
+        <id>3</id>
+        <name>Fresh Veggie</name>
+        <description></description>
+        <youtubeId>110</youtubeId>
+        <history>Oninon and Crisp capsicum</history>
+        <imageUrl></imageUrl>
+    </item>
+    <item>
+        <id>4</id>
+        <name>Peppy Paneer</name>
+        <description></description>
+        <youtubeId>155</youtubeId>
+        <history>Paneer, Crisp capsicum and Red pepper</history>
+        <imageUrl></imageUrl>
+    </item>
+    <item>
+        <id>5</id>
+        <name>Mexican Green Wave</name>
+        <description></description>
+        <youtubeId>445</youtubeId>
+        <history>Onion, Crip capsicum, Tomato with mexican herb</history>
+        <imageUrl></imageUrl>
+    </item>
+</menu>

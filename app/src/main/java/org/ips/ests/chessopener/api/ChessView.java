@@ -661,8 +661,8 @@ public class ChessView extends UI {
 	}
 	
 	@Override public void play(){
-		if(_jni.isEnded() == 0){
-			if(_progressPlay != null && _progressPlay.getVisibility() == View.VISIBLE){
+		if(_jni.isEnded() == 0 && _progressPlay != null){
+			if(_progressPlay.getVisibility() == View.VISIBLE){
 				_progressPlay.setVisibility(View.GONE);
 				if (_butPlay != null) {
 					_butPlay.setVisibility(View.VISIBLE);	

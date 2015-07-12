@@ -11,8 +11,13 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import org.ips.ests.chessopener.R;
+import org.ips.ests.chessopener.Start;
+import org.ips.ests.chessopener.model.Opening;
 import org.ips.ests.chessopener.ui.SlidingTabLayout;
 import org.ips.ests.chessopener.ui.ViewPagerAdapter;
+import org.ips.ests.chessopener.xml.OpeningsFromXml;
+
+import java.util.ArrayList;
 
 
 public class BibliotecaActivity extends ActionBarActivity
@@ -28,8 +33,7 @@ public class BibliotecaActivity extends ActionBarActivity
     ViewPager pager;
     ViewPagerAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence Titles[]={"Home","Events"};
-    int Numboftabs =2;
+    CharSequence Titles[]={"Home","History", "Video"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +48,13 @@ public class BibliotecaActivity extends ActionBarActivity
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
-        mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com", BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
-
-
+        mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com",
+                BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
 
 
 
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
-        adapter =  new ViewPagerAdapter(getSupportFragmentManager(),Titles,Numboftabs);
+        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length);
 
         // Assigning ViewPager View and setting the adapter
         pager = (ViewPager) findViewById(R.id.pager);
