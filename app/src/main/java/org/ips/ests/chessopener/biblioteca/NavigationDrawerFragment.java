@@ -125,7 +125,6 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
 
         for (Opening opening : Start.openings) {
             items.add(new NavigationItem(opening.getName(), getResources().getDrawable(R.drawable.ic_menu_check)));
-
         }
 
 //        items.add(new NavigationItem("item 1", getResources().getDrawable(R.drawable.ic_menu_check)));

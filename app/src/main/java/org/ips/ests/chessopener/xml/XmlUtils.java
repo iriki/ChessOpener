@@ -98,34 +98,8 @@ public class XmlUtils {
             e.printStackTrace();
         }
 
-        Log.v("TAG", "Text File: " + text);
+        //Log.v("TAG", "Text File: " + text);
         return text;
-    }
-
-
-
-
-
-
-
-    // OLD
-    public static void parseXml(Context context) throws XPathExpressionException, IOException {
-        XPath xpath = XPathFactory.newInstance().newXPath();
-        String expression = "//opening";
-        InputSource inputSource = new InputSource(context.getAssets().open("openings.xml"));
-        NodeList nodes = (NodeList) xpath.evaluate(expression, inputSource, XPathConstants.NODESET);
-
-        List<String> nos = new ArrayList<>();
-
-        for (int i = 0; i < nodes.getLength(); i++) {
-            Node opening = nodes.item(i);
-            NamedNodeMap attributes = opening.getAttributes();
-            String node = attributes.getNamedItem("name").getNodeValue();
-            nos.add(node);
-//            System.out.println(attributes.getNamedItem("name").getNodeValue());
-
-
-        }
     }
 
 }

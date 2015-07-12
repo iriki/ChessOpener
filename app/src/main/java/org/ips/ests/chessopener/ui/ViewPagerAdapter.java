@@ -5,19 +5,23 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import org.ips.ests.chessopener.model.Opening;
+
 /**
  * Created by Edwin on 15/02/2015.
  */
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
+    private final Opening opening;
     CharSequence Titles[]; // This will Store the Titles of the Tabs which are Going to be passed when ViewPagerAdapter is created
     int NumbOfTabs; // Store the number of tabs, this will also be passed when the ViewPagerAdapter is created
 
 
     // Build a Constructor and assign the passed Values to appropriate values in the class
-    public ViewPagerAdapter(FragmentManager fm, CharSequence mTitles[], int mNumbOfTabsumb) {
+    public ViewPagerAdapter(FragmentManager fm, CharSequence mTitles[], int mNumbOfTabsumb, Opening opening) {
         super(fm);
 
+        this.opening = opening;
         this.Titles = mTitles;
         this.NumbOfTabs = mNumbOfTabsumb;
 

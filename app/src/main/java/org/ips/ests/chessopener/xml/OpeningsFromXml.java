@@ -43,8 +43,6 @@ public class OpeningsFromXml {
             String imageUrl = XmlUtils.getValue(e, KEY_IMAGEURL); // description child value
             int id = Integer.valueOf(XmlUtils.getValue(e, KEY_ID)); // description child value
 
-            System.out.println(name + youtubeId + history);
-
             Opening opening = new Opening(id, name, description, youtubeId, history, imageUrl);
             openings.add(opening);
         }
