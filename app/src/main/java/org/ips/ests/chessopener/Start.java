@@ -16,8 +16,28 @@ public class Start extends Application {
 
     @Override
     public void onCreate() {
-        openings = OpeningsFromXml.createInitialList(this);
+        //openings = OpeningsFromXml.createInitialList(this);
+
+
+        openings = populateFromArray();
+
 
         super.onCreate();
     }
+
+    private ArrayList<Opening> populateFromArray() {
+        ArrayList<Opening> openings = new ArrayList<>();
+
+
+        String[] histories = getResources().getStringArray(R.array.openings_history);
+        String[] names = getResources().getStringArray(R.array.openings_names);
+
+        for (int i = 0; i < histories.length; i++) {
+            openings.add(new Opening(i, names[i], "desc", "you", histories[i], "url" ));
+        }
+
+
+        return openings;
+    }
 }
+

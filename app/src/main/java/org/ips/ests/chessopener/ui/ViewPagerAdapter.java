@@ -12,7 +12,7 @@ import org.ips.ests.chessopener.model.Opening;
  */
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    private final Opening opening;
+    private Opening opening;
     CharSequence Titles[]; // This will Store the Titles of the Tabs which are Going to be passed when ViewPagerAdapter is created
     int NumbOfTabs; // Store the number of tabs, this will also be passed when the ViewPagerAdapter is created
 
@@ -24,19 +24,25 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
         this.opening = opening;
         this.Titles = mTitles;
         this.NumbOfTabs = mNumbOfTabsumb;
+    }
 
+    //call this method to update fragments in ViewPager dynamically
+    public void update(Opening opening) {
+        this.opening = opening;
+        notifyDataSetChanged();
     }
 
     //This method return the fragment for the every position in the View Pager
     @Override
     public Fragment getItem(int position) {
 
+        Fragment tab;
         switch (position) {
 
             default:
             case 0:
-                Tab1 tab1 = new Tab1();
-                return tab1;
+                tab = Tab1.newInstance(opening);
+                break;
             case 1:
                 Tab2 tab2 = new Tab2();
                 return tab2;
@@ -45,17 +51,16 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 return tab3;
         }
 
-//        if(position == 0) // if the position is 0 we are returning the First tab
-//        {
-//            Tab1 tab1 = new Tab1();
-//            return tab1;
-//        }
-//        else             // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
-//        {
-//            Tab2 tab2 = new Tab2();
-//            return tab2;
-//        }
+        return tab;
+    }
 
+    @Override
+    public int getItemPosition(Object object) {
+        if (object instanceof IUpdateableFragment) {
+            ((IUpdateableFragment) object).update(opening);
+        }
+        //don't return POSITION_NONE, avoid fragment recreation.
+        return super.getItemPosition(object);
     }
 
     // This method return the titles for the Tabs in the Tab Strip

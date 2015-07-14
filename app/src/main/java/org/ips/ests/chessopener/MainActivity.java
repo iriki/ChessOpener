@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 
 import org.ips.ests.chessopener.biblioteca.BibliotecaActivity;
-import org.ips.ests.chessopener.library.AberturaDetailActivity;
 
 public class MainActivity extends Activity {
 

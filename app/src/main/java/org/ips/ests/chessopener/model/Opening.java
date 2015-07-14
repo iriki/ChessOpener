@@ -1,11 +1,15 @@
 package org.ips.ests.chessopener.model;
 
+import java.io.Serializable;
 import java.util.Locale;
 
 /**
  * Created by hsousa on 12/07/15.
  */
-public class Opening {
+public class Opening implements Serializable {
+    public static final String OPENING_TAG = "opening";
+
+    private static final long serialVersionUID = -2163051469151804394L;
 
     private static final String YOUTUBE_VIDEO = "https://www.youtube.com/watch?v=%s";
     private static final String YOUTUBE_THUMB = "http://img.youtube.com/vi/%s/0.jpg";

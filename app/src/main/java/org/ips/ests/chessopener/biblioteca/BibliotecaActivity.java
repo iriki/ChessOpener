@@ -54,7 +54,7 @@ public class BibliotecaActivity extends ActionBarActivity
 
 
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
-        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length);
+        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length, Start.openings.get(0));
 
         // Assigning ViewPager View and setting the adapter
         pager = (ViewPager) findViewById(R.id.pager);
@@ -82,11 +82,10 @@ public class BibliotecaActivity extends ActionBarActivity
         Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
         //TODO: substituir fragmentos
 
-        Opening o = Start.openings.get(position);
-
-
+        if (adapter != null) {
+            adapter.update(Start.openings.get(position));
+        }
     }
-
 
     @Override
     public void onBackPressed() {

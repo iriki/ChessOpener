@@ -29,11 +29,7 @@
             android:label="@string/activity_chessboard_name" >
         </activity>
 
-        <!-- Actividade que mostra o tabuleiro -->
-        <activity
-            android:name=".library.AberturaDetailActivity"
-            android:label="@string/activity_library_name" >
-        </activity>
+        <!-- Actividade que mostra a lista de Aberturas -->
         <activity
             android:name=".biblioteca.BibliotecaActivity"
             android:label="@string/title_activity_biblioteca"
