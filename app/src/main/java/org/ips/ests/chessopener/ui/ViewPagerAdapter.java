@@ -44,11 +44,11 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 tab = Tab1.newInstance(opening);
                 break;
             case 1:
-                Tab2 tab2 = new Tab2();
-                return tab2;
+                tab = Tab2.newInstance(opening);
+                break;
             case 2:
-                Tab3 tab3 = new Tab3();
-                return tab3;
+                tab = Tab3.newInstance(opening);
+                break;
         }
 
         return tab;

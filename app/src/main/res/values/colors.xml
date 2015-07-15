@@ -34,4 +34,6 @@
     <color name="ColorPrimary">#00897B</color>
     <color name="ColorPrimaryDark">#00695C</color>
 
+    <color name="secondary_dark_gray">#CCC</color>
+
 </resources>

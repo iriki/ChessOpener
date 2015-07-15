@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+     Jonas, basicamente temos 5 string-arrays para alimentar cada atributo:
+        private String name;            - alimentado por <string-array name="openings_names">
+        private String history;         - alimentado por <string-array name="openings_history">
+        private String description;     - alimentado por <string-array name="openings_description">
+        private String imageUrl;        - alimentado por <string-array name="openings_image_url">
+        private String youtubeId;       - alimentado por <string-array name="openings_youtube_id">
+
+         A unica questao é que TODAS os string-array deverão ter o mesmo numero de item's, para funcionar bem.
+         Se achares demasiado confuso até pudemos colcar cada string-array num ficheiro diferente.
+-->
+    <string-array name="openings_description"  formatted="false">
+
+        <item>
+            <![CDATA[
+            <p>The
+                <b>Sicilian Defence</b>
+                is a
+                <a href="https://en.wikipedia.org/wiki/Chess" title="Chess">chess</a>
+                <a href="https://en.wikipedia.org/wiki/Chess_opening" title="Chess opening">
+                    opening
+                </a>
+                that begins with the moves:
+            </p>
+            <dl>
+                <dd>1.
+                    <a class="extiw" href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4" title="b:Chess Opening Theory/1. e4">e4
+                    </a>
+                    <a class="extiw" href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...c5" title="b:Chess Opening Theory/1. e4/1...c5">c5
+                    </a>
+                </dd>
+            </dl>
+            <p>The Sicilian is the most popular and best-scoring response to White\'s first move
+                1.e4. 1.d4 is a statistically more successful opening for white due to the high
+                success rate of the Sicilian defence against 1.e4.
+
+                <i>
+                    <a href="https://en.wikipedia.org/wiki/New_In_Chess" title="New In Chess">New In
+                        Chess
+                    </a>
+                </i>
+                stated in its 2000 Yearbook that of the
+                <a href="https://en.wikipedia.org/wiki/Game_theory" title="Game theory">games</a>
+                in its<a href="https://en.wikipedia.org/wiki/Database" title="Database">database</a>
+                , White scored 56.1% in
+                296,200 games beginning 1.d4, but 54.1% in 349,855 games beginning 1.e4, mainly due
+                to the Sicilian, which held White to a 52.3% score in 145,996 games.
+            </p>
+            <p>17% of all games between<a href="https://en.wikipedia.org/wiki/Grandmaster_(chess)" title="Grandmaster (chess)">grandmasters</a>, and 25% of the games in the
+                <a href="https://en.wikipedia.org/wiki/Chess_Informant" title="Chess Informant">
+                    Chess Informant
+                </a>
+                database, begin with the Sicilian.
+                Almost one quarter of all games use the Sicilian Defence.
+            </p>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Grandmaster_(chess)" title="Grandmaster (chess)">Grandmaster
+                </a>
+                <a href="https://en.wikipedia.org/wiki/John_Nunn" title="John Nunn">John Nunn</a>
+                attributes the Sicilian Defence\'s popularity to "its combative nature; in many lines
+                Black is playing not just for equality, but for the advantage. The drawback is that
+                White often obtains an early initiative, so Black has to take care not to fall
+                victim to a quick attack."
+                Grandmaster
+                <a href="https://en.wikipedia.org/wiki/Jonathan_Rowson" title="Jonathan Rowson">
+                    Jonathan Rowson
+                </a>
+                considered why the Sicilian is the most successful response to 1.e4, even though
+                1...c5 develops no pieces, and the pawn on c5 controls only d4 and b4. Rowson
+                writes:
+            </p>
+            <blockquote class="templatequote">
+                <p>To my mind there is quite a straightforward explanation. In order to profit from
+                    the initiative granted by the first move, White has to make use of his
+                    opportunity to do something before Black has an equal number of opportunities of
+                    his own. However, to do this, he has to make \'contact\' with the black position.
+                    The first point of contact usually comes in the form of a pawn exchange, which
+                    leads to the opening of the position. … So the thought behind 1...c5 is this:
+                    ″OK, I\'ll let you open the position, and develop your pieces aggressively, but
+                    at a price – you have to give me one of your center pawns.″
+                </p>
+                <div class="templatequotecite">—<a href="https://en.wikipedia.org/wiki/Jonathan_Rowson" title="Jonathan Rowson">
+                    Jonathan Rowson</a>,
+                    <cite>Chess for Zebras: Thinking Differently About Black and White
+                        <sup class="reference" id="cite_ref-6">
+                            <a href="#cite_note-6"><span>[</span>6
+                                <span>]</span>
+                            </a>
+                        </sup>
+                    </cite>
+                </div>
+            </blockquote>
+            <p>The earliest recorded notes on the Sicilian Defence date back to the late 16th
+                century by the Italian chess players
+                <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Giulio_Polerio" title="Giulio Polerio">Giulio
+                    Polerio
+                </a>
+                and <a href="https://en.wikipedia.org/wiki/Gioachino_Greco" title="Gioachino Greco">
+                    Gioachino Greco</a>.
+            </p>
+         ]]>
+
+        </item>
+
+        <item>blabla</item>
+        <item>blabla</item>
+        <item>blabla</item>
+        <item>blabla</item>
+    </string-array>
+
+</resources>

@@ -50,7 +50,7 @@ public class Opening implements Serializable {
     }
 
     public String getImageUrl() {
-        return imageUrl == null ? "" : imageUrl;
+        return imageUrl != null ? imageUrl : getYoutubeThumbURL();
     }
 
     public int getId() {

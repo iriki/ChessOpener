@@ -22,20 +22,20 @@ import org.ips.ests.chessopener.model.Opening;
  */
 public class Tab1 extends Fragment implements IUpdateableFragment {
 
-    TextView tvHistory;
+    TextView tvDescription;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.tab_1,container,false);
-        tvHistory = (TextView) v.findViewById(R.id.tv_history);
+        View v = inflater.inflate(R.layout.tab_1, container, false);
+        tvDescription = (TextView) v.findViewById(R.id.tv_description);
         if (savedInstanceState != null) {
             Bundle args = getArguments();
             Opening opening = (Opening) args.getSerializable(Opening.OPENING_TAG);
-            System.out.println(opening.getHistory());
-            tvHistory.setText(opening.getHistory());
+            System.out.println(opening.getDescription());
+            tvDescription.setText(Html.fromHtml(opening.getDescription()));
         } else {
-            System.out.println(Start.openings.get(0).getHistory());
-            tvHistory.setText(Start.openings.get(0).getHistory());
+            System.out.println(Start.openings.get(0).getDescription());
+            tvDescription.setText(Html.fromHtml(Start.openings.get(0).getDescription()));
         }
         return v;
     }
@@ -52,10 +52,10 @@ public class Tab1 extends Fragment implements IUpdateableFragment {
     @Override
     public void update(Opening opening) {
 
-        System.out.println(opening.getHistory());
+        System.out.println(opening.getDescription());
 
-//        tvHistory.setText(Html.fromHtml(getString(R.string.nice_html)));
-        tvHistory.setText(Html.fromHtml(opening.getHistory()));
-        tvHistory.setMovementMethod(LinkMovementMethod.getInstance());
+//        tvDescription.setText(Html.fromHtml(getString(R.string.nice_html)));
+        tvDescription.setText(Html.fromHtml(opening.getDescription()));
+        tvDescription.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

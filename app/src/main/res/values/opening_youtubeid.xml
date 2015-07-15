@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+     Jonas, basicamente temos 5 string-arrays para alimentar cada atributo:
+        private String name;            - alimentado por <string-array name="openings_names">
+        private String history;         - alimentado por <string-array name="openings_history">
+        private String description;     - alimentado por <string-array name="openings_description">
+        private String imageUrl;        - alimentado por <string-array name="openings_image_url">
+        private String youtubeId;       - alimentado por <string-array name="openings_youtube_id">
+
+         A unica questao é que TODAS os string-array deverão ter o mesmo numero de item's, para funcionar bem.
+         Se achares demasiado confuso até pudemos colcar cada string-array num ficheiro diferente.
+    -->
+
+    <string-array name="openings_youtube_id">
+        <item>G0ctAe7bGzs</item>
+        <item>blabla</item>
+        <item>blabla</item>
+        <item>blabla</item>
+        <item>blabla</item>
+    </string-array>
+
+</resources>

@@ -33,6 +33,7 @@ public class BibliotecaActivity extends ActionBarActivity
     ViewPager pager;
     ViewPagerAdapter adapter;
     SlidingTabLayout tabs;
+    /** The titles of the Tabs */
     CharSequence Titles[]={"Home","History", "Video"};
 
     @Override
