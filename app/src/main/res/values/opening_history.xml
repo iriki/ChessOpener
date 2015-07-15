@@ -14,9 +14,9 @@
 
     <string-array name="openings_history" formatted="false">
 
-        <item>
-            <![CDATA[
-            <p>The Sicilian Defence was analysed by
+        <item id="0" name="Sicilian defense">
+		<![CDATA[
+		<p>The Sicilian Defence was analysed by
                 <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Giulio_Polerio"
                     title="Giulio Polerio">Giulio
                     Polerio
@@ -96,12 +96,12 @@
                         <span>]</span>
                     </a>
                 </sup>
-                Staunton wrote of the Sicilian, "In the opinion of Jaenisch and the German \'<a
+                Staunton wrote of the Sicilian, "In the opinion of Jaenisch and the German '<a
                     href="https://en.wikipedia.org/wiki/Handbuch_des_Schachspiels"
                     title="Handbuch des Schachspiels">
-                    Handbuch</a>\', with which I coincide, this is the best possible reply to 1.P-K4,
-                [1.e4 in algebraic notation] \'as it renders the formation of a centre impracticable
-                for White and prevents every attack.\'&nbsp;"
+                    Handbuch</a>', with which I coincide, this is the best possible reply to 1.P-K4,
+                [1.e4 in algebraic notation] 'as it renders the formation of a centre impracticable
+                for White and prevents every attack.'&nbsp;"
                 <sup class="reference" id="cite_ref-14">
                     <a href="#cite_note-14"><span>[</span>14
                         <span>]</span>
@@ -109,14 +109,14 @@
                 </sup>
             </p>
             <p>The opening fell out of favour in the later part of the nineteenth century, when some
-                of the world\'s leading players rejected it.
+                of the world's leading players rejected it.
                 <sup class="reference" id="cite_ref-15">
                     <a href="#cite_note-15"><span>[</span>A
                         <span>]</span>
                     </a>
                 </sup>
                 <a href="https://en.wikipedia.org/wiki/Paul_Morphy" title="Paul Morphy">Paul
-                    Morphy</a>, the world\'s best
+                    Morphy</a>, the world's best
                 player in the late 1850s, decried "that pernicious fondness for the Sicilian Defense
                 ... extending from about 1843 to some time after 1851".
                 <sup class="reference" id="cite_ref-16">
@@ -139,10 +139,10 @@
                         <span>]</span>
                     </a>
                 </sup>
-                The death of the opening\'s two greatest proponents, Staunton and Anderssen, in 1874
+                The death of the opening's two greatest proponents, Staunton and Anderssen, in 1874
                 and 1879 respectively, also contributed to its decline. It has been said that "these
                 losses almost dealt a knockout blow to the Sicilian because it took a long time to
-                find such important figures to carry the Sicilian\'s standard."
+                find such important figures to carry the Sicilian's standard."
                 <sup class="reference" id="cite_ref-19">
                     <a href="#cite_note-19"><span>[</span>17
                         <span>]</span>
@@ -150,9 +150,9 @@
                 </sup>
                 <a href="https://en.wikipedia.org/wiki/George_H._D._Gossip"
                     title="George H. D. Gossip">George H. D.
-                    Gossip</a>, in<i>The Chess Player\'s Manual</i>, first published in 1874, wrote,
+                    Gossip</a>, in<i>The Chess Player's Manual</i>, first published in 1874, wrote,
                 "Of late years ... discoveries have been made which have the effect of considerably
-                strengthening White\'s attack, and the \'Sicilian\' is now considered by most modern
+                strengthening White's attack, and the 'Sicilian' is now considered by most modern
                 authorities to be a comparatively weak mode of play."
                 <sup class="reference" id="cite_ref-20">
                     <a href="#cite_note-20"><span>[</span>18
@@ -185,7 +185,7 @@
                     href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca"
                     title="José Raúl Capablanca">
                     Capablanca</a>, World Champion from 1921 to 1927, famously denounced it as an
-                opening where "Black\'s game is full of holes".
+                opening where "Black's game is full of holes".
                 <sup class="reference" id="cite_ref-23">
                     <a href="#cite_note-23"><span>[</span>21
                         <span>]</span>
@@ -232,9 +232,9 @@
                 Lasker
             </a>
             (World Champion from 1894 to 1921),<a
-                        href="https://en.wikipedia.org/wiki/Frank_Marshall_(chess_player)"
-                        title="Frank Marshall (chess player)">Frank Marshall</a>,<a
-                        href="https://en.wikipedia.org/wiki/Savielly_Tartakower" title="Savielly Tartakower">
+            href="https://en.wikipedia.org/wiki/Frank_Marshall_(chess_player)"
+            title="Frank Marshall (chess player)">Frank Marshall</a>,<a
+            href="https://en.wikipedia.org/wiki/Savielly_Tartakower" title="Savielly Tartakower">
             Savielly Tartakower</a>,
             and<a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch" title="Aron Nimzowitsch">
             Aron Nimzowitsch</a>, and
@@ -265,8 +265,8 @@
             </sup>
             despite their critical comments, occasionally played the opening. It was played six
             times (out of 110 games) at<a
-                        href="https://en.wikipedia.org/wiki/New_York_1924_chess_tournament"
-                        title="New York 1924 chess tournament">New York 1924</a>.
+            href="https://en.wikipedia.org/wiki/New_York_1924_chess_tournament"
+            title="New York 1924 chess tournament">New York 1924</a>.
             <sup class="reference" id="cite_ref-31">
                 <a href="#cite_note-31"><span>[</span>29
                     <span>]</span>
@@ -280,14 +280,14 @@
                 </a>
             </i>
             (4th edition) wrote, "The Sicilian has claims to be considered as the best of the
-            irregular defences to 1.P-K4 at Black\'s disposal, and has been practised with
+            irregular defences to 1.P-K4 at Black's disposal, and has been practised with
             satisfactory results by the leading players of the day."
             <sup class="reference" id="cite_ref-32">
                 <a href="#cite_note-32"><span>[</span>C
                     <span>]</span>
                 </a>
             </sup>
-            In this period Black\'s approach was usually slow and positional, and the all-out attacks
+            In this period Black's approach was usually slow and positional, and the all-out attacks
             by White that became common after World War II had not yet been developed.
             <sup class="reference" id="cite_ref-33">
                 <a href="#cite_note-33"><span>[</span>30
@@ -302,7 +302,7 @@
                     Alexander Kotov</a>, and<a href="https://en.wikipedia.org/wiki/Miguel_Najdorf"
                     title="Miguel Najdorf">Miguel Najdorf</a>.<a
                     href="https://en.wikipedia.org/wiki/Reuben_Fine" title="Reuben Fine">Reuben
-                    Fine</a>, one of the world\'s
+                    Fine</a>, one of the world's
                 leading players during this time period, wrote of the Sicilian in 1948, "Black gives
                 up
                 control of the centre, neglects his development, and often submits to horribly
@@ -339,7 +339,7 @@
                 Sicilian Defence became recognised as the defence that offered Black the most
                 winning
                 chances against 1.e4. Both players favoured sharp, aggressive play and employed the
-                Sicilian almost exclusively throughout their careers, burnishing the defence\'s
+                Sicilian almost exclusively throughout their careers, burnishing the defence's
                 present
                 reputation. Today, most leading grandmasters include the Sicilian in their opening
                 repertoire. Some of the current top-level players who regularly use it include<a
@@ -367,7 +367,7 @@
                 <a href="https://en.wikipedia.org/wiki/Larry_Evans" title="Larry Evans">Larry
                     Evans
                 </a>
-                observed that, "The Sicilian is Black\'s most dynamic, asymmetrical reply to 1.P-K4.
+                observed that, "The Sicilian is Black's most dynamic, asymmetrical reply to 1.P-K4.
                 It
                 produces the psychological and tension factors which denote the best in modern play
                 and
@@ -378,48 +378,977 @@
                     </a>
                 </sup>
             </p>
-            ]]>
-
+        ]]>
         </item>
-
-        <item>
-            <![CDATA[
-            <p>
-                <b>Alekhine\'s Defence</b>
-                is a
-                <a href="https://en.wikipedia.org/wiki/Hypermodernism_(chess)" title="Hypermodernism (chess)">hypermodern
+        <item id="1" name="Alekhine defense">
+        <![CDATA[
+		<p>The opening is named after<a href="https://en.wikipedia.org/wiki/Alexander_Alekhine"
+                title="Alexander Alekhine">
+                Alexander Alekhine</a>, who introduced it in the
+                <a href="https://en.wikipedia.org/wiki/Category:1921_in_chess"
+                    title="Category:1921 in chess">1921
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Chess_opening" title="Chess opening">chess opening</a>
-                that begins with the moves:
-            </p>
-            <dl>
-                <dd>1.
-                    <a class="extiw" href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4"
-                        title="b:Chess Opening Theory/1. e4">e4
-                    </a>
-                    <a class="extiw"
-                        href="//en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...Nf6" title="b:Chess Opening Theory/1. e4/1...Nf6">Nf6
-                    </a>
-                </dd>
-            </dl>
-            <p>
-                <a href="https://en.wikipedia.org/wiki/White_and_Black_in_chess" title="White and Black in chess">Black</a>
-                tempts White\'s pawns forward to form a broad pawn centre, with plans to undermine
-                and attack the white structure later in the spirit of hypermodern defence. White\'s
-                imposing mass of pawns in the centre often includes pawns on c4, d4, e5, and f4.
-                <a class="mw-redirect" href="https://en.wikipedia.org/wiki/International_Grandmaster"
-                    title="International Grandmaster">Grandmaster
+                <a href="https://en.wikipedia.org/wiki/Budapest" title="Budapest">Budapest</a>
+                tournament in games against
+                <a href="https://en.wikipedia.org/wiki/Endre_Steiner" title="Endre Steiner">Endre
+                    Steiner
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Nick_de_Firmian" title="Nick de Firmian">Nick de Firmian</a>
-                observes of Alekhine\'s in MCO-15 (2008), "The game immediately loses any sense of
-                symmetry or balance, which makes the opening a good choice for aggressive fighting
-                players."
+                <sup class="reference" id="cite_ref-2">
+                    <a href="#cite_note-2">
+                        <span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                and<a href="https://en.wikipedia.org/wiki/Friedrich_S%C3%A4misch"
+                    title="Friedrich Sämisch">Fritz Sämisch</a>.
+                <sup class="reference" id="cite_ref-3">
+                    <a href="#cite_note-3">
+                        <span>[</span>3
+                        <span>]</span>
+                    </a>
+                </sup>
+                Four years later, the editors of the Fourth Edition of
+                <i>
+                    <a href="https://en.wikipedia.org/wiki/Modern_Chess_Openings"
+                        title="Modern Chess Openings">Modern Chess
+                        Openings
+                    </a>
+                </i>
+                (MCO-4) wrote:
             </p>
-            ]]>
-        </item>
-        <item>http://archive.org/download/ElephantsDream_277/elephant_dreams_640_512kb.mp4</item>
-        <item>http://archive.org/download/Sintel/sintel-2048-stereo_512kb.mp4</item>
-        <item>http://archive.org/download/Tears-of-Steel/tears_of_steel_720p.mp4</item>
+            <blockquote>
+                <p>Nothing is more indicative of the iconoclastic conceptions of the '<a
+                    href="https://en.wikipedia.org/wiki/Hypermodernism_(chess)"
+                    title="Hypermodernism (chess)">hypermodern
+                    school</a>' than the bizarre defence introduced by Alekhine ... . Although
+                    opposing to
+                    all tenets of the classical school, Black allows his King's Knight to be driven
+                    about
+                    the board in the early stages of the game, in the expectation of provoking a
+                    weakness in
+                    White's centre pawns.
+                    <sup class="reference" id="cite_ref-4">
+                        <a href="#cite_note-4">
+                            <span>[</span>4
+                            <span>]</span>
+                        </a>
+                    </sup>
+                </p>
+            </blockquote>
+            <p>In addition to Alekhine, another early exponent of the defence was<a
+                href="https://en.wikipedia.org/wiki/Ernst_Gr%C3%BCnfeld" title="Ernst Grünfeld">
+                Ernst Grünfeld</a>.
+            </p>
+        ]]>
+		</item>
+		<item id="2" name="Caro-Kann">
+        <![CDATA[
+		<p>The opening is named after the
+                <a href="https://en.wikipedia.org/wiki/England" title="England">English</a>
+                player
+                <a href="https://en.wikipedia.org/wiki/Horatio_Caro" title="Horatio Caro">Horatio
+                    Caro
+                </a>
+                and the
+                <a href="https://en.wikipedia.org/wiki/Austria" title="Austria">Austrian</a>
+                player
+                <a href="https://en.wikipedia.org/wiki/Marcus_Kann" title="Marcus Kann">Marcus
+                    Kann
+                </a>
+                who analysed it in 1886. Kann scored an impressive 17-move victory with the
+                Caro–Kann
+                Defence against German-British chess champion
+                <a href="https://en.wikipedia.org/wiki/Jacques_Mieses" title="Jacques Mieses">
+                    Jacques Mieses
+                </a>
+                at the 4th
+                <a href="https://en.wikipedia.org/wiki/German_Chess_Championship"
+                    title="German Chess Championship">German Chess
+                    Congress
+                </a>
+                in Hamburg in May 1885:
+            </p>
+            <blockquote>
+                <p>1.e4 c6 2.d4 d5 3.e5 Bf5 4.Bd3 Bxd3 5.Qxd3 e6 6.f4 c5 7.c3 Nc6 8.Nf3 Qb6 9.0-0
+                    Nh6 10.b3
+                    cxd4 11.cxd4 Nf5 12.Bb2 Rc8 13.a3 Ncxd4 14.Nxd4 Bc5 15.Rd1 Nxd4 16.Bxd4 Bxd4+
+                    17.Qxd4
+                    Rc1 0–1
+                    <sup class="reference" id="cite_ref-1">
+                        <a href="#cite_note-1"><span>[</span>1
+                            <span>]</span>
+                        </a>
+                    </sup>
+                </p>
+            </blockquote>
+        ]]>
+		</item>
+		<item id="3" name="Latvian Gambit">
+        <![CDATA[
+		<p>The opening was originally known as the<b>Greco Counter-Gambit</b>, and some modern
+                writers
+                still refer to it as such.
+                <sup class="reference" id="cite_ref-4">
+                    <a href="#cite_note-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+                That name recognised the Italian player
+                <a href="https://en.wikipedia.org/wiki/Gioachino_Greco" title="Gioachino Greco">
+                    Gioachino Greco
+                </a>
+                (1600–34), who contributed to the early theory of the opening. The new name
+                <i>Latvian Gambit</i>
+                was made official by the
+                <a class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_Internationale_des_%C3%89checs" title="Fédération Internationale des Échecs">FIDE
+                </a>
+                Congress of 1937. The name was a tribute to the
+                <a href="https://en.wikipedia.org/wiki/Latvia" title="Latvia">Latvian</a>
+                players, notably<a
+                    href="https://en.wikipedia.org/wiki/K%C4%81rlis_B%C4%93ti%C5%86%C5%A1"
+                    title="Kārlis Bētiņš">
+                    Kārlis Bētiņš</a>, who analysed it in the early part of the 20th century.
+            </p>
+        
+		]]>
+		</item>
+		<item id="4" name="Ponziani Opening">
+        <![CDATA[
+		<p>The opening 1.e4 e5 2.Nf3 Nc6 3.c3 is one of the oldest known openings, having been
+                discussed
+                in chess literature by no later than 1497. It was mentioned in both of the earliest
+                chess
+                treatises: the
+                <i>Repetición de Amores y Arte de Ajedrez con ci Iuegos de Partido</i>
+                by
+                <a href="https://en.wikipedia.org/wiki/Luis_Ram%C3%ADrez_de_Lucena"
+                    title="Luis Ramírez de Lucena">Lucena
+                </a>
+                <sup class="reference" id="cite_ref-GaryLane_2-0">
+                    <a href="#cite_note-GaryLane-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                and the<a href="https://en.wikipedia.org/wiki/G%C3%B6ttingen_manuscript"
+                    title="Göttingen manuscript">Göttingen
+                    manuscript</a>.
+                <sup class="reference" id="cite_ref-3">
+                    <a href="#cite_note-3"><span>[</span>3
+                        <span>]</span>
+                    </a>
+                </sup>
+                Today the opening bears the surname of<a
+                    href="https://en.wikipedia.org/wiki/Domenico_Lorenzo_Ponziani"
+                    title="Domenico Lorenzo Ponziani">Domenico Lorenzo Ponziani</a>. Although
+                Ponziani did
+                analyze the opening in 1769, his principal contribution was the introduction of the
+                <a class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/List_of_chess_terms#Countergambit" title="List of chess terms">countergambit
+                </a>
+                3...f5!?
+                <sup class="reference" id="cite_ref-Staunton_1847.2C_p._182_4-0">
+                    <a href="#cite_note-Staunton_1847.2C_p._182-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+                Later the opening was favored by<a
+                    href="https://en.wikipedia.org/wiki/Howard_Staunton" title="Howard Staunton">
+                    Howard Staunton</a>, who in
+                <i>The Chess-Player's Handbook</i>
+                (1847) called it "so full of interest and variety, that its omission in many of the
+                leading
+                works on the game is truly unaccountable. ... it deserves, and, if we mistake not,
+                will yet
+                attain a higher place in the category of legitimate openings than has hitherto been
+                assigned
+                to it".
+                <sup class="reference" id="cite_ref-Staunton_1847.2C_p._182_4-1">
+                    <a href="#cite_note-Staunton_1847.2C_p._182-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+        ]]>
+		</item>
+		<item id="5" name="Blackmar-Diemer Gambit">
+        <![CDATA[
+		<p>The Blackmar–Diemer Gambit arose as a development of the earlier Blackmar Gambit,
+                named after
+                <a href="https://en.wikipedia.org/wiki/Armand_Blackmar" title="Armand Blackmar">
+                    Armand Blackmar</a>, a relatively
+                little-known New Orleans player of the late 19th century who popularized its
+                characteristic
+                moves (1.d4 d5 2.e4 dxe4 3.f3) and was the first player to publish analysis on the
+                opening
+                in the chess literature.
+                <sup class="reference" id="cite_ref-2">
+                    <a href="#cite_note-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                The popularity of the original Blackmar Gambit, however, was short-lived, as it was
+                basically unsound, allowing Black to secure a superior position after White's
+                immediate 3.f3
+                with 3...e5!. In 1889, Ignatz von Popiel came up with the idea of 3.Nc3, though his
+                main
+                idea was to meet 3...Nf6 with 4.Bg5 (rather than the more usual 4.f3) and provided
+                analysis
+                of the
+                <b>Lemberger Counter-Gambit</b>
+                (3.Nc3 e5).
+            </p>
+            <p>The evolved, modern form of this gambit owes much to the German master
+                <a href="https://en.wikipedia.org/wiki/Emil_Josef_Diemer" title="Emil Josef Diemer">
+                    Emil Josef Diemer
+                </a>
+                (1908–90), who popularized the continuation 3.Nc3 Nf6 and then 4.f3 (when 4...e5? is
+                ineffective as 5.dxe5 hits Black's knight, and after 5...Qxd1+ 6.Kxd1 the knight has
+                to
+                retreat to d7 or g8). The position resulting after 3... Nf6 4.f3 reflects the main
+                line of
+                the gambit accepted, although other Black responses on move three are possible.
+                After many
+                years of analysis, Diemer wrote a book on the opening in the late 1950s, titled
+                <i>Vom Ersten Zug An Auf Matt!</i>
+                (<i>Toward Mate From The First Move!</i>), with most of the published analysis
+                devoted to
+                the
+                <b>Ryder Gambit</b>
+                (and associated<a class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/Halosar_Trap" title="Halosar Trap">Halosar
+                    Trap</a>), a double-pawn sacrifice characterized by the moves 4...exf3 5.Qxf3.
+            </p>
+            <p>This
+                <a href="https://en.wikipedia.org/wiki/Gambit" title="Gambit">gambit</a>
+                is considered an aggressive opening, but its soundness continues to be the subject
+                of much
+                debate both on and off the chessboard. The ChessOK Opening Tree Mode lists the
+                Blackmar–Diemer as scoring 49% wins for White, 34% wins for Black, and 17% draws.
+                <sup class="reference" id="cite_ref-3">
+                    <a href="#cite_note-3"><span>[</span>3
+                        <span>]</span>
+                    </a>
+                </sup>
+                Dismissed by many masters on the one hand, and embraced enthusiastically by many
+                amateurs on
+                the other, many consider that Black has good chances of defending successfully and
+                converting the extra pawn in the<a
+                    href="https://en.wikipedia.org/wiki/Chess_endgame" title="Chess endgame">
+                    endgame</a>, while theory suggests that Black has many ways to equalize. As a
+                result,
+                this opening is rarely seen in top-level play, but enjoys a certain popularity among
+                <a href="https://en.wikipedia.org/wiki/Chess_club" title="Chess club">club</a>
+                players. Some titled players, including International Master<a
+                    href="https://en.wikipedia.org/wiki/Gary_Lane" title="Gary Lane">Gary Lane</a>,
+                consider the opening to be suitable at the club level
+                and for young and improving players. In one of his<i>Keybooks</i>, the Rev Tim
+                Sawyer said,
+                "Stop playing for the endgame, play to end the game! Be a winner. Play the
+                Blackmar–Diemer
+                Gambit!"
+                <sup class="reference" id="cite_ref-4">
+                    <a href="#cite_note-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+                On the other hand, Sam Collins (in his book<i>Understanding the Chess Openings</i>)
+                noted
+                the tendency for some Blackmar–Diemer fanatics to try to get the opening in every
+                game, thus
+                limiting their chess experience, and concluded, "Nobody who plays good chess plays
+                this
+                line, and nobody who plays good chess ever will."
+                <sup class="reference" id="cite_ref-5">
+                    <a href="#cite_note-5"><span>[</span>5
+                        <span>]</span>
+                    </a>
+                </sup>
+                Other dismissive quotes include "playing the Blackmar–Diemer Gambit is like shopping
+                for a
+                tombstone" (Andrew Martin)
+                <sup class="reference" id="cite_ref-6">
+                    <a href="#cite_note-6"><span>[</span>6
+                        <span>]</span>
+                    </a>
+                </sup>
+                and "To convince an adherent of the BDG that it is unsound, is like trying to
+                convince a
+                child that there is no Santa Claus." (Kevin Denny).
+                <sup class="reference" id="cite_ref-7">
+                    <a href="#cite_note-7"><span>[</span>7
+                        <span>]</span>
+                    </a>
+                </sup>
+                As a result of the intense controversy surrounding the opening, much of the
+                literature on
+                the opening is lacking in objectivity.
+                <sup class="reference" id="cite_ref-8">
+                    <a href="#cite_note-8"><span>[</span>8
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+        ]]>
+		</item>
+		<item id="6" name="Budapest Gambit">
+        <![CDATA[
+		<p>In a
+                <i>Chess Notes</i>
+                feature article, Edward Winter showed that the origins of this opening are not yet
+                entirely
+                elucidated.
+                <sup class="reference" id="cite_ref-1">
+                    <a href="#cite_note-1"><span>[</span>1
+                        <span>]</span>
+                    </a>
+                </sup>
+                The first known game with the Budapest Gambit is Adler–
+                <a href="https://en.wikipedia.org/wiki/G%C3%A9za_Mar%C3%B3czy" title="Géza Maróczy">
+                    Maróczy
+                </a>
+                (played in
+                <a href="https://en.wikipedia.org/wiki/Budapest" title="Budapest">Budapest</a>
+                in 1896). This game already featured some key aspects of the gambit, such as active
+                play for
+                the black pieces, and White making the typical mistake of moving the queen too
+                early. As the
+                player of the white pieces was not a strong player, the new opening went unnoticed
+                apart
+                from the local experts who had witnessed the game. The Hungarians<a
+                    href="https://en.wikipedia.org/wiki/Istv%C3%A1n_Abonyi" title="István Abonyi">
+                    István Abonyi</a>,
+                <a href="https://en.wikipedia.org/wiki/Zsigmond_Bar%C3%A1sz"
+                    title="Zsigmond Barász">Zsigmond Barász
+                </a>
+                and
+                <a href="https://en.wikipedia.org/wiki/Gyula_Breyer" title="Gyula Breyer">Gyula
+                    Breyer
+                </a>
+                further developed the opening. Abonyi played it in 1916 against the Dutch surgeon
+                <a href="https://en.wikipedia.org/wiki/Jan_F._Esser" title="Jan F. Esser">Johannes
+                    Esser
+                </a>
+                in a small tournament in Budapest. The Austrian player Josef Emil Krejcik played it
+                against
+                Helmer in
+                <a href="https://en.wikipedia.org/wiki/Vienna" title="Vienna">Vienna</a>
+                in 1917.
+                <a href="https://en.wikipedia.org/wiki/Carl_Schlechter" title="Carl Schlechter">Carl
+                    Schlechter
+                </a>
+                published an optimistic analysis of the gambit in the<i>Deutsche Schachzeitung</i>.
+                <sup class="reference" id="cite_ref-Tseitlin8_2-0">
+                    <a href="#cite_note-Tseitlin8-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-Oleinikov_3_3-0">
+                    <a href="#cite_note-Oleinikov_3-3"><span>[</span>3
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-4">
+                    <a href="#cite_note-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+            <p>The first use of the opening against a world-class player was at
+                <a href="https://en.wikipedia.org/wiki/Berlin" title="Berlin">Berlin</a>
+                in April 1918, a double
+                <a href="https://en.wikipedia.org/wiki/Round-robin_tournament"
+                    title="Round-robin tournament">round-robin
+                    tournament
+                </a>
+                with four players:<a href="https://en.wikipedia.org/wiki/Akiba_Rubinstein"
+                    title="Akiba Rubinstein">Akiba
+                    Rubinstein</a>,<a href="https://en.wikipedia.org/wiki/Carl_Schlechter"
+                    title="Carl Schlechter">Carl
+                    Schlechter</a>,
+                <a href="https://en.wikipedia.org/wiki/Jacques_Mieses" title="Jacques Mieses">
+                    Jacques Mieses
+                </a>
+                and<a href="https://en.wikipedia.org/wiki/Milan_Vidmar" title="Milan Vidmar">Milan
+                    Vidmar</a>. Vidmar had to play
+                Black in the first round against Rubinstein, then ranked the fourth best player in
+                the world
+                with a very
+                <a href="https://en.wikipedia.org/wiki/Glossary_of_chess#Positional_play"
+                    title="Glossary of chess">positional
+                </a>
+                style.
+                <sup class="reference" id="cite_ref-ChessMetrics.com_5-0">
+                    <a href="#cite_note-ChessMetrics.com-5"><span>[</span>5
+                        <span>]</span>
+                    </a>
+                </sup>
+                At a loss for what to play, he sought advice from his friend Abonyi, who showed him
+                the
+                Budapest Gambit and the main ideas the Hungarian players had found. Vidmar followed
+                Abonyi's
+                advice and beat Rubinstein convincingly in just 24 moves.
+                <sup class="reference" id="cite_ref-6">
+                    <a href="#cite_note-6"><span>[</span>6
+                        <span>]</span>
+                    </a>
+                </sup>
+                This victory so heartened Vidmar that he went on to win the tournament, while
+                Rubinstein was
+                so demoralised by this defeat that he lost another game against Mieses and drew a
+                third one
+                against Schlechter in the same opening.
+                <sup class="reference" id="cite_ref-Tseitlin8_2-1">
+                    <a href="#cite_note-Tseitlin8-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-7">
+                    <a href="#cite_note-7"><span>[</span>7
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+            <p>After this tournament, the gambit finally began to be taken seriously. Top players
+                like
+                <a href="https://en.wikipedia.org/wiki/Savielly_Tartakower"
+                    title="Savielly Tartakower">Savielly Tartakower
+                </a>
+                and
+                <a href="https://en.wikipedia.org/wiki/Siegbert_Tarrasch" title="Siegbert Tarrasch">
+                    Siegbert Tarrasch
+                </a>
+                started to play it. Schlechter published in 1918 the monograph<i>Die budapester
+                    Verteidigung
+                    des Damengambits</i>,
+                <sup class="reference" id="cite_ref-8">
+                    <a href="#cite_note-8"><span>[</span>8
+                        <span>]</span>
+                    </a>
+                </sup>
+                which can be considered the first book on this opening. The gambit reached its peak
+                of
+                popularity (around five Budapest Gambits for every thousand games played) around
+                1920,
+                <sup class="reference" id="cite_ref-9">
+                    <a href="#cite_note-9"><span>[</span>9
+                        <span>]</span>
+                    </a>
+                </sup>
+                so much so that many White players adopted the move-order 1.d4 Nf6 2.Nf3 to avoid
+                it.
+                <sup class="reference" id="cite_ref-Oleinikov_4_10-0">
+                    <a href="#cite_note-Oleinikov_4-10"><span>[</span>10
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-11">
+                    <a href="#cite_note-11"><span>[</span>11
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+            <p>The leading exponents of 1.d4 started to look for reliable antidotes.
+                <a href="https://en.wikipedia.org/wiki/Alexander_Alekhine"
+                    title="Alexander Alekhine">Alexander Alekhine
+                </a>
+                showed how White could get a strong attack with 4.e4 in his games against
+                <a href="https://en.wikipedia.org/wiki/Ilya_Rabinovich" title="Ilya Rabinovich">Ilya
+                    Rabinovich
+                </a>
+                (
+                <a href="https://en.wikipedia.org/wiki/Baden-Baden" title="Baden-Baden">
+                    Baden-Baden
+                </a>
+                1925) and
+                <a href="https://en.wikipedia.org/wiki/Adolf_Seitz" title="Adolf Seitz">Adolf
+                    Seitz
+                </a>
+                (
+                <a href="https://en.wikipedia.org/wiki/Hastings" title="Hastings">Hastings</a>
+                1925–26). But a few weeks later a
+                <a href="https://en.wikipedia.org/wiki/Glossary_of_chess#Theme_tournament"
+                    title="Glossary of chess">theme
+                    tournament
+                </a>
+                on the Budapest Gambit was held, in Budapest, and the result was 14½–21½ in Black's
+                favor.
+                Another tournament in
+                <a href="https://en.wikipedia.org/wiki/Semmering,_Austria"
+                    title="Semmering, Austria">Semmering
+                </a>
+                the same year saw Alekhine losing to
+                <a href="https://en.wikipedia.org/wiki/Karl_Gilg" title="Karl Gilg">Karl Gilg</a>
+                in his pet line with White against the gambit, so that the e4-line had a mixed
+                reputation.
+                <sup class="reference" id="cite_ref-Oleinikov_4_10-1">
+                    <a href="#cite_note-Oleinikov_4-10"><span>[</span>10
+                        <span>]</span>
+                    </a>
+                </sup>
+                Meanwhile, more positional plans were also developed for White. Rubinstein showed
+                how White
+                could get a small positional advantage with 4.Bf4 Nc6 5.Nf3 Bb4+ 6.Nbd2, an
+                assessment still
+                valid today. The possibility 6.Nc3 was also considered attractive, as structural
+                weaknesses
+                were not valued as much as a material advantage of one pawn in those days. By the
+                end of the
+                1920s, despite the invention of the highly original
+                <a href="https://en.wikipedia.org/wiki/Budapest_Gambit#Fajarowicz_variation_3...Ne4"
+                    title="Budapest Gambit">
+                    Fajarowicz variation
+                </a>
+                3...Ne4 in 1928, the Budapest Gambit was considered theoretically dubious.
+                <sup class="reference" id="cite_ref-12">
+                    <a href="#cite_note-12"><span>[</span>12
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+            <p>This assessment was left unchanged for decades, as few players at the highest level
+                used the
+                Budapest Gambit and information about games from lesser players could not easily be
+                found.
+                During that time, various responses were developed against the 4.Bf4 line; these
+                included
+                4...g5, invented by<a href="https://en.wikipedia.org/wiki/Istv%C3%A1n_Abonyi"
+                    title="István Abonyi">István
+                    Abonyi</a>, further developed by the masters Bakonyi and Drimer. The master
+                Kaposztas
+                showed that even when White succeeded in his positional plan, it only meant for
+                Black a
+                worse endgame with drawish tendencies.
+                <sup class="reference" id="cite_ref-13">
+                    <a href="#cite_note-13"><span>[</span>notes 1
+                        <span>]</span>
+                    </a>
+                </sup>
+                Two pawn sacrifices were also introduced in the variation with 6.Nbd2 (still in the
+                4.Bf4
+                line), based on pawn pushes d7–d6 or f7–f6 and a quick attack against b2.
+                <sup class="reference" id="cite_ref-Oleinikov_6_14-0">
+                    <a href="#cite_note-Oleinikov_6-14"><span>[</span>13
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+            <p>The Budapest Gambit saw a short-lived revival in 1984–85 when
+                <i>
+                    <a href="https://en.wikipedia.org/wiki/Chess_Informant" title="Chess Informant">
+                        Chess Informant
+                    </a>
+                </i>
+                included three games (as many as in the previous fifteen years), all played at a
+                high level
+                of competition, and all won by Black.
+                <sup class="reference" id="cite_ref-Oleinikov_7_15-0">
+                    <a href="#cite_note-Oleinikov_7-15"><span>[</span>14
+                        <span>]</span>
+                    </a>
+                </sup>
+                But White players found reinforcements and even invented a line with 4.e3 and 5.Nh3.
+                <sup class="reference" id="cite_ref-Oleinikov_8_16-0">
+                    <a href="#cite_note-Oleinikov_8-16"><span>[</span>15
+                        <span>]</span>
+                    </a>
+                </sup>
+                In the 21st century, despite<a
+                    href="https://en.wikipedia.org/wiki/Shakhriyar_Mamedyarov"
+                    title="Shakhriyar Mamedyarov">Shakhriyar Mamedyarov</a>'s successful efforts to
+                rehabilitate the line 4.Bf4 g5, the Budapest Gambit almost never appears at the
+                highest
+                level.,
+                <sup class="reference" id="cite_ref-Oleinikov_12_17-0">
+                    <a href="#cite_note-Oleinikov_12-17"><span>[</span>16
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-18">
+                    <a href="#cite_note-18"><span>[</span>17
+                        <span>]</span>
+                    </a>
+                </sup>
+                however
+                <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Richard_Rapport"
+                    title="Richard Rapport">Richard
+                    Rapport
+                </a>
+                with black defeated Gelfand using the opening in round 2 of the 2014 Tata Steel
+                Chess
+                competition.
+            </p>
+        ]]>
+		</item>
+		<item id="7" name="Calabrese Countergambit">
+        <![CDATA[
+			No history available
+		]]>
+		</item>
+		<item id="8" name="Evans Gambit">
+        <![CDATA[
+		<p>The gambit is named after the Welsh sea Captain<a
+                href="https://en.wikipedia.org/wiki/William_Davies_Evans"
+                title="William Davies Evans">William Davies Evans</a>, the first player known to
+                have
+                employed it. The first game with the opening is considered to be Evans–<a
+                    href="https://en.wikipedia.org/wiki/Alexander_McDonnell"
+                    title="Alexander McDonnell">McDonnell</a>, London 1827,
+                although in that game a slightly different move order was tried (1.e4 e5 2.Nf3 Nc6
+                3.Bc4 Bc5
+                4.0-0 d6 and only now 5.b4). In 1832, the first analysis of the gambit was published
+                in the
+                <i>Second Series of Progressive Lessons (1832)</i>
+                by<a href="https://en.wikipedia.org/wiki/William_Lewis_(chess_player)"
+                    title="William Lewis (chess player)">William
+                    Lewis</a>.
+                <sup class="reference" id="cite_ref-1">
+                    <a href="#cite_note-1"><span>[</span>1
+                        <span>]</span>
+                    </a>
+                </sup>
+                The gambit became very popular shortly after that, being employed a number of times
+                in the
+                series of games between McDonnell and
+                <a class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/Louis_de_la_Bourdonnais" title="Louis de la Bourdonnais">
+                    Louis de la Bourdonnais
+                </a>
+                in 1834. Players such as<a href="https://en.wikipedia.org/wiki/Adolf_Anderssen"
+                    title="Adolf Anderssen">Adolf
+                    Anderssen</a>,
+                <a href="https://en.wikipedia.org/wiki/Paul_Morphy" title="Paul Morphy">Paul
+                    Morphy
+                </a>
+                and
+                <a href="https://en.wikipedia.org/wiki/Mikhail_Chigorin" title="Mikhail Chigorin">
+                    Mikhail Chigorin
+                </a>
+                subsequently took it up. After<a href="https://en.wikipedia.org/wiki/Emanuel_Lasker"
+                    title="Emanuel Lasker">Emanuel
+                    Lasker</a>'s simplifying defense to the opening in a tournament in 1895, it was
+                out of
+                favour for much of the 20th century, although
+                <a href="https://en.wikipedia.org/wiki/John_Nunn" title="John Nunn">John Nunn</a>
+                and
+                <a href="https://en.wikipedia.org/wiki/Jan_Timman" title="Jan Timman">Jan Timman</a>
+                played some games with it in the late 1970s and early 1980s, and in the 1990s
+                <a href="https://en.wikipedia.org/wiki/Garry_Kasparov" title="Garry Kasparov">Garry
+                    Kasparov
+                </a>
+                used it in a few of his games (notably a famous 25-move win against
+                <a href="https://en.wikipedia.org/wiki/Viswanathan_Anand" title="Viswanathan Anand">
+                    Viswanathan Anand
+                </a>
+                in<a href="https://en.wikipedia.org/wiki/Riga" title="Riga">Riga</a>, 1995), which
+                prompted a brief revival of
+                interest in it.
+                <sup class="reference" id="cite_ref-2">
+                    <a href="#cite_note-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+        
+		]]>
+		</item>
+		<item id="9" name="Fried Liver Attack">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="10" name="Grunfeld Defense">
+        <![CDATA[
+		<p>The first instance of this opening is in an 1855 game by<a
+                href="https://en.wikipedia.org/wiki/Moheschunder_Bannerjee"
+                title="Moheschunder Bannerjee">Moheschunder
+                Bannerjee</a>, an Indian player who had transitioned from
+                <a href="https://en.wikipedia.org/wiki/Indian_chess" title="Indian chess">Indian
+                    chess
+                </a>
+                rules, playing Black against
+                <a href="https://en.wikipedia.org/wiki/John_Cochrane_(chess_player)"
+                    title="John Cochrane (chess player)">John
+                    Cochrane
+                </a>
+                in Calcutta, in May 1855:
+            </p>
+            <blockquote>
+                <p>1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.e3 Bg7 5.Nf3 0-0 6.cxd5 Nxd5 7.Be2 Nxc3 8.bxc3 c5
+                    9.0-0 cxd4
+                    10.cxd4 Nc6 11.Bb2 Bg4 12.Rc1 Rc8 13.Ba3 Qa5 14.Qb3 Rfe8 15.Rc5 Qb6 16.Rb5 Qd8
+                    17.Ng5
+                    Bxe2 18.Nxf7 Na5
+                </p>
+            </blockquote>
+            <p>and White
+                <a href="https://en.wikipedia.org/wiki/Checkmate" title="Checkmate">mates</a>
+                in three (19.Nh6+
+                <a href="https://en.wikipedia.org/wiki/Double_check" title="Double check">double
+                    check
+                </a>
+                Kh8 20.Qg8+ Rxg8 21.Nf7<a href="https://en.wikipedia.org/wiki/Checkmate"
+                    title="Checkmate">#</a>).
+                <sup class="reference" id="cite_ref-1">
+                    <a href="#cite_note-1"><span>[</span>1
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-2">
+                    <a href="#cite_note-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                Cochrane published a book reporting his games with Moheshchunder and other Indians
+                in 1864.
+            </p>
+            <p>It gained popularity after
+                <a href="https://en.wikipedia.org/wiki/Ernst_Gr%C3%BCnfeld" title="Ernst Grünfeld">
+                    Ernst Grünfeld
+                </a>
+                introduced it into international play at Vienna 1922, where, in his first game with
+                the
+                defense, he defeated future world champion<a
+                    href="https://en.wikipedia.org/wiki/Alexander_Alekhine"
+                    title="Alexander Alekhine">Alexander Alekhine</a>.
+                <sup class="reference" id="cite_ref-3">
+                    <a href="#cite_note-3"><span>[</span>3
+                        <span>]</span>
+                    </a>
+                </sup>
+                Grünfeld usually employed a very classical style. The defence was later adopted by a
+                number
+                of prominent players, including<a
+                    href="https://en.wikipedia.org/wiki/Vasily_Smyslov" title="Vasily Smyslov">
+                    Vasily
+                    Smyslov</a>,<a href="https://en.wikipedia.org/wiki/Viktor_Korchnoi"
+                    title="Viktor Korchnoi">Viktor Korchnoi</a>,
+                <a href="https://en.wikipedia.org/wiki/Leonid_Stein" title="Leonid Stein">Leonid
+                    Stein</a>, and<a href="https://en.wikipedia.org/wiki/Bobby_Fischer"
+                    title="Bobby Fischer">Bobby Fischer</a>.
+                <a href="https://en.wikipedia.org/wiki/Garry_Kasparov" title="Garry Kasparov">Garry
+                    Kasparov
+                </a>
+                often used the defence, including in his
+                <a class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/Chess_world_championship" title="Chess world championship">World Championship
+                </a>
+                matches against
+                <a href="https://en.wikipedia.org/wiki/Anatoly_Karpov" title="Anatoly Karpov">
+                    Anatoly Karpov
+                </a>
+                in 1986, 1987 and 1990, and
+                <a href="https://en.wikipedia.org/wiki/Vladimir_Kramnik" title="Vladimir Kramnik">
+                    Vladimir Kramnik
+                </a>
+                in 2000. Currently active notable players who employ the opening include<a
+                    href="https://en.wikipedia.org/wiki/Loek_van_Wely" title="Loek van Wely">Loek
+                    van Wely</a>,<a href="https://en.wikipedia.org/wiki/Peter_Svidler"
+                    title="Peter Svidler">Peter Svidler</a>,<a
+                    href="https://en.wikipedia.org/wiki/Peter_Leko" title="Peter Leko">Peter
+                    Leko</a>,<a href="https://en.wikipedia.org/wiki/Viswanathan_Anand"
+                    title="Viswanathan Anand">Viswanathan Anand</a>,
+                <a href="https://en.wikipedia.org/wiki/Luke_McShane" title="Luke McShane">Luke
+                    McShane
+                </a>
+                and<a href="https://en.wikipedia.org/wiki/Gata_Kamsky" title="Gata Kamsky">Gata
+                    Kamsky</a>.
+                <sup class="reference" id="cite_ref-CG_4-0">
+                    <a href="#cite_note-CG-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+                Anand employed it twice in the<a
+                    href="https://en.wikipedia.org/wiki/World_Chess_Championship_2010"
+                    title="World Chess Championship 2010">World Chess Championship 2010</a>. In the
+                <a href="https://en.wikipedia.org/wiki/World_Chess_Championship_2012"
+                    title="World Chess Championship 2012">World
+                    Chess Championship 2012
+                </a>
+                between Anand and<a href="https://en.wikipedia.org/wiki/Boris_Gelfand"
+                    title="Boris Gelfand">Boris Gelfand</a>, each
+                player used the Grünfeld once with both games ending in draws. Anand faced the
+                Grunfeld
+                against
+                <a href="https://en.wikipedia.org/wiki/Magnus_Carlsen" title="Magnus Carlsen">Magnus
+                    Carlsen
+                </a>
+                during the first game of the
+                <a href="https://en.wikipedia.org/wiki/World_Chess_Championship_2014"
+                    title="World Chess Championship 2014">World
+                    Chess Championship 2014
+                </a>
+                and drew in a Rook and Queen ending.
+            </p>
+            <p>The
+                <a class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/Game_of_the_Century_(chess)" title="Game of the Century (chess)">Game of the Century
+                </a>
+                between
+                <a href="https://en.wikipedia.org/wiki/Donald_Byrne" title="Donald Byrne">Donald
+                    Byrne
+                </a>
+                and 13-year-old Bobby Fischer on October 17, 1956, featured this opening, although
+                arriving
+                in the Grünfeld via a
+                <a href="https://en.wikipedia.org/wiki/Transposition_(chess)"
+                    title="Transposition (chess)">transposition
+                </a>
+                of moves (using 1.Nf3 Nf6 2.c4 g6 3.Nc3 Bg7 4.d4 0-0 5.Bf4 d5).
+            </p>
+        ]]>
+		</item>
+		<item id="11" name="Halloween Gambit">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="12" name="Petrov Defense">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="13" name="Philidor Defense">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="14" name="Queen’s Indian Defense">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="15" name="Semi-Slav Defense">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="16" name="Smith Morra Gambit">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="17" name="Vienna Game">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="18" name="Kings Indian Defense">
+        <![CDATA[
+		No history available
+		]]>
+		</item>
+		<item id="19" name="Giuoco Piano">
+		<![CDATA[
+		<p>The Giuoco Piano is the oldest recorded opening. The
+                <a href="https://en.wikipedia.org/wiki/Portuguese_people" title="Portuguese people">
+                    Portuguese
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Pedro_Damiano" title="Pedro Damiano">
+                    Damiano
+                </a>
+                played it at the beginning of the 16th century and the
+                <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Italian_people"
+                    title="Italian people">Italian
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Gioachino_Greco" title="Gioachino Greco">
+                    Greco
+                </a>
+                played it at the beginning of the 17th century. The opening is also known as the
+                <a href="https://en.wikipedia.org/wiki/Italian_Game" title="Italian Game">Italian
+                    Game
+                </a>
+                (<a href="#CITEREFPinski2005">Pinski 2005</a>:5), although that name is also used to
+                describe all games starting with 1.e4 e5 2.Nf3 Nc6 3.Bc4, regardless of Black's
+                third move (
+                <a href="#CITEREFGufeldStetsko1996">Gufeld &amp; Stetsko 1996</a>:5). The Giuoco
+                Piano was
+                popular through the 19th century, but modern refinements in defensive play have led
+                most
+                chess masters towards openings like the
+                <a href="https://en.wikipedia.org/wiki/Ruy_Lopez" title="Ruy Lopez">Ruy Lopez</a>
+                that offer White greater chances for long term<a
+                    class="mw-redirect"
+                    href="https://en.wikipedia.org/wiki/Chess_terminology#Initiative" title="Chess terminology">initiative</a>.
+            </p>
+            <p>In modern play, grandmasters have shown distinct preference for the slower and more
+                strategic
+                Giuoco Pianissimo (4.d3).
+                <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Anatoli_Karpov"
+                    title="Anatoli Karpov">Anatoli Karpov
+                </a>
+                used the Giuoco Pianissimo against
+                <a href="https://en.wikipedia.org/wiki/Viktor_Korchnoi" title="Viktor Korchnoi">
+                    Viktor Korchnoi
+                </a>
+                twice in the 1981 World Championship tournament, with both games ending in a<a
+                    href="https://en.wikipedia.org/wiki/Draw_(chess)" title="Draw (chess)">draw</a>;
+                <sup class="reference" id="cite_ref-1">
+                    <a href="#cite_note-1"><span>[</span>1
+                        <span>]</span>
+                    </a>
+                </sup>
+                <sup class="reference" id="cite_ref-2">
+                    <a href="#cite_note-2"><span>[</span>2
+                        <span>]</span>
+                    </a>
+                </sup>
+                <a href="https://en.wikipedia.org/wiki/Garry_Kasparov" title="Garry Kasparov">Garry
+                    Kasparov
+                </a>
+                used it against
+                <a href="https://en.wikipedia.org/wiki/Jo%C3%ABl_Lautier" title="Joël Lautier">Joël
+                    Lautier
+                </a>
+                at Linares 1994, resigning after 26 moves;
+                <sup class="reference" id="cite_ref-3">
+                    <a href="#cite_note-3"><span>[</span>3
+                        <span>]</span>
+                    </a>
+                </sup>
+                <a href="https://en.wikipedia.org/wiki/Vladimir_Kramnik" title="Vladimir Kramnik">
+                    Vladimir Kramnik
+                </a>
+                chose it against
+                <a href="https://en.wikipedia.org/wiki/Teimour_Radjabov" title="Teimour Radjabov">
+                    Teimour Radjabov
+                </a>
+                at Linares (2004);
+                <sup class="reference" id="cite_ref-4">
+                    <a href="#cite_note-4"><span>[</span>4
+                        <span>]</span>
+                    </a>
+                </sup>
+                <a href="https://en.wikipedia.org/wiki/Viswanathan_Anand" title="Viswanathan Anand">
+                    Viswanathan Anand
+                </a>
+                used it to defeat
+                <a href="https://en.wikipedia.org/wiki/Jon_Ludvig_Hammer" title="Jon Ludvig Hammer">
+                    Jon Hammer
+                </a>
+                in 2010;
+                <sup class="reference" id="cite_ref-5">
+                    <a href="#cite_note-5"><span>[</span>5
+                        <span>]</span>
+                    </a>
+                </sup>
+                and
+                <a href="https://en.wikipedia.org/wiki/Magnus_Carlsen" title="Magnus Carlsen">Magnus
+                    Carlsen
+                </a>
+                used it against
+                <a href="https://en.wikipedia.org/wiki/Hikaru_Nakamura" title="Hikaru Nakamura">
+                    Hikaru Nakamura
+                </a>
+                at London 2011, winning in 41 moves.
+                <sup class="reference" id="cite_ref-6">
+                    <a href="#cite_note-6"><span>[</span>6
+                        <span>]</span>
+                    </a>
+                </sup>
+            </p>
+        ]]>
+		</item>
     </string-array>
 
 

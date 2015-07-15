@@ -14,25 +14,26 @@
     -->
 
     <string-array name="openings_names">
-        <item>Sicilian defense</item>
-        <item>Alekhine defense</item>
-        <item>Caro-Kann</item>
-        <item>Latvian Gambit</item>
-        <item>Ponziani Openingr</item>
-        <item>Blackmar-Diemer Gambit</item>
-        <item>Budapest Gambit</item>
-        <item>Calabrese Countergambit</item>
-        <item>Evans Gambit</item>
-        <item>Fried Liver Attack</item>
-        <item>Halloween Gambit</item>
-        <item>Petrov Defense</item>
-        <item>Philidor Defense</item>
-        <item>Queen’s Indian Defense</item>
-        <item>Semi-Slav Defense</item>
-        <item>Smith Morra Gambit</item>
-        <item>Vienna Game</item>
-        <item>Kings Indian Defense</item>
-        <item>Giuoco Piano</item>
+        <item id="0">Sicilian defense</item>
+        <item id="1">Alekhine defense</item>
+        <item id="2">Caro-Kann</item>
+        <item id="3">Latvian Gambit</item>
+        <item id="4">Ponziani Opening</item>
+        <item id="5">Blackmar-Diemer Gambit</item>
+        <item id="6">Budapest Gambit</item>
+        <item id="7">Calabrese Countergambit</item>
+        <item id="8">Evans Gambit</item>
+        <item id="9">Fried Liver Attack</item>
+		<item id="10">Grunfeld Defense</item>
+        <item id="11">Halloween Gambit</item>
+        <item id="12">Petrov Defense</item>
+        <item id="13">Philidor Defense</item>
+        <item id="14">Queen’s Indian Defense</item>
+        <item id="15">Semi-Slav Defense</item>
+        <item id="16">Smith Morra Gambit</item>
+        <item id="17">Vienna Game</item>
+        <item id="18">Kings Indian Defense</item>
+        <item id="19">Giuoco Piano</item>
     </string-array>
 
 </resources>

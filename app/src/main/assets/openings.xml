@@ -131,7 +131,7 @@
                 </sup>
             </p>
         </description>
-        <youtubeId>G0ctAe7bGzs</youtubeId>
+        <youtubeId>qzydxPgPKzs</youtubeId>
         <history>
             <p>The Sicilian Defence was analysed by
                 <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Giulio_Polerio"
@@ -685,8 +685,7 @@
                 </p>
             </blockquote>
         </history>
-        <moves>e4 c6;
-        </moves>
+        <moves>e4 c6;</moves>
         <imageUrl>
             http://i.ytimg.com/vi/uLfrt7Atldo/hqdefault.jpg
         </imageUrl>
@@ -806,15 +805,14 @@
                     Kārlis Bētiņš</a>, who analysed it in the early part of the 20th century.
             </p>
         </history>
-        <moves>e4 e5;Nf3 f5;
-        </moves>
+        <moves>e4 e5;Nf3 f5;</moves>
         <imageUrl>
             http://www.thechesswebsite.com/wp-content/uploads/2012/07/LatvianGambit_big.jpg
         </imageUrl>
     </item>
     <item>
         <id>4</id>
-        <name>Ponziani Openingr</name>
+        <name>Ponziani Opening</name>
         <description>
             <p>The
                 <b>Ponziani Opening</b>
@@ -2301,7 +2299,7 @@
         </description>
         <youtubeId>mAf-YuGPYMo</youtubeId>
         <history>No history available</history>
-        <moves>d</moves>
+        <moves>e4 e5;Nf3 d6;</moves>
         <imageUrl>http://www.thechesswebsite.com/wp-content/uploads/2014/12/philidor.jpg</imageUrl>
     </item>
     <item>
@@ -2563,7 +2561,7 @@
             </p>
         </description>
         <youtubeId>c59ngPmuQc0</youtubeId>
-        <history></history>
+        <history>No history available</history>
         <moves>e4 c5;d4 cxd4;c3 ;</moves>
         <imageUrl>http://www.thechesswebsite.com/wp-content/uploads/2012/07/smithmorra_big.jpg
         </imageUrl>
@@ -2909,7 +2907,7 @@
                 </sup>
             </p>
         </history>
-        <moves>d</moves>
+        <moves>e4 e5;Nf3 Nc6;Bc4 Bc5;</moves>
         <imageUrl>http://www.thechesswebsite.com/wp-content/uploads/2012/07/Giuoco-Piano.jpg
         </imageUrl>
     </item>
