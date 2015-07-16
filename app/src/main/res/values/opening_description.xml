@@ -8,7 +8,7 @@
         private String imageUrl;        - alimentado por <string-array name="openings_image_url">
         private String youtubeId;       - alimentado por <string-array name="openings_youtube_id">
 
-         A unica questao é que TODAS os string-array deverão ter o mesmo numero de item's, para funcionar bem.
+         A unica questao é que TODAS os string-array deverão ter o mesmo numero de item\'s, para funcionar bem.
          Se achares demasiado confuso até pudemos colcar cada string-array num ficheiro diferente.
 -->
     <string-array name="openings_description"  formatted="false">
@@ -35,7 +35,7 @@
                     </a>
                 </dd>
             </dl>
-            <p>The Sicilian is the most popular and best-scoring response to White's first move
+            <p>The Sicilian is the most popular and best-scoring response to White\'s first move
                 1.e4. 1.d4 is a statistically more successful opening for white due to the high
                 success rate of the Sicilian defence against 1.e4.
                 <sup class="reference" id="cite_ref-1">
@@ -83,7 +83,7 @@
                     title="Grandmaster (chess)">Grandmaster
                 </a>
                 <a href="https://en.wikipedia.org/wiki/John_Nunn" title="John Nunn">John Nunn</a>
-                attributes the Sicilian Defence's popularity to "its combative nature; in many lines
+                attributes the Sicilian Defence\'s popularity to "its combative nature; in many lines
                 Black is playing not just for equality, but for the advantage. The drawback is that
                 White often obtains an early initiative, so Black has to take care not to fall
                 victim to a quick attack."
@@ -104,10 +104,10 @@
                 <p>To my mind there is quite a straightforward explanation. In order to profit from
                     the initiative granted by the first move, White has to make use of his
                     opportunity to do something before Black has an equal number of opportunities of
-                    his own. However, to do this, he has to make 'contact' with the black position.
+                    his own. However, to do this, he has to make \'contact\' with the black position.
                     The first point of contact usually comes in the form of a pawn exchange, which
                     leads to the opening of the position. … So the thought behind 1...c5 is this:
-                    ″OK, I'll let you open the position, and develop your pieces aggressively, but
+                    ″OK, I\'ll let you open the position, and develop your pieces aggressively, but
                     at a price – you have to give me one of your center pawns.″
                 </p>
                 <div class="templatequotecite">—<a
@@ -131,9 +131,9 @@
                 <a href="https://en.wikipedia.org/wiki/White_and_Black_in_chess"
                     title="White and Black in chess">Black
                 </a>
-                tempts White's pawns forward to form a broad pawn centre, with plans to undermine
+                tempts White\'s pawns forward to form a broad pawn centre, with plans to undermine
                 and attack
-                the white structure later in the spirit of hypermodern defence. White's imposing
+                the white structure later in the spirit of hypermodern defence. White\'s imposing
                 mass of
                 pawns in the centre often includes pawns on c4, d4, e5, and f4.
                 <a class="mw-redirect"
@@ -142,7 +142,7 @@
                 <a href="https://en.wikipedia.org/wiki/Nick_de_Firmian" title="Nick de Firmian">Nick
                     de Firmian
                 </a>
-                observes of Alekhine's in MCO-15 (2008), "The game immediately loses any sense of
+                observes of Alekhine\'s in MCO-15 (2008), "The game immediately loses any sense of
                 symmetry
                 or balance, which makes the opening a good choice for aggressive fighting players."
                 <sup class="reference" id="cite_ref-MCO-15p.159_1-0">
@@ -177,7 +177,7 @@
             </dl>
             <p>The Caro–Kann is a common defense against the
                 <a class="mw-redirect"
-                    href="https://en.wikipedia.org/wiki/King%27s_Pawn_Opening" title="King's Pawn Opening">King's
+                    href="https://en.wikipedia.org/wiki/King%27s_Pawn_Opening" title="King\'s Pawn Opening">King\'s
                     Pawn Opening
                 </a>
                 and is classified as a "<a href="https://en.wikipedia.org/wiki/Semi-Open_Game"
@@ -230,7 +230,7 @@
                 </dd>
             </dl>
             <p>The opening has the appearance of a
-                <a href="https://en.wikipedia.org/wiki/King%27s_Gambit" title="King's Gambit">King's
+                <a href="https://en.wikipedia.org/wiki/King%27s_Gambit" title="King\'s Gambit">King\'s
                     Gambit
                 </a>
                 with colours reversed. It is an aggressive but dubious choice for Black which often
@@ -283,9 +283,9 @@
                 </a>
                 code for the Latvian Gambit is C40 (<a
                     href="https://en.wikipedia.org/wiki/King%27s_Knight_Opening"
-                    title="King's Knight Opening">King's Knight Opening</a>).
+                    title="King\'s Knight Opening">King\'s Knight Opening</a>).
             </p>
-        
+
          ]]>
         </item>
 		<item id="4" name="Ponziani Opening">
@@ -326,11 +326,11 @@
                 1497. It
                 was advocated by<a href="https://en.wikipedia.org/wiki/Howard_Staunton"
                     title="Howard Staunton">Howard Staunton</a>,
-                generally considered the world's strongest player from 1843 to 1851, in his 1847
+                generally considered the world\'s strongest player from 1843 to 1851, in his 1847
                 book<i>The
-                    Chess-Player's Handbook</i>. For some decades, it was often called "Staunton's
+                    Chess-Player\'s Handbook</i>. For some decades, it was often called "Staunton\'s
                 Opening"
-                or the "English Knight's Game" as a result. Today, it is usually known by the name
+                or the "English Knight\'s Game" as a result. Today, it is usually known by the name
                 of<a href="https://en.wikipedia.org/wiki/Domenico_Lorenzo_Ponziani"
                     title="Domenico Lorenzo Ponziani">Domenico
                     Lorenzo Ponziani</a>, whose main contribution to the opening was his
@@ -348,13 +348,13 @@
                 href="https://en.wikipedia.org/wiki/Ruy_Lopez" title="Ruy Lopez">Ruy Lopez</a>, and
                 3.Bc4, the<a href="https://en.wikipedia.org/wiki/Italian_Game" title="Italian Game">
                     Italian Game</a>, and is accordingly rarely seen today at any level of
-                play. Black's main responses are 3...Nf6, leading to quiet play, and 3...d5, leading
+                play. Black\'s main responses are 3...Nf6, leading to quiet play, and 3...d5, leading
                 to
                 <a class="mw-redirect"
                     href="https://en.wikipedia.org/wiki/List_of_chess_terms#Sharp" title="List of chess terms">
                     sharp
                 </a>
-                play. Ponziani's countergambit 3...f5!? was successfully played in the
+                play. Ponziani\'s countergambit 3...f5!? was successfully played in the
                 <a href="https://en.wikipedia.org/wiki/Grandmaster_(chess)"
                     title="Grandmaster (chess)">grandmaster
                 </a>
@@ -512,26 +512,26 @@
                     title="Glossary of chess">pawn
                     structure</a>. Black usually looks to have an aggressive game (many lines of
                 which can
-                shock opponents that do not know the theory) or cripple white's pawn structure.
+                shock opponents that do not know the theory) or cripple white\'s pawn structure.
             </p>
             <p>The Budapest Gambit contains several specific
                 <a href="https://en.wikipedia.org/wiki/Chess_strategy" title="Chess strategy">
                     strategic
                 </a>
-                themes. After 3.dxe5 Ng4, there is a battle over White's extra pawn on e5, which
+                themes. After 3.dxe5 Ng4, there is a battle over White\'s extra pawn on e5, which
                 Black
                 typically attacks with ...Nc6 and (after ...Bc5 or ...Bb4+) ...Qe7, while White
                 often
                 defends it with Bf4, Nf3, and sometimes Qd5. In the 4.Nf3 variation the game can
                 evolve
-                either with Black attacking White's
+                either with Black attacking White\'s
                 <a href="https://en.wikipedia.org/wiki/Glossary_of_chess#Kingside"
                     title="Glossary of chess">kingside
                 </a>
                 with manoeuvres of<a
                     href="https://en.wikipedia.org/wiki/Glossary_of_chess#Rook_lift"
                     title="Glossary of chess">rook
-                    lifts</a>, or with White attacking Black's kingside with the push f2–f4, in
+                    lifts</a>, or with White attacking Black\'s kingside with the push f2–f4, in
                 which case
                 Black reacts in the centre against the e3-pawn. In numerous variations the move
                 c4–c5 allows
@@ -649,7 +649,7 @@
                 <a href="https://en.wikipedia.org/wiki/Knight_(chess)" title="Knight (chess)">
                     knight
                 </a>
-                for an attack on Black's<a href="https://en.wikipedia.org/wiki/King_(chess)"
+                for an attack on Black\'s<a href="https://en.wikipedia.org/wiki/King_(chess)"
                     title="King (chess)">king</a>. The
                 opening begins with the moves:
             </p>
@@ -710,7 +710,7 @@
                 <a href="https://en.wikipedia.org/wiki/Two_Knights_Defense"
                     title="Two Knights Defense">Two Knights Defense
                 </a>
-                where White has chosen the offensive line 4.Ng5, but Black's last move is risky
+                where White has chosen the offensive line 4.Ng5, but Black\'s last move is risky
                 (other Black
                 choices include 5...Na5, 5...b5, and 5...Nd4). White can now get an advantage with
                 6.d4 (the
@@ -810,7 +810,7 @@
                 liability rather than an asset.
             </p>
          ]]>
-            
+
         </item>
 		<item id="11" name="Halloween Gambit">
            <![CDATA[
@@ -888,7 +888,7 @@
                     </a>
                 </sup>
             </p>
-            <p>White's objective is to seize the center with pawns and drive back Black's knights.
+            <p>White\'s objective is to seize the center with pawns and drive back Black\'s knights.
                 After<b>
                     4... Nxe5</b>, White usually plays
                 <b>5. d4</b>
@@ -897,13 +897,13 @@
                 to either g6 or c6.
             </p>
          ]]>
-            
+
         </item>
 		<item id="12" name="Petrov Defense">
            <![CDATA[
             <p>
-                <b>Petrov's Defence</b>
-                (also called<b>Petroff's Defence</b>,
+                <b>Petrov\'s Defence</b>
+                (also called<b>Petroff\'s Defence</b>,
                 <b>Russian Game</b>
                 and<b>Russian Defence</b>) is a
                 <a href="https://en.wikipedia.org/wiki/Chess_opening" title="Chess opening">chess
@@ -952,7 +952,7 @@
                 Black, after gaining a<a href="https://en.wikipedia.org/wiki/Tempo_(chess)"
                     title="Tempo (chess)">tempo</a>, has a
                 well-placed<a href="https://en.wikipedia.org/wiki/Knight_(chess)"
-                    title="Knight (chess)">knight</a>. Pillsbury's
+                    title="Knight (chess)">knight</a>. Pillsbury\'s
                 game in 1895
                 <sup class="reference" id="cite_ref-1">
                     <a href="#cite_note-1"><span>[</span>1
@@ -994,7 +994,7 @@
                     title="Encyclopaedia of Chess Openings">
                     ECO
                 </a>
-                codes for Petrov's Defence are C43 (for 3.d4) and C42 (for all other lines).
+                codes for Petrov\'s Defence are C43 (for 3.d4) and C42 (for all other lines).
                 <sup class="reference" id="cite_ref-2">
                     <a href="#cite_note-2"><span>[</span>2
                         <span>]</span>
@@ -1002,7 +1002,7 @@
                 </sup>
             </p>
          ]]>
-            
+
         </item>
 		<item id="13" name="Philidor Defense">
            <![CDATA[
@@ -1037,7 +1037,7 @@
                 title="François-André Danican Philidor">François-André Danican Philidor</a>, who
                 advocated
                 it as an alternative to the common 2...Nc6. His original idea was to challenge
-                White's
+                White\'s
                 centre by the pawn thrust f7–f5.
             </p>
             <p>Today, the Philidor is known as a solid but passive choice for Black, and is seldom
@@ -1054,12 +1054,12 @@
                 code for Philidor Defence is C41.
             </p>
          ]]>
-            
+
         </item>
 		<item id="14" name="Queen’s Indian Defense">
            <![CDATA[
             <p>The
-                <b>Queen's Indian Defense</b>
+                <b>Queen\'s Indian Defense</b>
                 <sup class="reference" id="cite_ref-1">
                     <a href="#cite_note-1"><span>[</span>1
                         <span>]</span>
@@ -1100,17 +1100,17 @@
                 </dd>
             </dl>
             <p>The opening is a solid defense to the<a
-                href="https://en.wikipedia.org/wiki/Queen%27s_Pawn_Game" title="Queen's Pawn Game">
-                Queen's Pawn Game</a>.
+                href="https://en.wikipedia.org/wiki/Queen%27s_Pawn_Game" title="Queen\'s Pawn Game">
+                Queen\'s Pawn Game</a>.
                 <sup class="reference" id="cite_ref-2">
                     <a href="#cite_note-2"><span>[</span>2
                         <span>]</span>
                     </a>
                 </sup>
-                3...b6 increases Black's control over the central light squares e4 and d5 by
+                3...b6 increases Black\'s control over the central light squares e4 and d5 by
                 preparing to
                 <a href="https://en.wikipedia.org/wiki/Fianchetto" title="Fianchetto">fianchetto</a>
-                the queen's<a href="https://en.wikipedia.org/wiki/Bishop" title="Bishop">bishop</a>,
+                the queen\'s<a href="https://en.wikipedia.org/wiki/Bishop" title="Bishop">bishop</a>,
                 with the opening deriving its
                 name from this maneuver. As in the other<a
                     class="mw-redirect" href="https://en.wikipedia.org/wiki/Indian_defense"
@@ -1128,24 +1128,24 @@
                 <a href="https://en.wikipedia.org/wiki/Nimzo-Indian_Defence"
                     title="Nimzo-Indian Defence">Nimzo-Indian Defense
                 </a>
-                that arises after 3.Nc3 Bb4. The Queen's Indian is regarded as the sister opening of
+                that arises after 3.Nc3 Bb4. The Queen\'s Indian is regarded as the sister opening of
                 the
-                Nimzo-Indian, since both openings aim to impede White's efforts to gain full control
+                Nimzo-Indian, since both openings aim to impede White\'s efforts to gain full control
                 of the
-                center by playing e2–e4. Together, they form one of Black's most well-respected
+                center by playing e2–e4. Together, they form one of Black\'s most well-respected
                 responses to
                 1.d4.
             </p>
          ]]>
-             
+
         </item>
 		<item id="15" name="Semi-Slav Defense">
            <![CDATA[
             <p>The
                 <b>Semi-Slav Defense</b>
                 is a variation of the
-                <a href="https://en.wikipedia.org/wiki/Queen%27s_Gambit" title="Queen's Gambit">
-                    Queen's Gambit
+                <a href="https://en.wikipedia.org/wiki/Queen%27s_Gambit" title="Queen\'s Gambit">
+                    Queen\'s Gambit
                 </a>
                 <a href="https://en.wikipedia.org/wiki/Chess_opening" title="Chess opening">chess
                     opening
@@ -1198,7 +1198,7 @@
                 Black advancing pawns to both e6 and c6, the opening resembles a mixture of the
                 Orthodox
                 <a href="https://en.wikipedia.org/wiki/Queen%27s_Gambit_Declined"
-                    title="Queen's Gambit Declined">Queen's Gambit
+                    title="Queen\'s Gambit Declined">Queen\'s Gambit
                     Declined
                 </a>
                 (QGD) and the<a href="https://en.wikipedia.org/wiki/Slav_Defense"
@@ -1220,12 +1220,12 @@
                 <b>5.g3</b>
                 and<b>5.cxd5</b>, the last of which, after 5...exd5, leads to a line of the QGD
                 Exchange
-                Variation where White's early Nf3 enables Black's queen bishop to freely develop,
+                Variation where White\'s early Nf3 enables Black\'s queen bishop to freely develop,
                 which
                 should give equality (ECO codes D43 and D45).
             </p>
          ]]>
-             
+
         </item>
 		<item id="16" name="Smith Morra Gambit">
            <![CDATA[
@@ -1299,7 +1299,7 @@
                 </sup>
             </p>
          ]]>
-            
+
         </item>
 		<item id="17" name="Vienna Game">
             <![CDATA[
@@ -1328,7 +1328,7 @@
                     </a>
                 </dd>
             </dl>
-            <p>White's second move is less common than 2.Nf3, and is also more recent. A book
+            <p>White\'s second move is less common than 2.Nf3, and is also more recent. A book
                 reviewer wrote
                 in the
                 <i>
@@ -1339,7 +1339,7 @@
                 </i>
                 in 1888 that "since
                 <a href="https://en.wikipedia.org/wiki/Paul_Morphy" title="Paul Morphy">Morphy</a>
-                only one new opening has been introduced, the 'Vienna'."
+                only one new opening has been introduced, the \'Vienna\'."
                 <sup class="reference" id="cite_ref-1">
                     <a href="#cite_note-1"><span>[</span>1
                         <span>]</span>
@@ -1347,14 +1347,14 @@
                 </sup>
             </p>
             <p>The original idea behind the Vienna Game was to play a delayed
-                <a href="https://en.wikipedia.org/wiki/King%27s_Gambit" title="King's Gambit">King's
+                <a href="https://en.wikipedia.org/wiki/King%27s_Gambit" title="King\'s Gambit">King\'s
                     Gambit
                 </a>
                 with f4, but in modern play White often plays more quietly (for example by
                 <a href="https://en.wikipedia.org/wiki/Fianchetto" title="Fianchetto">
                     fianchettoing
                 </a>
-                his king's bishop with g3 and Bg2). Black most often continues with<a
+                his king\'s bishop with g3 and Bg2). Black most often continues with<a
                     class="extiw"
                     href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nc3/2...Nf6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nc3/2...Nf6">
                     2...Nf6</a>.
@@ -1391,12 +1391,12 @@
                 </sup>
             </p>
          ]]>
-            
+
         </item>
 		<item id="18" name="Kings Indian Defense">
           <![CDATA[
             <p>The
-                <b>King's Indian Defence</b>
+                <b>King\'s Indian Defence</b>
                 is a common<a href="https://en.wikipedia.org/wiki/Chess_opening"
                     title="Chess opening">chess opening</a>. It arises
                 after the moves:
@@ -1424,8 +1424,8 @@
                     title="Grünfeld Defence">Grünfeld Defence
                 </a>
                 arises when Black plays 3...d5 instead, and is considered a separate opening.
-                White's major
-                third move options are 3.Nc3, 3.Nf3 or 3.g3, with both the King's Indian and
+                White\'s major
+                third move options are 3.Nc3, 3.Nf3 or 3.g3, with both the King\'s Indian and
                 Grünfeld
                 playable against these moves.
             </p>
@@ -1436,10 +1436,10 @@
                         Encyclopaedia of Chess Openings
                     </a>
                 </i>
-                (ECO) classifies the King's Indian Defence under the codes E60 through E99.
+                (ECO) classifies the King\'s Indian Defence under the codes E60 through E99.
             </p>
          ]]>
-            
+
         </item>
 		<item id="19" name="Giuoco Piano">
             <![CDATA[
@@ -1489,7 +1489,7 @@
                     </a>
                 </dd>
             </dl>
-            <p>White's "<a class="mw-redirect"
+            <p>White\'s "<a class="mw-redirect"
                 href="https://en.wikipedia.org/wiki/Chess_terminology#Italian_bishop" title="Chess terminology">Italian bishop</a>" at c4 prevents
                 Black from advancing in the
                 <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Center_(chess)"
@@ -1517,7 +1517,7 @@
                 3...f5.
             </p>
          ]]>
-             
+
         </item>
 		
     </string-array>
