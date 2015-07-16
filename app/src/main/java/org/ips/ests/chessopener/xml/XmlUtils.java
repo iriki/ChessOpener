@@ -84,7 +84,8 @@ public class XmlUtils {
         String text = "";
 
         try {
-            input = assetManager.open("openings.xml");
+            //input = assetManager.open("openings.xml"); TODO
+            input = null;
 
             int size = input.available();
             byte[] buffer = new byte[size];

@@ -154,8 +154,8 @@
             </p>
          ]]>
         </item>
-		<item id="2" name="Caro-Kann">
-            <![CDATA[
+		<item id="2" name="Caro-Kann"><![CDATA[
+
              <p>The
                 <b>Caro–Kann Defence</b>
                 is a
@@ -171,7 +171,7 @@
                         title="b:Chess Opening Theory/1. e4">e4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...c6" title="b:Chess Opening Theory/1. e4/1...c6">c6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1…c6" title="b:Chess Opening Theory/1. e4/1...c6">c6
                     </a>
                 </dd>
             </dl>
@@ -199,8 +199,8 @@
                     structure</a>.
             </p>
 
-         ]]>
-        </item>
+
+        ]]></item>
 		<item id="3" name="Latvian Gambit">
             <![CDATA[
                 <p>The
