@@ -34,6 +34,10 @@
         <item id="17">Vienna Game</item>
         <item id="18">Kings Indian Defense</item>
         <item id="19">Giuoco Piano</item>
+        <item id="20">King's pawn opening</item>
+        <item id="21">Queen's pawn opening</item>
+        <item id="22">Bird's Opening</item>
+        <item id="23">Van't Kruijs Opening</item>
     </string-array>
 
 </resources>

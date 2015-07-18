@@ -74,6 +74,18 @@
 		<item id="19" name="Giuoco Piano">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/Giuoco-Piano.jpg
 		</item>
+		<item id="20" name="King's pawn opening">
+		http://www.chessvideos.tv/chess-opening-database/static/e4.gif
+		</item>
+		<item id="21" name="Queen's pawn opening">
+		http://i.ytimg.com/vi/pZPES80yWUc/hqdefault.jpg
+		</item>
+		<item id="22" name="Bird's Opening">
+		http://www.thechesswebsite.com/images/birdsopening.jpg
+		</item>
+		<item id="23" name="Van't Kruijs Opening">
+		http://i.ytimg.com/vi/FMZOFlOwLoE/maxresdefault.jpg
+		</item>
     </string-array>
 
 </resources>
