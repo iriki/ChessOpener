@@ -35,7 +35,7 @@
 		<item id="6" name="Budapest Gambit">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/budapest_big.jpg
          </item>
-		<item id="7" name="Calabrese Countergambit">
+		<item id="7" name="Calabrese Counter-gambit">
 		http://www.thechesswebsite.com/wp-content/uploads/2014/05/Calabrese-Countergambit.jpg
         </item>
 		<item id="8" name="Evans Gambit">
@@ -53,7 +53,7 @@
 		<item id="12" name="Petrov Defense">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/Petrov.jpg
          </item>
-		<item id="13" name="Philidor Defense">
+		<item id="13" name="Philidor's Defense">
 		http://www.thechesswebsite.com/wp-content/uploads/2014/12/philidor.jpg
          </item>
 		<item id="14" name="Queen’s Indian Defense">
@@ -62,13 +62,13 @@
 		<item id="15" name="Semi-Slav Defense">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/semi-slav-big.jpg
          </item>
-		<item id="16" name="Smith Morra Gambit">
+		<item id="16" name="Smith-Morra Gambit">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/smithmorra_big.jpg
          </item>
 		<item id="17" name="Vienna Game">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/traxler-big.png
         </item>
-		<item id="18" name="Kings Indian Defense">
+		<item id="18" name="King's Indian Defense">
 		http://www.thechesswebsite.com/wp-content/uploads/2012/07/kings-indian-defense-big.jpg
          </item>
 		<item id="19" name="Giuoco Piano">
@@ -77,7 +77,7 @@
 		<item id="20" name="King's pawn opening">
 		http://www.chessvideos.tv/chess-opening-database/static/e4.gif
 		</item>
-		<item id="21" name="Queen's pawn opening">
+		<item id="21" name="Queen's pawn game">
 		http://i.ytimg.com/vi/pZPES80yWUc/hqdefault.jpg
 		</item>
 		<item id="22" name="Bird's Opening">
