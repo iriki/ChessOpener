@@ -19,114 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <!--
-        <TableLayout
-            android:id="@+id/LayoutTopTitle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dip"
-            android:background="@color/bgColorText">
-
-
-            <TableRow android:gravity="center_vertical">
-
-                <ViewSwitcher
-                    android:id="@+id/ImageTurnOpp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dip"
-                    android:layout_marginRight="8dip">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/turnblack" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/turnwhite" />
-                </ViewSwitcher>
-
-                <TextView
-                    android:id="@+id/TextViewClockTimeOpp"
-                    style="@style/DefaultTextStyle"
-                    android:layout_width="50dip"
-                    android:layout_height="wrap_content"
-                    android:text="00:00" />
-
-                <TextView
-                    android:id="@+id/TextViewTopTitle"
-                    style="@style/DefaultTextStyle"
-                    android:layout_width="200dip"
-                    android:layout_height="wrap_content"
-                    android:text="Title..." />
-            </TableRow>
-
-        </TableLayout>
-    -->
-
-<!--
-    <include
-        android:id="@+id/includeboard"
-        layout="@layout/board"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/LayoutTopTitle" />
-
-    <TextView
-        android:id="@+id/includeboard"
-        android:layout_width="wrap_content"
-        android:layout_height="320dip"
-        android:layout_below="@id/LayoutTopTitle" />-->
-
-
-<!--
-    <TableLayout
-        android:id="@+id/LayoutBottomTitle"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/includeboard"
-        android:layout_marginTop="2dip"
-        android:background="@color/bgColorText">
-
-        <TableRow android:gravity="center_vertical">
-
-            <ViewSwitcher
-                android:id="@+id/ImageTurnMe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dip"
-                android:layout_marginRight="8dip">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turnblack" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turnwhite" />
-            </ViewSwitcher>
-
-            <TextView
-                android:id="@+id/TextViewClockTimeMe"
-                style="@style/DefaultTextStyle"
-                android:layout_width="50dip"
-                android:layout_height="wrap_content"
-                android:text="00:00" />
-
-            <TextView
-                android:id="@+id/TextViewTitle"
-                style="@style/DefaultTextStyle"
-                android:layout_width="200dip"
-                android:layout_height="wrap_content"
-                android:text="Title..." />
-        </TableRow>
-    </TableLayout>
--->
-
     <RelativeLayout
         android:id="@+id/ButtonsLayout"
         android:layout_width="fill_parent"
@@ -165,31 +57,12 @@
                     android:text="@string/button_new" />
 
 
-                <!--
-                                <ImageButton
-                                    android:id="@+id/ButtonOpen"
-                                    android:layout_width="40dip"
-                                    android:layout_height="40dip"
-                                    android:layout_margin="2dip"
-                                    android:scaleType="fitXY"
-                                    android:src="@drawable/abc_btn_borderless_material" />
-
-
-                                <ImageButton
-                                    android:id="@+id/ButtonSave"
-                                    android:layout_width="40dip"
-                                    android:layout_height="40dip"
-                                    android:layout_margin="2dip"
-                                    android:scaleType="fitXY"
-                                    android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
-                -->
-
                 <ImageButton
                     android:id="@+id/ButtonPrevious"
                     android:layout_width="40dip"
                     android:layout_height="40dip"
                     android:layout_margin="2dip"
-                    android:scaleType="fitXY"
+                    android:scaleType="center"
                     android:src="@drawable/ic_backward" />
 
                 <ImageButton
@@ -197,28 +70,8 @@
                     android:layout_width="40dip"
                     android:layout_height="40dip"
                     android:layout_margin="2dip"
-                    android:scaleType="fitXY"
+                    android:scaleType="center"
                     android:src="@drawable/ic_forward" />
-
-<!--
-                <ImageButton
-                    android:id="@+id/ButtonPlay"
-                    android:layout_width="40dip"
-                    android:layout_height="40dip"
-                    android:layout_margin="2dip"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
--->
-
-
-<!--                <ProgressBar
-                    android:id="@+id/ProgressBarPlay"
-                    style="?android:attr/progressBarStyleLarge"
-                    android:layout_width="40dip"
-                    android:layout_height="40dip"
-                    android:layout_margin="2dip"
-                    android:visibility="gone" />-->
-
 
             </TableRow>
         </TableLayout>

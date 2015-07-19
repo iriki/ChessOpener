@@ -164,15 +164,9 @@ public class ChessView extends UI {
 		_layoutHistory = null;
 		
 		_view.init(ocl);
-		
-		//_vibrator = (Vibrator)activity.getSystemService(Context.VIBRATOR_SERVICE);
-		_vibrator = null;
-		
+
 		_jArrayECO = null;
-		// below was previously in init() method
-//		_hScrollHistory = (HorizontalScrollView)_parent.findViewById(R.id.HScrollViewHistory);
-//		_layoutHistory = (RelativeLayout)_parent.findViewById(R.id.LayoutHistory);
-//		_vScrollHistory = (ScrollView)_parent.findViewById(R.id.VScrollViewHistory);
+
 
         _btnCurrentOpening = (Button)_parent.findViewById(R.id.ButtonCurrentOpening);
         _btnCurrentOpening.setOnClickListener(new OnClickListener() {
@@ -189,46 +183,10 @@ public class ChessView extends UI {
                     _parent.startActivity(i);
 
                 } else {
-                    UiUtils.doToast(_parent, "opneing not in database");
+                    UiUtils.doToast(_parent, _parent.getString(R.string.toast_opening_not_in_db));
                 }
             }
         });
-
-//		_butPlay = (ImageButton)_parent.findViewById(R.id.ButtonPlay);
-		//_butPlay.setFocusable(false);
-		if (_butPlay != null) {
-			_butPlay.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		if(m_bActive)
-	        		{
-	        			//Log.i("butPlay", _jni.getNumBoard() + "::" + _arrPGN.size());
-
-	        			if(_jni.getNumBoard() < _arrPGN.size())
-	        			{
-		        			AlertDialog.Builder builder = new AlertDialog.Builder(_parent)
-			    				.setTitle(_parent.getString(R.string.title_create_new_line))
-			    				.setNegativeButton(R.string.alert_no, new DialogInterface.OnClickListener() {
-			        				public void onClick(DialogInterface dialog, int which) {
-				    					dialog.dismiss();
-				    				}
-			    				});
-		        			builder.setPositiveButton(R.string.alert_yes, new DialogInterface.OnClickListener() {
-		        				public void onClick(DialogInterface dialog, int which) {
-			    					dialog.dismiss();
-			    					play();
-		        				}
-		        			});
-			    			AlertDialog alert = builder.create();
-			    			alert.show();
-	        			}        			
-	        			else
-	        			{
-	        				play();
-	        			}
-	        		}
-	        	}
-	    	});
-		}
 
 		
 		OnClickListener oclUndo =new OnClickListener() {
@@ -240,7 +198,7 @@ public class ChessView extends UI {
         		}
         	}
     	};
-    	/*
+
 		ImageButton butPrevious = (ImageButton)_parent.findViewById(R.id.ButtonPrevious);
 		if(butPrevious != null){
 			//butPrevious.setFocusable(false);
@@ -261,7 +219,7 @@ public class ChessView extends UI {
 			//butNext.setFocusable(false);
 			butNext.setOnClickListener(oclFf);
 		}
-		*/
+
         Button butNewGame = (Button)_parent.findViewById(R.id.ButtonNewGame);
 		if(butNewGame != null){
 			//butNewGame.setFocusable(false);
@@ -277,63 +235,6 @@ public class ChessView extends UI {
 			});
 		}
 
-		/*
-		ImageButton butSaveGame = (ImageButton)_parent.findViewById(R.id.ButtonSave);
-		if(butSaveGame != null){
-			//butSaveGame.setFocusable(false);
-			butSaveGame.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		
-	        		_parent.saveGame(); 
-	        	}
-			});
-		}
-		
-		ImageButton butOpenGame = (ImageButton)_parent.findViewById(R.id.ButtonOpen);
-		if(butOpenGame != null){
-			//butOpenGame.setFocusable(false);
-			butOpenGame.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		Intent intent = new Intent();
-	       	     	intent.setClass(_parent, GamesListView.class);
-	       	     	_parent.startActivityForResult(intent, main.REQUEST_OPEN);
-	        	}
-			});
-		}
-		ImageButton butBlindFoldShow = (ImageButton)_parent.findViewById(R.id.ButtonBlindfoldShow);
-		if(butBlindFoldShow != null){
-			//butBlindFoldShow.setFocusable(false);
-			butBlindFoldShow.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		_view.setBlindfoldMode(0);
-	        		_view.resetImageCache();
-	        		updateState();
-	        	}
-			});
-		}
-		ImageButton butBlindFoldHide = (ImageButton)_parent.findViewById(R.id.ButtonBlindfoldHide);
-		if(butBlindFoldHide != null){
-			//butBlindFoldHide.setFocusable(false);
-			butBlindFoldHide.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		_view.setBlindfoldMode(ChessViewBase.MODE_BLINDFOLD_HIDEPIECES);
-	        		_view.resetImageCache();
-	        		updateState();
-	        	}
-			});
-		}
-		ImageButton butBlindFoldLocations = (ImageButton)_parent.findViewById(R.id.ButtonBlindfoldLocations);
-		if(butBlindFoldLocations != null){
-			//butBlindFoldLocations.setFocusable(false);
-			butBlindFoldLocations.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		_view.setBlindfoldMode(ChessViewBase.MODE_BLINDFOLD_SHOWPIECELOCATION);
-	        		_view.resetImageCache();
-	        		updateState();
-	        	}
-			});
-		}
-		*/
 		
 //		Button bHintGuess = (Button)_parent.findViewById(R.id.ButtonHintGuess);
     	Button bHintGuess = null;
@@ -354,138 +255,15 @@ public class ChessView extends UI {
 				
 			});
 		}
-		
-//		_tvClockMe = (TextView)_parent.findViewById(R.id.TextViewClockTimeMe);
-//		_tvClockOpp = (TextView)_parent.findViewById(R.id.TextViewClockTimeOpp);
-//		_tvTitleMe = (TextView)_parent.findViewById(R.id.TextViewTitle);
-//		_tvTitleOpp = (TextView)_parent.findViewById(R.id.TextViewTopTitle);
-//		_tvEngine = (TextView)_parent.findViewById(R.id.TextViewEngine);
-		//_tvEngineValue = (TextView)_parent.findViewById(R.id.TextViewEngineValue);
-		
-//		_imgStatusGuess = (ImageView)_parent.findViewById(R.id.ImageStatusGuess);
-//		
-//		_switchTurnMe = (ViewSwitcher)_parent.findViewById(R.id.ImageTurnMe);
-//		_switchTurnOpp = (ViewSwitcher)_parent.findViewById(R.id.ImageTurnOpp);
-				/*
-		ImageButton butSwitch = (ImageButton)_parent.findViewById(R.id.ButtonSwitch);
-		if(butSwitch != null){
-			//butSwitch.setFocusable(false);
-			butSwitch.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		if(_viewAnimator.getChildCount() >= 6){
-	        			_parent.showSubViewMenu();	
-	        		} else {
-	        			toggleControls();
-	        		}
-				}
-			});
-		}
-		*/
-		
-//		_tvAnnotate = (TextView)_parent.findViewById(R.id.TextViewAnnotate);
-		if(_tvAnnotate != null){
-			_tvAnnotate.setOnClickListener(new OnClickListener() {
-	        	public void onClick(View arg0) {
-	        		
-        			final int i = _jni.getNumBoard() - 2;
-        			if(i > 0){
-	        			final FrameLayout fl = new FrameLayout(_parent);
-	        			final EditText input = new EditText(_parent);
-	        			input.setGravity(Gravity.CENTER);
-	        			input.setText(_arrPGN.get(i)._sAnnotation);
-	        			
-	        			fl.addView(input, new FrameLayout.LayoutParams(FrameLayout.LayoutParams.FILL_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT));
-	        			
-	        			AlertDialog.Builder builder = new AlertDialog.Builder(_parent)
-	        				.setView(fl)
-	        				.setTitle(_parent.getString(R.string.title_annotate) + " " + _arrPGN.get(i)._sMove)
-	        				.setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
-	        				public void onClick(DialogInterface dialog, int which) {
-	        					String s = input.getText().toString();
-	        					s = s.replaceAll("[\\{\\}]+", "");
-	        					_arrPGN.get(i)._sAnnotation = s;
-	        					_tvAnnotate.setText(s);
-	        					_arrPGNView.get(i).setAnnotated(s.length() > 0);
-	        					
-	        					dialog.dismiss();
-	        				}
-	        				
-	        			});
-	        			AlertDialog alert = builder.create();
-	        			alert.show();
-        			}
-	        	}
-	        });
-		}
-//		_tvAnnotateGuess = (TextView)_parent.findViewById(R.id.TextViewGuess);
-//		
-//		_viewAnimator = (ViewAnimator)_parent.findViewById(R.id.ViewAnimatorMain);
-		if(_viewAnimator != null){
-			_viewAnimator.setOutAnimation(_parent, R.anim.slide_left);
-			_viewAnimator.setInAnimation(_parent, R.anim.slide_right);
-		}
-//		_progressPlay = (ProgressBar)_parent.findViewById(R.id.ProgressBarPlay);
-		
-//		_seekBar = (SeekBar)_parent.findViewById(R.id.SeekBarMain);
-		if(_seekBar != null){
-			_seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener(){
-	
-				@Override
-				public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-					 if(fromUser){
-						
-						if(_jni.getNumBoard()-1 > progress)
-							progress++;
-						 
-						ChessView.this.jumptoMove(progress);
-						ChessView.this.updateState();
-					 }
-				}
-	
-				@Override
-				public void onStartTrackingTouch(SeekBar seekBar) {
-					// TODO Auto-generated method stub
-				}
-	
-				@Override
-				public void onStopTrackingTouch(SeekBar seekBar) {
-					// TODO Auto-generated method stub
-				}
-			});
-			_seekBar.setMax(1);
-		}
-		
-//		_arrImageCaptured = new ImageView[2][5];
-//		_arrImageCaptured[BoardConstants.BLACK][BoardConstants.PAWN] = (ImageView)_parent.findViewById(R.id.ImageCapturedBlackPawn);
-//		_arrImageCaptured[BoardConstants.BLACK][BoardConstants.KNIGHT] = (ImageView)_parent.findViewById(R.id.ImageCapturedBlackKnight);
-//		_arrImageCaptured[BoardConstants.BLACK][BoardConstants.BISHOP] = (ImageView)_parent.findViewById(R.id.ImageCapturedBlackBishop);
-//		_arrImageCaptured[BoardConstants.BLACK][BoardConstants.ROOK] = (ImageView)_parent.findViewById(R.id.ImageCapturedBlackRook);
-//		_arrImageCaptured[BoardConstants.BLACK][BoardConstants.QUEEN] = (ImageView)_parent.findViewById(R.id.ImageCapturedBlackQueen);
-//		_arrImageCaptured[BoardConstants.WHITE][BoardConstants.PAWN] = (ImageView)_parent.findViewById(R.id.ImageCapturedWhitePawn);
-//		_arrImageCaptured[BoardConstants.WHITE][BoardConstants.KNIGHT] = (ImageView)_parent.findViewById(R.id.ImageCapturedWhiteKnight);
-//		_arrImageCaptured[BoardConstants.WHITE][BoardConstants.BISHOP] = (ImageView)_parent.findViewById(R.id.ImageCapturedWhiteBishop);
-//		_arrImageCaptured[BoardConstants.WHITE][BoardConstants.ROOK] = (ImageView)_parent.findViewById(R.id.ImageCapturedWhiteRook);
-//		_arrImageCaptured[BoardConstants.WHITE][BoardConstants.QUEEN] = (ImageView)_parent.findViewById(R.id.ImageCapturedWhiteQueen);
+
+
 			
 		_arrTextCaptured = new TextView[2][5];
-//		_arrTextCaptured[BoardConstants.BLACK][BoardConstants.PAWN] = (TextView)_parent.findViewById(R.id.TextViewCapturedBlackPawn);
-//		_arrTextCaptured[BoardConstants.BLACK][BoardConstants.KNIGHT] = (TextView)_parent.findViewById(R.id.TextViewCapturedBlackKnight);
-//		_arrTextCaptured[BoardConstants.BLACK][BoardConstants.BISHOP] = (TextView)_parent.findViewById(R.id.TextViewCapturedBlackBishop);
-//		_arrTextCaptured[BoardConstants.BLACK][BoardConstants.ROOK] = (TextView)_parent.findViewById(R.id.TextViewCapturedBlackRook);
-//		_arrTextCaptured[BoardConstants.BLACK][BoardConstants.QUEEN] = (TextView)_parent.findViewById(R.id.TextViewCapturedBlackQueen);
-//		_arrTextCaptured[BoardConstants.WHITE][BoardConstants.PAWN] = (TextView)_parent.findViewById(R.id.TextViewCapturedWhitePawn);
-//		_arrTextCaptured[BoardConstants.WHITE][BoardConstants.KNIGHT] = (TextView)_parent.findViewById(R.id.TextViewCapturedWhiteKnight);
-//		_arrTextCaptured[BoardConstants.WHITE][BoardConstants.BISHOP] = (TextView)_parent.findViewById(R.id.TextViewCapturedWhiteBishop);
-//		_arrTextCaptured[BoardConstants.WHITE][BoardConstants.ROOK] = (TextView)_parent.findViewById(R.id.TextViewCapturedWhiteRook);
-//		_arrTextCaptured[BoardConstants.WHITE][BoardConstants.QUEEN] = (TextView)_parent.findViewById(R.id.TextViewCapturedWhiteQueen);
-		
 		_selectedLevel = 3;
-		
 		_lClockStartWhite = 0;
 		_lClockStartBlack = 0;
 		_lClockTotal = 0;
-		
-		
+
 		_timer = new Timer(true);
         _timer.schedule(new TimerTask(){
 			@Override public void run() {
@@ -503,30 +281,11 @@ public class ChessView extends UI {
     	return sTmp;
     }
 		
-	public void toggleControls(){
-
-		if(_viewAnimator != null){
-			_viewAnimator.showNext();
-		}
-	}
-	
-	public void toggleControl(int i){
-		if(_viewAnimator != null){
-			_viewAnimator.setDisplayedChild(i);
-		}
-	}
-		
 	public void setAutoFlip(boolean b){
 		_bAutoFlip = b;
 	}
 	public void setShowMoves(boolean b){
 		_bShowMoves = b;
-	}
-	public boolean getAutoFlip(){
-		return _bAutoFlip;
-	}
-	public boolean getShowMoves(){
-		return _bShowMoves;
 	}
 
 	public void onClickPGNView(PGNView item){
@@ -537,18 +296,9 @@ public class ChessView extends UI {
 				jumptoMove(i+2);
 			else
 				jumptoMove(i+1);
-				
-			//if(_arrPGN.get(i)._sAnnotation.length() > 0){
-			//UiUtils.doToast(_arrPGN.get(i)._sMove + " :" + _arrPGN.get(i)._sAnnotation);
-			
-			//}
+
 			updateState();
-		} else {
-			//TODO toast pleas wait
 		}
-	}
-	public void onLongClickPGNView(PGNView item){
-		
 	}
 	
 	public void clearPGNView(){

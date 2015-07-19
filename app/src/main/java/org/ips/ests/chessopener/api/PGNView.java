@@ -40,20 +40,7 @@ public class PGNView {
 		_tvItem = (TextView)_view.findViewById(R.id.TextViewMove);
 		_tvItem.setText(sMove);
 		_sMove = sMove;
-		
-		_view.setOnClickListener(new OnClickListener() {
-        	public void onClick(View arg0) {
-        		_parent.onClickPGNView(PGNView.this);
-        	}
-    	});
-		
-		_view.setOnLongClickListener(new OnLongClickListener(){
 
-			public boolean onLongClick(View v) {
-				_parent.onLongClickPGNView(PGNView.this);
-				return false;
-			}
-		});
 	}
 	public void setAnnotated(boolean b){
 		_bAnnotated = b;
