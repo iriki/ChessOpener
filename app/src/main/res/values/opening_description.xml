@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--
-     Jonas, basicamente temos 5 string-arrays para alimentar cada atributo:
+     Basicamente temos 5 string-arrays para alimentar cada atributo:
         private String name;            - alimentado por <string-array name="openings_names">
         private String history;         - alimentado por <string-array name="openings_history">
         private String description;     - alimentado por <string-array name="openings_description">
         private String imageUrl;        - alimentado por <string-array name="openings_image_url">
         private String youtubeId;       - alimentado por <string-array name="openings_youtube_id">
 
-         A unica questao é que TODAS os string-array deverão ter o mesmo numero de item\'s, para funcionar bem.
-         Se achares demasiado confuso até pudemos colcar cada string-array num ficheiro diferente.
+         TODAS os string-array deverão ter o mesmo numero de item's, para funcionar correctamente.
 -->
-    <string-array name="openings_description"  formatted="false">
 
-        <item id="0" name="Sicilian defense">
+    <string-array name="openings_description" formatted="false">
+
+        <item name="Sicilian defense" id="0">
             <![CDATA[
              <p>The
                 <b>Sicilian Defence</b>
@@ -125,8 +125,10 @@
             <p>The earliest recorded notes on the Sicilian Defence date back to the late 16th
          ]]>
         </item>
-        <item id="1" name="Alekhine defense">
+        <item name="Alekhine defense" id="1">
             <![CDATA[
+            <p><b>Alekhine\'s Defence</b> is a <a href="https://en.wikipedia.org/wiki/Hypermodernism_(chess)" title="Hypermodernism (chess)">hypermodern</a>
+            <a href="https://en.wikipedia.org/wiki/Chess_opening" title="Chess opening">chess opening</a> that begins with the moves:</p>
              <p>
                 <a href="https://en.wikipedia.org/wiki/White_and_Black_in_chess"
                     title="White and Black in chess">Black
@@ -154,7 +156,7 @@
             </p>
          ]]>
         </item>
-		<item id="2" name="Caro-Kann">
+		<item name="Caro-Kann" id="2">
             <![CDATA[
              <p>The
                 <b>Caro–Kann Defence</b>
@@ -201,7 +203,7 @@
 
 
         ]]></item>
-		<item id="3" name="Latvian Gambit">
+		<item name="Latvian Gambit" id="3">
             <![CDATA[
                 <p>The
                 <b>Latvian Gambit</b>
@@ -288,7 +290,7 @@
 
          ]]>
         </item>
-		<item id="4" name="Ponziani Opening">
+		<item name="Ponziani Opening" id="4">
             <![CDATA[
               <p>The
                 <b>Ponziani Opening</b>
@@ -375,7 +377,7 @@
             </p>
 			 ]]>
         </item>
-		<item id="5" name="Blackmar-Diemer Gambit">
+		<item name="Blackmar-Diemer Gambit" id="5">
              <![CDATA[
              <p>The
                 <b>Blackmar–Diemer Gambit</b>
@@ -399,7 +401,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...d5/2._e4" title="b:Chess Opening Theory/1. d4/1...d5/2. e4">e4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...d5/2._e4/2...dxe4" title="b:Chess Opening Theory/1. d4/1...d5/2. e4/2...dxe4">
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...d5/2._e4/2...dxe4" title="b:Chess Opening Theory/1.
+                        d4/1...d5/2. e4/2...dxe4">
                         dxe4
                     </a>
                 </dd>
@@ -427,7 +430,7 @@
             </p>
          ]]>
         </item>
-		<item id="6" name="Budapest Gambit">
+		<item name="Budapest Gambit" id="6">
              <![CDATA[
              <p>The
                 <b>Budapest Gambit</b>
@@ -451,7 +454,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4">c4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...e5" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4/2...e5">e5
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...e5" title="b:Chess Opening Theory/1. d4/1...Nf6/2.
+                        c4/2...e5">e5
                     </a>
                 </dd>
             </dl>
@@ -543,7 +547,7 @@
             </p>
 			 ]]>
          </item>
-		<item id="7" name="Calabrese Counter-gambit">
+		<item name="Calabrese Counter-gambit" id="7">
              <![CDATA[
              <p>The Italian Game is white’s effort to quickly develop his light square bishop and
                 dominate
@@ -565,7 +569,7 @@
             </p>
 			 ]]>
         </item>
-		<item id="8" name="Evans Gambit">
+		<item name="Evans Gambit" id="8">
              <![CDATA[
              <p>The
                 <b>Evans Gambit</b>
@@ -589,7 +593,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3">Nf3
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3/2...Nc6">Nc6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2.
+                        Nf3/2...Nc6">Nc6
                     </a>
                 </dd>
                 <dd>3.
@@ -626,7 +631,7 @@
             </ul>
         ]]>
         </item>
-		<item id="9" name="Fried Liver Attack">
+		<item name="Fried Liver Attack" id="9">
            <![CDATA[
             <p>The<b>Fried Liver Attack</b>, also called the
                 <b>Fegatello Attack</b>
@@ -667,7 +672,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3">Nf3
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3/2...Nc6">Nc6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2.
+                        Nf3/2...Nc6">Nc6
                     </a>
                 </dd>
                 <dd>3.
@@ -758,7 +764,7 @@
             </p>
          ]]>
         </item>
-		<item id="10" name="Grunfeld Defense">
+		<item name="Grunfeld Defense" id="10">
            <![CDATA[
             p>The
                 <b>Grünfeld Defence</b>
@@ -787,7 +793,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4">c4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...g6" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4/2...g6">g6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...g6" title="b:Chess Opening Theory/1. d4/1...Nf6/2.
+                        c4/2...g6">g6
                     </a>
                 </dd>
                 <dd>3.
@@ -812,7 +819,7 @@
          ]]>
 
         </item>
-		<item id="11" name="Halloween Gambit">
+		<item name="Halloween Gambit" id="11">
            <![CDATA[
             <p>The
                 <b>Halloween Gambit</b>
@@ -845,7 +852,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3">Nf3
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3/2...Nc6">Nc6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2.
+                        Nf3/2...Nc6">Nc6
                     </a>
                 </dd>
                 <dd>3.
@@ -899,7 +907,7 @@
          ]]>
 
         </item>
-		<item id="12" name="Petrov Defense">
+		<item name="Petrov Defense" id="12">
            <![CDATA[
             <p>
                 <b>Petrov\'s Defence</b>
@@ -925,7 +933,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3">Nf3
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nf6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3/2...Nf6">Nf6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nf6" title="b:Chess Opening Theory/1. e4/1...e5/2.
+                        Nf3/2...Nf6">Nf6
                     </a>
                 </dd>
             </dl>
@@ -1004,7 +1013,7 @@
          ]]>
 
         </item>
-		<item id="13" name="Philidor's Defense">
+		<item name="Philidor's Defense" id="13">
            <![CDATA[
             <p>The
                 <b>Philidor Defence</b>
@@ -1056,7 +1065,7 @@
          ]]>
 
         </item>
-		<item id="14" name="Queen's Indian Defense">
+		<item name="Queen's Indian Defense" id="14">
            <![CDATA[
             <p>The
                 <b>Queen\'s Indian Defense</b>
@@ -1085,7 +1094,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4">c4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...e6" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4/2...e6">e6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...e6" title="b:Chess Opening Theory/1. d4/1...Nf6/2.
+                        c4/2...e6">e6
                     </a>
                 </dd>
                 <dd>3.
@@ -1139,7 +1149,7 @@
          ]]>
 
         </item>
-		<item id="15" name="Semi-Slav Defense">
+		<item name="Semi-Slav Defense" id="15">
            <![CDATA[
             <p>The
                 <b>Semi-Slav Defense</b>
@@ -1166,7 +1176,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...d5/2._c4" title="b:Chess Opening Theory/1. d4/1...d5/2. c4">c4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...d5/2._c4/2...c6" title="b:Chess Opening Theory/1. d4/1...d5/2. c4/2...c6">c6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...d5/2._c4/2...c6" title="b:Chess Opening Theory/1. d4/1...d5/2.
+                        c4/2...c6">c6
                     </a>
                 </dd>
                 <dd>3.
@@ -1227,7 +1238,7 @@
          ]]>
 
         </item>
-		<item id="16" name="Smith-Morra Gambit">
+		<item name="Smith-Morra Gambit" id="16">
            <![CDATA[
             <p>In<a href="https://en.wikipedia.org/wiki/Chess" title="Chess">chess</a>, the
                 <b>Smith–Morra Gambit</b>
@@ -1256,7 +1267,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...c5/2._d4" title="b:Chess Opening Theory/1. e4/1...c5/2. d4">d4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...c5/2._d4/2...cxd4" title="b:Chess Opening Theory/1. e4/1...c5/2. d4/2...cxd4">
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...c5/2._d4/2...cxd4" title="b:Chess Opening Theory/1. e4/1...c5/2.
+                        d4/2...cxd4">
                         cxd4
                     </a>
                 </dd>
@@ -1301,7 +1313,7 @@
          ]]>
 
         </item>
-		<item id="17" name="Vienna Game">
+		<item name="Vienna Game" id="17">
             <![CDATA[
             <p>The
                 <b>Vienna Game</b>
@@ -1356,7 +1368,8 @@
                 </a>
                 his king\'s bishop with g3 and Bg2). Black most often continues with<a
                     class="extiw"
-                    href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nc3/2...Nf6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nc3/2...Nf6">
+                    href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nc3/2...Nf6" title="b:Chess Opening Theory/1. e4/1...e5/2.
+                    Nc3/2...Nf6">
                     2...Nf6</a>.
                 The opening can also lead to the<a
                     class="mw-redirect"
@@ -1393,7 +1406,7 @@
          ]]>
 
         </item>
-		<item id="18" name="King's Indian Defense">
+		<item name="King's Indian Defense" id="18">
           <![CDATA[
             <p>The
                 <b>King\'s Indian Defence</b>
@@ -1415,7 +1428,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4">c4
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...g6" title="b:Chess Opening Theory/1. d4/1...Nf6/2. c4/2...g6">g6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...Nf6/2._c4/2...g6" title="b:Chess Opening Theory/1. d4/1...Nf6/2.
+                        c4/2...g6">g6
                     </a>
                 </dd>
             </dl>
@@ -1441,7 +1455,7 @@
          ]]>
 
         </item>
-		<item id="19" name="Giuoco Piano">
+		<item name="Giuoco Piano" id="19">
             <![CDATA[
             <p>The
                 <b>Giuoco Piano</b>
@@ -1474,7 +1488,8 @@
                         href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3">Nf3
                     </a>
                     <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2. Nf3/2...Nc6">Nc6
+                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e5/2._Nf3/2...Nc6" title="b:Chess Opening Theory/1. e4/1...e5/2.
+                        Nf3/2...Nc6">Nc6
                     </a>
                 </dd>
                 <dd>3.
@@ -1519,7 +1534,7 @@
          ]]>
 
         </item>
-		<item id="20" name="King's pawn opening">
+		<item name="King's pawn opening" id="20">
             <![CDATA[
             <p>The <b>King\'s Pawn Game</b> is any <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">chess opening</a> starting with the move:</p>
             <dl>
@@ -1529,7 +1544,7 @@
          ]]>
 
         </item>
-        <item id="21" name="Queen's pawn game">
+        <item name="Queen's pawn game" id="21">
             <![CDATA[
             <p>In the most general sense the term <b>Queen\'s Pawn Game</b> can refer to any <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">chess opening</a> which starts with the move 1.d4. It is the second most popular opening move after <a href="https://en.wikipedia.org/1.e4" title="1.e4" class="mw-redirect">1.e4</a>. The name is usually used to describe openings beginning with 1.d4 where White does not play the <a href="https://en.wikipedia.org/Queen%27s_Gambit" title="Queen\'s Gambit">Queen\'s Gambit</a>. The most common Queen\'s Pawn Game openings are:</p>
             <ul>
@@ -1552,7 +1567,7 @@
            ]]>
 
         </item>
-        <item id="22" name="Bird's Opening">
+        <item name="Bird's Opening" id="22">
             <![CDATA[
              <p><b>Bird\'s Opening</b> (or the <b>Dutch Attack</b>) is a <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">chess opening</a> characterised by the move:</p>
             <dl>
@@ -1563,21 +1578,41 @@
             ]]>
 
         </item>
-        <item id="23" name="Van't Kruijs Opening">
+        <item name="Van't Kruijs Opening" id="23">
             <![CDATA[
-            <p>The <b>Van\'t Kruijs<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> Opening</b> (<small>Dutch pronunciation:</small> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="https://en.wikipedia.org/Help:IPA_for_Dutch" title="Help:IPA for Dutch">[vɑn ət ˈkrœys]</a></span>) is a <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">chess opening</a> defined by the move:</p>
+            <p>The <b>Van\'t Kruijs<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup>
+             Opening</b> (<small>Dutch pronunciation:</small> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA">
+             <a href="https://en.wikipedia.org/Help:IPA_for_Dutch" title="Help:IPA for Dutch">[vɑn ət ˈkrœys]</a></span>) is a
+             <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">chess opening</a> defined by the move:</p>
              <dl>
             <dd>1. <a href="//en.wikibooks.org/wiki/Chess_Opening_Theory/1._e3" class="extiw" title="b:Chess Opening Theory/1. e3">e3</a></dd>
             </dl>
-            <p>It is named after the <a href="https://en.wikipedia.org/Amsterdam" title="Amsterdam">Amsterdam</a> player <a href="/w/index.php?title=Maarten_van%27t_Kruijs&amp;action=edit&amp;redlink=1" class="new" title="Maarten van\'t Kruijs (page does not exist)">Maarten van\'t Kruijs</a> (1813–85) who won the sixth <a href="https://en.wikipedia.org/Dutch_Chess_Championship" title="Dutch Chess Championship">Dutch championship</a> in 1878. As this opening move is rarely played, it is considered an <a href="https://en.wikipedia.org/Irregular_chess_openings" title="Irregular chess openings" class="mw-redirect">irregular opening</a>, and thus it is classified under the A00 code in the <a href="https://en.wikipedia.org/Encyclopaedia_of_Chess_Openings" title="Encyclopaedia of Chess Openings">Encyclopaedia of Chess Openings</a> (ECO).</p>
-            <p>The opening 1.e3 is not popular according to <a href="https://en.wikipedia.org/ChessBase" title="ChessBase">ChessBase</a>; it ranks eleventh in popularity out of the twenty possible first moves. It releases the king\'s <a href="https://en.wikipedia.org/Bishop_(chess)" title="Bishop (chess)">bishop</a>, and makes a modest claim of the centre, but the move is somewhat passive. The queen\'s bishop\'s development is somewhat hindered by the pawn on e3, and White usually wants to take more than a modest stake of the centre.</p>
-            <p>Although not very aggressive for a first move, play may <a href="https://en.wikipedia.org/Transposition_(chess)" title="Transposition (chess)">transpose</a> to lines of the <a href="https://en.wikipedia.org/English_Opening" title="English Opening">English Opening</a> (c2–c4), <a href="https://en.wikipedia.org/Queen%27s_Pawn_Game" title="Queen\'s Pawn Game">Queen\'s Pawn Game</a> (d2–d4), or reversed <a href="https://en.wikipedia.org/French_Defence" title="French Defence">French Defence</a> (delayed d2–d4) or reversed <a href="https://en.wikipedia.org/Dutch_Defence" title="Dutch Defence">Dutch Defence</a> (f2–f4) positions.</p>
-            <p>The Van\'t Kruijs Opening is not a common choice for <a href="https://en.wikipedia.org/International_Grandmaster" title="International Grandmaster" class="mw-redirect">grandmasters</a>, but its ability to transpose into many different openings explains its attraction for some people such as the <a href="https://en.wikipedia.org/Czech_people" title="Czech people" class="mw-redirect">Czech</a> grandmaster <a href="/w/index.php?title=Pavel_Blatny&amp;action=edit&amp;redlink=1" class="new" title="Pavel Blatny (page does not exist)">Pavel Blatny</a>, <a href="https://en.wikipedia.org/Aron_Nimzowitsch" title="Aron Nimzowitsch">Aron Nimzowitsch</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> and <a href="https://en.wikipedia.org/Bent_Larsen" title="Bent Larsen">Bent Larsen</a>. <a href="https://en.wikipedia.org/Garry_Kasparov" title="Garry Kasparov">Garry Kasparov</a> has used the move against the <a href="https://en.wikipedia.org/Fritz_(chess)" title="Fritz (chess)">Fritz</a> chess engine to get it "out of book".</p>
+            <p>It is named after the <a href="https://en.wikipedia.org/Amsterdam" title="Amsterdam">Amsterdam</a> player
+            <a href="/w/index.php?title=Maarten_van%27t_Kruijs&amp;action=edit&amp;redlink=1" class="new"
+            title="Maarten van\'t Kruijs (page does not exist)">Maarten van\'t Kruijs</a> (1813–85) who won the sixth
+            <a href="https://en.wikipedia.org/Dutch_Chess_Championship" title="Dutch Chess Championship">Dutch championship</a> in 1878.
+            As this opening move is rarely played, it is considered an <a href="https://en.wikipedia.org/Irregular_chess_openings"
+            title="Irregular chess openings" class="mw-redirect">irregular opening</a>, and thus it is
+            classified under the A00 code in the <a href="https://en.wikipedia.org/Encyclopaedia_of_Chess_Openings"
+            title="Encyclopaedia of Chess Openings">Encyclopaedia of Chess Openings</a> (ECO).</p>
+            <p>The opening 1.e3 is not popular according to <a href="https://en.wikipedia.org/ChessBase" title="ChessBase">ChessBase</a>;
+             it ranks eleventh in popularity out of the twenty possible first moves. It releases the king\'s
+             <a href="https://en.wikipedia.org/Bishop_(chess)" title="Bishop (chess)">bishop</a>,
+             and makes a modest claim of the centre, but the move is somewhat passive. The queen\'s bishop\'s
+             development is somewhat hindered by the pawn on e3, and White usually wants to take more than a modest stake of the centre.</p>
+            <p>Although not very aggressive for a first move, play may <a href="https://en.wikipedia.org/Transposition_(chess)"
+            title="Transposition (chess)">transpose</a> to lines of the <a href="https://en.wikipedia.org/English_Opening"
+            title="English Opening">English Opening</a> (c2–c4), <a href="https://en.wikipedia.org/Queen%27s_Pawn_Game"
+            title="Queen\'s Pawn Game">Queen\'s Pawn Game</a> (d2–d4), or reversed <a href="https://en.wikipedia.org/French_Defence"
+            title="French Defence">French Defence</a> (delayed d2–d4) or reversed <a href="https://en.wikipedia.org/Dutch_Defence"
+            title="Dutch Defence">Dutch Defence</a> (f2–f4) positions.</p>
+            <p>The Van\'t Kruijs Opening is not a common choice for <a href="https://en.wikipedia.org/International_Grandmaster"
+            title="International Grandmaster" class="mw-redirect">grandmasters</a>, but its ability to transpose into many different openings explains its attraction for some people such as the <a href="https://en.wikipedia.org/Czech_people" title="Czech people" class="mw-redirect">Czech</a> grandmaster <a href="/w/index.php?title=Pavel_Blatny&amp;action=edit&amp;redlink=1" class="new" title="Pavel Blatny (page does not exist)">Pavel Blatny</a>, <a href="https://en.wikipedia.org/Aron_Nimzowitsch" title="Aron Nimzowitsch">Aron Nimzowitsch</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> and <a href="https://en.wikipedia.org/Bent_Larsen" title="Bent Larsen">Bent Larsen</a>. <a href="https://en.wikipedia.org/Garry_Kasparov" title="Garry Kasparov">Garry Kasparov</a> has used the move against the <a href="https://en.wikipedia.org/Fritz_(chess)" title="Fritz (chess)">Fritz</a> chess engine to get it "out of book".</p>
 
              ]]>
 
         </item>
-        <item id="24" name="French Defense">
+        <item name="French Defense" id="24">
             <![CDATA[
             <p>The <b>French Defence</b> is a <a href="https://en.wikipedia.org/Chess" title="Chess">chess</a> <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">opening</a> characterised by the moves:</p>
             <dl>

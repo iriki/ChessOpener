@@ -28,9 +28,14 @@ public class Tab1 extends Fragment implements IUpdateableFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.tab_1, container, false);
         tvDescription = (TextView) v.findViewById(R.id.tv_description);
+
+
         if (savedInstanceState != null) {
             Bundle args = getArguments();
             Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
+            update(opening);
+        } else if (getArguments() != null && getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY) != null) {
+            Opening opening = (Opening) getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY);
             update(opening);
         } else {
             update(Start.openings.get(0));

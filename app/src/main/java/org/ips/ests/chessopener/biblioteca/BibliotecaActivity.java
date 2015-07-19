@@ -109,7 +109,7 @@ public class BibliotecaActivity extends ActionBarActivity
 
         if (adapter != null) {
             pager.setAdapter(adapter);
-//            adapter.update(Start.openings.get(position));
+            adapter.update(Start.openings.get(position));
         }
     }
 

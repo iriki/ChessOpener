@@ -28,5 +28,6 @@ proguard/
 # Log Files
 *.log
 
-
+# aditional ignored files
 .idea/
+*.iml

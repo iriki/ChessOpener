@@ -32,6 +32,9 @@ public class Tab2 extends Fragment implements IUpdateableFragment {
             Bundle args = getArguments();
             Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
             update(opening);
+        } else if (getArguments() != null && getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY) != null) {
+            Opening opening = (Opening) getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY);
+            update(opening);
         } else {
             update(Start.openings.get(0));
         }

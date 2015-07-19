@@ -43,6 +43,12 @@ public class OpeningUtils {
         return openings;
     }
 
+    /**
+     *
+     * @param str
+     * @param openings
+     * @return
+     */
     public static Opening findOpeningFromString(@NonNull String str, @NonNull ArrayList<Opening> openings) {
 
         for (Opening opening : openings) {
