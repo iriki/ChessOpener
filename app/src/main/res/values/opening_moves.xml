@@ -74,6 +74,10 @@
 		<item id="23" name="Van't Kruijs Opening">
 		e3 ;
 		</item>
+		<item id="24" name="French Defense">
+		e4 e6;
+		</item>
+
 
     </string-array>
 </resources>

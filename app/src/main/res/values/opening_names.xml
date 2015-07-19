@@ -38,6 +38,7 @@
         <item id="21">Queen\'s pawn opening</item>
         <item id="22">Bird\'s Opening</item>
         <item id="23">Van\'t Kruijs Opening</item>
+        <item id="24">French defense</item>
     </string-array>
 
 </resources>

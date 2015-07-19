@@ -1577,6 +1577,16 @@
              ]]>
 
         </item>
+        <item id="24" name="French Defense">
+            <![CDATA[
+            <p>The <b>French Defence</b> is a <a href="https://en.wikipedia.org/Chess" title="Chess">chess</a> <a href="https://en.wikipedia.org/Chess_opening" title="Chess opening">opening</a> characterised by the moves:</p>
+            <dl>
+<dd>1. <a href="//en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4" class="extiw" title="b:Chess Opening Theory/1. e4">e4</a> <a href="//en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...e6" class="extiw" title="b:Chess Opening Theory/1. e4/1...e6">e6</a></dd>
+</dl>
+<p>The French has a reputation for <a href="https://en.wikipedia.org/Solid_(chess)" title="Solid (chess)" class="mw-redirect">solidity</a> and resilience, though it can result in a somewhat cramped game for Black in the early stages. Black often gains counterattacking possibilities on the <a href="https://en.wikipedia.org/Queenside_(chess)" title="Queenside (chess)" class="mw-redirect">queenside</a> while White tends to concentrate on the <a href="https://en.wikipedia.org/Kingside_(chess)" title="Kingside (chess)" class="mw-redirect">kingside</a>.</p>
+             ]]>
+
+        </item>
 
 
     </string-array>
