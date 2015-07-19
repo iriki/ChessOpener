@@ -6,43 +6,6 @@
     <string name="activity_library_name">Openings Library</string>
     <string name="activity_chessboard_name">Chess Board</string>
 
-
-<string name="nice_html">
-<![CDATA[
-            <p>
-                <b>Alekhine\'s Defence</b>
-                is a
-                <a href="https://en.wikipedia.org/wiki/Hypermodernism_(chess)" title="Hypermodernism (chess)">hypermodern
-                </a>
-                <a href="https://en.wikipedia.org/wiki/Chess_opening" title="Chess opening">chess opening</a>
-                that begins with the moves:
-            </p>
-            <dl>
-                <dd>1.
-                    <a class="extiw" href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4"
-                        title="b:Chess Opening Theory/1. e4">e4
-                    </a>
-                    <a class="extiw"
-                        href="https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4/1...Nf6" title="b:Chess Opening Theory/1. e4/1...Nf6">Nf6
-                    </a>
-                </dd>
-            </dl>
-            <p>
-                <a href="https://en.wikipedia.org/wiki/White_and_Black_in_chess" title="White and Black in chess">Black</a>
-                tempts White\'s pawns forward to form a broad pawn centre, with plans to undermine
-                and attack the white structure later in the spirit of hypermodern defence. White\'s
-                imposing mass of pawns in the centre often includes pawns on c4, d4, e5, and f4.
-                <a class="mw-redirect" href="https://en.wikipedia.org/wiki/International_Grandmaster"
-                    title="International Grandmaster">Grandmaster
-                </a>
-                <a href="https://en.wikipedia.org/wiki/Nick_de_Firmian" title="Nick de Firmian">Nick de Firmian</a>
-                observes of Alekhine\'s in MCO-15 (2008), "The game immediately loses any sense of
-                symmetry or balance, which makes the opening a good choice for aggressive fighting
-                players."
-            </p>
-]]>
-</string>
-
     <!-- Strings da API -->
     <string name="state_play">in play</string>
     <string name="state_draw">draw</string>

@@ -1,80 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--
+ Basicamente temos 5 string-arrays para alimentar cada atributo:
+    private String name;            - alimentado por <string-array name="openings_names">
+    private String history;         - alimentado por <string-array name="openings_history">
+    private String description;     - alimentado por <string-array name="openings_description">
+    private String imageUrl;        - alimentado por <string-array name="openings_image_url">
+    private String youtubeId;       - alimentado por <string-array name="openings_youtube_id">
+
+     TODAS os string-array deverão ter o mesmo numero de item's, para funcionar correctamente.
+-->
+
     <string-array name="opening_moves">
 
-        <item id="0" name="Sicilian defense">
+        <item name="Sicilian defense" id="0">
 		e4 c5;
         </item>
-        <item id="1" name="Alekhine defense">
+        <item name="Alekhine defense" id="1">
 		e4 Nf6;
         </item>
-		<item id="2" name="Caro-Kann">
+		<item name="Caro-Kann" id="2">
 		e4 c6;
         </item>
-		<item id="3" name="Latvian Gambit">
+		<item name="Latvian Gambit" id="3">
 		e4 e5;Nf3 f5;
         </item>
-		<item id="4" name="Ponziani Opening">
+		<item name="Ponziani Opening" id="4">
 		e4 e5;Nf3 Nc6;c3 ;
         </item>
-		<item id="5" name="Blackmar-Diemer Gambit">
+		<item name="Blackmar-Diemer Gambit" id="5">
 		d4 d5;e4 dxe4;Nc3 ;
          </item>
-		<item id="6" name="Budapest Gambit">
+		<item name="Budapest Gambit" id="6">
 		d4 Nf6;c4 e5;
          </item>
-		<item id="7" name="Calabrese Counter-gambit">
+		<item name="Calabrese Counter-gambit" id="7">
 		e4 e5;Bc4 f5;
         </item>
-		<item id="8" name="Evans Gambit">
+		<item name="Evans Gambit" id="8">
 		e4 e5;Nf3 Nc6;Bc4 Bc5;b4 ;
          </item>
-		<item id="9" name="Fried Liver Attack">
+		<item name="Fried Liver Attack" id="9">
 		e4 e5;Nf3 Nc6;Bc4 Nf6;Ng5 d5;exd5 Nxd5;
          </item>
-		<item id="10" name="Grunfeld Defense">
+		<item name="Grunfeld Defense" id="10">
 		d4 Nf6;c4 g6;Nc3 d5;
          </item>
-		<item id="11" name="Halloween Gambit">
+		<item name="Halloween Gambit" id="11">
 		e4 e5;Nf3 Nc6;Nc3 Nf6;;Nxe5 ;
          </item>
-		<item id="12" name="Petrov Defense">
+		<item name="Petrov Defense" id="12">
 		e4 e5;Nf3 Nf6;
          </item>
-		<item id="13" name="Philidor's Defense">
+		<item name="Philidor's Defense" id="13">
 		e4 e5;Nf3 d6;
          </item>
-		<item id="14" name="Queen's Indian Defense">
+		<item name="Queen's Indian Defense" id="14">
 		d4 Nf6;c4 e6;Nf3 b6;
          </item>
-		<item id="15" name="Semi-Slav Defense">
+		<item name="Semi-Slav Defense" id="15">
 		d4 d5;c4 c6;Nf3 Nf6;Nc3 e6;
          </item>
-		<item id="16" name="Smith-Morra Gambit">
+		<item name="Smith-Morra Gambit" id="16">
 		e4 c5;d4 cxd4;c3 ;
          </item>
-		<item id="17" name="Vienna Game">
+		<item name="Vienna Game" id="17">
 		e4 e5;Nc3 ;
         </item>
-		<item id="18" name="King's Indian Defense">
+		<item name="King's Indian Defense" id="18">
 		d4 Nf6;c4 g6;
          </item>
-		<item id="19" name="Giuoco Piano">
+		<item name="Giuoco Piano" id="19">
 		e4 e5;Nf3 Nc6;Bc4 Bc5;
 		</item>
-		<item id="20" name="King's pawn opening">
+		<item name="King's pawn opening" id="20">
 		e4 ;
 		</item>
-		<item id="21" name="Queen's pawn game">
+		<item name="Queen's pawn game" id="21">
 		d5 ;
 		</item>
-		<item id="22" name="Bird's Opening">
+		<item name="Bird's Opening" id="22">
 		f4 ;
 		</item>
-		<item id="23" name="Van't Kruijs Opening">
+		<item name="Van't Kruijs Opening" id="23">
 		e3 ;
 		</item>
-		<item id="24" name="French Defense">
+		<item name="French Defense" id="24">
 		e4 e6;
 		</item>
 

@@ -27,9 +27,9 @@ public class BibliotecaActivity extends ActionBarActivity
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private Toolbar mToolbar;
 
-
     ViewPager pager;
     ViewPagerAdapter adapter;
+    /** The tabs of the ViewPager */
     SlidingTabLayout tabs;
     /** The titles of the Tabs */
     CharSequence Titles[]={"Home","History", "Video"};
@@ -47,39 +47,28 @@ public class BibliotecaActivity extends ActionBarActivity
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
-        mNavigationDrawerFragment.setUserData("ChessOpener", "GNU GPL Licence v2",
+        mNavigationDrawerFragment.setUserData("Chess Opener", "GNU GPL Licence v2",
                 BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
 
-
+        // If we have an Opening object coming from the bundle, pass it it to adapter
         Opening opening = null;
-
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
+        Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             try {
                 opening = (Opening) bundle.getSerializable(Opening.OPENING_BUNDLE_KEY);
-
-//                NavigationDrawerFragment.mCurrentSelectedPosition =
-//                        OpeningUtils.findPositionFromString(opening.getName(), Start.openings);
-
-
-
-//                onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
             } catch (Exception ignored) {
             }
         }
 
-
-
-
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles for the Tabs and Number Of Tabs.
+        // Instantiates the adapter with the Opening object if not null, or the first Opening from the model
         adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length, opening != null ? opening : Start.openings.get(0));
 
         // Assigning ViewPager View and setting the adapter
         pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);
 
-        // Assiging the Sliding Tab Layout View
+        // Assigning the Sliding Tab Layout View
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true); // To make the Tabs Fixed set this true, This makes the tabs Space Evenly in Available width
 

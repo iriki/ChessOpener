@@ -2,16 +2,16 @@
 <resources>
 
     <!--
-     Jonas, basicamente temos 5 string-arrays para alimentar cada atributo:
+     Basicamente temos 5 string-arrays para alimentar cada atributo:
         private String name;            - alimentado por <string-array name="openings_names">
         private String history;         - alimentado por <string-array name="openings_history">
         private String description;     - alimentado por <string-array name="openings_description">
         private String imageUrl;        - alimentado por <string-array name="openings_image_url">
         private String youtubeId;       - alimentado por <string-array name="openings_youtube_id">
 
-         A unica questao é que TODAS os string-array deverão ter o mesmo numero de item's, para funcionar bem.
-         Se achares demasiado confuso até pudemos colcar cada string-array num ficheiro diferente.
-    -->
+         TODAS os string-array deverão ter o mesmo numero de item's, para funcionar correctamente.
+-->
+
 
     <string-array name="openings_names">
         <item id="0">Sicilian defense</item>
@@ -24,7 +24,7 @@
         <item id="7">Calabrese Counter-gambit</item>
         <item id="8">Evans Gambit</item>
         <item id="9">Fried Liver Attack</item>
-		<item id="10">Grunfeld Defense</item>
+        <item id="10">Grunfeld Defense</item>
         <item id="11">Halloween Gambit</item>
         <item id="12">Petrov Defense</item>
         <item id="13">Philidor\'s Defense</item>
