@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import org.ips.ests.chessopener.ChessBoardActivity;
 import org.ips.ests.chessopener.R;
 import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.api.chess.Move;
@@ -177,8 +178,7 @@ public class ChessView extends UI {
         _btnCurrentOpening.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO:
-//                UiUtils.doToast(_parent, ((Button)v).getText().toString());
+
                 Opening opening = OpeningUtils.findOpeningFromString(((Button)v).getText().toString(), Start.openings);
                 if (opening != null) {
                     Bundle args = new Bundle();
@@ -261,20 +261,23 @@ public class ChessView extends UI {
 			//butNext.setFocusable(false);
 			butNext.setOnClickListener(oclFf);
 		}
-		
-		Button butNewGame = (Button)_parent.findViewById(R.id.ButtonNewGame);
+		*/
+        Button butNewGame = (Button)_parent.findViewById(R.id.ButtonNewGame);
 		if(butNewGame != null){
 			//butNewGame.setFocusable(false);
 			butNewGame.setOnClickListener(new OnClickListener() {
 	        	public void onClick(View arg0) {
-	        		Intent intent = new Intent();
-	        	    intent.setClass(_parent, options.class);
-	        	    intent.putExtra("requestCode", main.REQUEST_NEWGAME);
-	        		_parent.startActivityForResult(intent, main.REQUEST_NEWGAME);    		
+//	        		Intent intent = new Intent();
+//	        	    intent.setClass(_parent, options.class);
+//	        	    intent.putExtra("requestCode", ChessBoardActivity.REQUEST_NEWGAME);
+//	        		_parent.startActivityForResult(intent, ChessBoardActivity.REQUEST_NEWGAME);
+
+                    newGame();
 	        	}
 			});
 		}
-		
+
+		/*
 		ImageButton butSaveGame = (ImageButton)_parent.findViewById(R.id.ButtonSave);
 		if(butSaveGame != null){
 			//butSaveGame.setFocusable(false);
@@ -549,6 +552,8 @@ public class ChessView extends UI {
 	}
 	
 	public void clearPGNView(){
+        _btnCurrentOpening.setEnabled(false);
+        _btnCurrentOpening.setText(_parent.getString(R.string.button_no_opening));
 		_arrPGNView.clear();
 		if(_layoutHistory != null){
 			_layoutHistory.removeAllViews();

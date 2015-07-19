@@ -6,9 +6,16 @@
     android:background="@android:color/white">
 
     <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
         android:id="@+id/includeboard"
+        android:layout_below="@id/toolbar_actionbar"
         layout="@layout/board"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -154,24 +161,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dip"
                     android:layout_margin="2dip"
-                    android:gravity="center"
-                    android:text="New" />
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/button_new" />
 
-                <ImageButton
-                    android:id="@+id/ButtonOpen"
-                    android:layout_width="40dip"
-                    android:layout_height="40dip"
-                    android:layout_margin="2dip"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/abc_btn_borderless_material" />
 
-                <ImageButton
-                    android:id="@+id/ButtonSave"
-                    android:layout_width="40dip"
-                    android:layout_height="40dip"
-                    android:layout_margin="2dip"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+                <!--
+                                <ImageButton
+                                    android:id="@+id/ButtonOpen"
+                                    android:layout_width="40dip"
+                                    android:layout_height="40dip"
+                                    android:layout_margin="2dip"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/abc_btn_borderless_material" />
+
+
+                                <ImageButton
+                                    android:id="@+id/ButtonSave"
+                                    android:layout_width="40dip"
+                                    android:layout_height="40dip"
+                                    android:layout_margin="2dip"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+                -->
 
                 <ImageButton
                     android:id="@+id/ButtonPrevious"
@@ -179,7 +190,7 @@
                     android:layout_height="40dip"
                     android:layout_margin="2dip"
                     android:scaleType="fitXY"
-                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+                    android:src="@drawable/ic_backward" />
 
                 <ImageButton
                     android:id="@+id/ButtonNext"
@@ -187,8 +198,9 @@
                     android:layout_height="40dip"
                     android:layout_margin="2dip"
                     android:scaleType="fitXY"
-                    android:src="@drawable/abc_ic_commit_search_api_mtrl_alpha" />
+                    android:src="@drawable/ic_forward" />
 
+<!--
                 <ImageButton
                     android:id="@+id/ButtonPlay"
                     android:layout_width="40dip"
@@ -196,278 +208,26 @@
                     android:layout_margin="2dip"
                     android:scaleType="fitXY"
                     android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+-->
 
 
-                <ProgressBar
+<!--                <ProgressBar
                     android:id="@+id/ProgressBarPlay"
                     style="?android:attr/progressBarStyleLarge"
                     android:layout_width="40dip"
                     android:layout_height="40dip"
                     android:layout_margin="2dip"
-                    android:visibility="gone" />
+                    android:visibility="gone" />-->
 
 
             </TableRow>
         </TableLayout>
-<!--
-
-        <ViewAnimator
-            android:id="@+id/ViewAnimatorMain"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@id/LayoutPlayButtons"
-            android:layout_marginBottom="2dip"
-            android:layout_marginTop="2dip"
-            android:background="@color/bgColorText">
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bgColorText">
-
-                <TextView
-                    android:id="@+id/TextViewEngine"
-                    style="@style/DefaultTextStyle"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="4dip" />
-
-                <TextView
-                    android:id="@+id/TextViewEngineValue"
-                    style="@style/DefaultTextStyle"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/TextViewEngine"
-                    android:padding="4dip" />
-            </RelativeLayout>
-
-            <TableLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bgColorText">
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/bgColor">
-
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedBlackPawn"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_bpb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedBlackKnight"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_bnb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedBlackBishop"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_bbb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedBlackRook"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_brb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedBlackQueen"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_bqb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedWhitePawn"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_wpb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedWhiteKnight"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_wnb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedWhiteBishop"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_wbb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedWhiteRook"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_wrb" />
-
-                    <ImageView
-                        android:id="@+id/ImageCapturedWhiteQueen"
-                        style="@style/CaptureImageStyle"
-                        android:src="@drawable/small_wqb" />
-
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedBlackPawn"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedBlackKnight"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedBlackBishop"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedBlackRook"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedBlackQueen"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedWhitePawn"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedWhiteKnight"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedWhiteBishop"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedWhiteRook"
-                        style="@style/CaptureTextStyle" />
-
-                    <TextView
-                        android:id="@+id/TextViewCapturedWhiteQueen"
-                        style="@style/CaptureTextStyle" />
-                </TableRow>
-            </TableLayout>
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bgColorText">
-
-                <SeekBar
-                    android:id="@+id/SeekBarMain"
-                    android:layout_width="fill_parent"
-                    android:layout_height="40dip"
-                    android:paddingLeft="8dip"
-                    android:paddingRight="8dip" />
-            </RelativeLayout>
-
-            <HorizontalScrollView
-                android:id="@+id/HScrollViewHistory"
-                android:layout_width="fill_parent"
-                android:layout_height="40dip"
-                android:background="@color/bgColor"
-                android:padding="2dip"
-                android:textColor="@color/textColor">
-
-                <RelativeLayout
-                    android:id="@+id/LayoutHistory"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </HorizontalScrollView>
-
-            <ScrollView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bgColorText"
-                android:fadingEdge="none"
-                android:padding="2dip">
-
-                <TextView
-                    android:id="@+id/TextViewAnnotate"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@android:drawable/editbox_background_normal"
-                    android:minHeight="50dip"
-                    android:padding="8dip"
-                    android:textColor="#000000" />
-            </ScrollView>
-
-
-            <TableLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bgColorText"
-                android:padding="2dip"
-                android:stretchColumns="2">
-
-                <TableRow>
-
-                    <ImageView
-                        android:id="@+id/ImageStatusGuess"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dip"
-                        android:src="@drawable/indicator_none" />
-
-                    <Button
-                        android:id="@+id/ButtonHintGuess"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dip"
-                        android:text="hint" />
-
-                    <TextView
-                        android:id="@+id/TextViewGuess"
-                        style="@style/textViewPlain"
-                        android:layout_width="72dip"
-                        android:layout_height="40dip"
-                        android:layout_margin="0dip"
-                        android:singleLine="false"
-                        android:text="" />
-                </TableRow>
-            </TableLayout>
-
-            <TableLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/bgColorText"
-                android:padding="2dip">
-
-                <TableRow android:gravity="center">"
-
-                    <ImageButton
-                        android:id="@+id/ButtonBlindfoldLocations"
-                        android:layout_width="40dip"
-                        android:layout_height="40dip"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/collections_view_as_grid" />
-
-                    <ImageButton
-                        android:id="@+id/ButtonBlindfoldHide"
-                        android:layout_width="40dip"
-                        android:layout_height="40dip"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/navigation_cancel" />
-
-                    <ImageButton
-                        android:id="@+id/ButtonBlindfoldShow"
-                        android:layout_width="40dip"
-                        android:layout_height="40dip"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/navigation_accept" />
-                </TableRow>
-            </TableLayout>
-
-        </ViewAnimator>
--->
 
     </RelativeLayout>
 
     <Button
         android:id="@+id/ButtonCurrentOpening"
-        android:text="No Opening"
+        android:text="@string/button_no_opening"
         android:enabled="false"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/ButtonsLayout"

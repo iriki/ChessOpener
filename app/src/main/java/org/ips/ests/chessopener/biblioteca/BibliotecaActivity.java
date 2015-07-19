@@ -1,6 +1,5 @@
 package org.ips.ests.chessopener.biblioteca;
 
-import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -9,7 +8,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import org.ips.ests.chessopener.R;
 import org.ips.ests.chessopener.Start;
@@ -32,7 +30,7 @@ public class BibliotecaActivity extends ActionBarActivity
     /** The tabs of the ViewPager */
     SlidingTabLayout tabs;
     /** The titles of the Tabs */
-    CharSequence Titles[]={"Home","History", "Video"};
+    CharSequence Titles[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +38,12 @@ public class BibliotecaActivity extends ActionBarActivity
         setContentView(R.layout.activity_biblioteca);
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(mToolbar);
+
+        Titles = new CharSequence[] {
+                getString(R.string.tab_description),
+                getString(R.string.tab_history),
+                getString(R.string.tab_video)
+        };
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.fragment_drawer);
@@ -50,8 +54,9 @@ public class BibliotecaActivity extends ActionBarActivity
         mNavigationDrawerFragment.setUserData("Chess Opener", "GNU GPL Licence v2",
                 BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
 
-        // If we have an Opening object coming from the bundle, pass it it to adapter
-        Opening opening = null;
+        // If we have an Opening object coming from the bundle instantiate it, if not, use the
+        // first opening from the array.
+        Opening opening = Start.openings.get(0);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             try {
@@ -60,9 +65,12 @@ public class BibliotecaActivity extends ActionBarActivity
             }
         }
 
+        // Changes the Toolbar's name to the Opening name
+        getSupportActionBar().setTitle(opening.getName());
+
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles for the Tabs and Number Of Tabs.
         // Instantiates the adapter with the Opening object if not null, or the first Opening from the model
-        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length, opening != null ? opening : Start.openings.get(0));
+        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length, opening);
 
         // Assigning ViewPager View and setting the adapter
         pager = (ViewPager) findViewById(R.id.pager);
@@ -83,22 +91,25 @@ public class BibliotecaActivity extends ActionBarActivity
         // Setting the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
 
-        if (opening != null) {
+        // Hack to make the NavDrawer select the opening coming from the Intent
+        mNavigationDrawerFragment.onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
 
-            mNavigationDrawerFragment.onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
-        }
 
     }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
-        //TODO: substituir fragmentos
+        //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
+
+        Opening opening = Start.openings.get(position);
 
         if (adapter != null) {
             pager.setAdapter(adapter);
-            adapter.update(Start.openings.get(position));
+            adapter.update(opening);
+        }
+        if (mToolbar != null && opening != null) {
+            mToolbar.setTitle(opening.getName());
         }
     }
 
@@ -138,6 +149,5 @@ public class BibliotecaActivity extends ActionBarActivity
 
         return super.onOptionsItemSelected(item);
     }
-
 
 }

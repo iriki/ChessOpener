@@ -22,6 +22,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.ClipboardManager;
 import android.util.Log;
 import android.view.Gravity;
@@ -29,7 +31,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-public class ChessBoardActivity extends Activity {
+public class ChessBoardActivity extends AppCompatActivity {
 
 	/** instances for the view and game of chess **/
 	private ChessView _chessView;
@@ -75,9 +77,10 @@ public class ChessBoardActivity extends Activity {
 
 		setContentView(R.layout.activity_chess_board);
 
-		// if(prefs.getBoolean("speechNotification", false)){
-		// _speech = new TextToSpeech(this, this);
-		// }
+		// Set a toolbar to replace the action bar.
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
+		setSupportActionBar(toolbar);
+
 
 		_chessView = new ChessView(this);
 		_keyboardBuffer = "";

@@ -6,6 +6,15 @@
     <string name="activity_library_name">Openings Library</string>
     <string name="activity_chessboard_name">Chess Board</string>
 
+    <string name="tab_description">History</string>
+    <string name="tab_history">History</string>
+    <string name="tab_video">Video</string>
+    <string name="button_new">New</string>
+
+    <string name="button_no_opening">No Opening</string>
+
+
+
     <!-- Strings da API -->
     <string name="state_play">in play</string>
     <string name="state_draw">draw</string>
