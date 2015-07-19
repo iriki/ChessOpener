@@ -3,7 +3,7 @@ package org.ips.ests.chessopener;
 import android.app.Application;
 
 import org.ips.ests.chessopener.model.Opening;
-import org.ips.ests.chessopener.xml.OpeningsFromXml;
+import org.ips.ests.chessopener.utils.OpeningUtils;
 
 import java.util.ArrayList;
 
@@ -17,32 +17,12 @@ public class Start extends Application {
 
     @Override
     public void onCreate() {
-        //openings = OpeningsFromXml.createInitialList(this);
 
-
-        openings = populateFromArray();
-
+        openings = OpeningUtils.populateFromArray(this);
 
         super.onCreate();
     }
 
-    private ArrayList<Opening> populateFromArray() {
-        ArrayList<Opening> openings = new ArrayList<>();
 
-        String[] description = getResources().getStringArray(R.array.openings_description);
-        String[] histories = getResources().getStringArray(R.array.openings_history);
-        String[] names = getResources().getStringArray(R.array.openings_names);
-
-        if(description.length != histories.length && histories.length != names.length && description.length != names.length) {
-            throw new RuntimeException("arrays lenght dont match");
-        }
-
-        for (int i = 0; i < histories.length; i++) {
-            openings.add(new Opening(i, names[i], description[i], "you", histories[i], "url" ));
-        }
-
-
-        return openings;
-    }
 }
 

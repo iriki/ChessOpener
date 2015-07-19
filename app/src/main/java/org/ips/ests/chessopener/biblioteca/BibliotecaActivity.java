@@ -1,5 +1,6 @@
 package org.ips.ests.chessopener.biblioteca;
 
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -15,10 +16,7 @@ import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.model.Opening;
 import org.ips.ests.chessopener.ui.SlidingTabLayout;
 import org.ips.ests.chessopener.ui.ViewPagerAdapter;
-import org.ips.ests.chessopener.xml.OpeningsFromXml;
-
-import java.util.ArrayList;
-
+import org.ips.ests.chessopener.utils.OpeningUtils;
 
 public class BibliotecaActivity extends ActionBarActivity
         implements NavigationDrawerCallbacks {
@@ -49,13 +47,33 @@ public class BibliotecaActivity extends ActionBarActivity
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
-        mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com",
+        mNavigationDrawerFragment.setUserData("ChessOpener", "GNU GPL Licence v2",
                 BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
 
 
+        Opening opening = null;
 
-        // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
-        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length, Start.openings.get(0));
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle != null) {
+            try {
+                opening = (Opening) bundle.getSerializable(Opening.OPENING_BUNDLE_KEY);
+
+//                NavigationDrawerFragment.mCurrentSelectedPosition =
+//                        OpeningUtils.findPositionFromString(opening.getName(), Start.openings);
+
+
+
+//                onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
+            } catch (Exception ignored) {
+            }
+        }
+
+
+
+
+        // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles for the Tabs and Number Of Tabs.
+        adapter =  new ViewPagerAdapter(getSupportFragmentManager(), Titles, Titles.length, opening != null ? opening : Start.openings.get(0));
 
         // Assigning ViewPager View and setting the adapter
         pager = (ViewPager) findViewById(R.id.pager);
@@ -75,6 +93,12 @@ public class BibliotecaActivity extends ActionBarActivity
 
         // Setting the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
+
+        if (opening != null) {
+
+            mNavigationDrawerFragment.onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
+        }
+
     }
 
     @Override
@@ -84,7 +108,8 @@ public class BibliotecaActivity extends ActionBarActivity
         //TODO: substituir fragmentos
 
         if (adapter != null) {
-            adapter.update(Start.openings.get(position));
+            pager.setAdapter(adapter);
+//            adapter.update(Start.openings.get(position));
         }
     }
 

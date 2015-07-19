@@ -30,19 +30,17 @@ public class Tab2 extends Fragment implements IUpdateableFragment {
         tvHistory = (TextView) v.findViewById(R.id.tv_history);
         if (savedInstanceState != null) {
             Bundle args = getArguments();
-            Opening opening = (Opening) args.getSerializable(Opening.OPENING_TAG);
-            System.out.println(opening.getHistory());
-            tvHistory.setText(Html.fromHtml(opening.getHistory()));
+            Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
+            update(opening);
         } else {
-            System.out.println(Start.openings.get(0).getHistory());
-            tvHistory.setText(Html.fromHtml(Start.openings.get(0).getHistory()));
+            update(Start.openings.get(0));
         }
         return v;
     }
 
     public static Fragment newInstance(Opening opening) {
         Bundle args = new Bundle();
-        args.putSerializable(Opening.OPENING_TAG, opening);
+        args.putSerializable(Opening.OPENING_BUNDLE_KEY, opening);
         Fragment tab2 = new Tab2();
         tab2.setArguments(args);
 
@@ -51,10 +49,6 @@ public class Tab2 extends Fragment implements IUpdateableFragment {
 
     @Override
     public void update(Opening opening) {
-
-        System.out.println(opening.getHistory());
-
-//        tvDescription.setText(Html.fromHtml(getString(R.string.nice_html)));
         tvHistory.setText(Html.fromHtml(opening.getHistory()));
         tvHistory.setMovementMethod(LinkMovementMethod.getInstance());
     }

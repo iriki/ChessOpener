@@ -1,7 +1,5 @@
 package org.ips.ests.chessopener.api;
 
-//import com.larvalabs.svgandroid.SVG;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -52,6 +50,12 @@ public class ChessImageView extends View {
 	}
 	
 	public void setICO(ImageCacheObject ico){
+
+        if (ico == null) {
+            System.out.println();
+        }
+
+
 		_ico = ico;
 	}
 	public ImageCacheObject getICO(){
@@ -87,17 +91,21 @@ public class ChessImageView extends View {
         ImageCacheObject ico = _ico;
         
         // first draw field background
-        if(ico == null)
-        	Log.e("err", "err");
-        
+        if(ico == null) {
+            Log.e("err", "err");
+
+            return;
+        }
+
         //_paint.setColor(Color.TRANSPARENT);
         if(hasFocus()){
         	_paint.setColor(0xffff9900);
         	canvas.drawRect(new Rect(0, 0, getWidth(), getHeight()), _paint);
         } else {
-        	_paint.setColor(ico._fieldColor == 0 ? _arrColorScheme[_colorScheme][0] : _arrColorScheme[_colorScheme][1]);
+            _paint.setColor(ico._fieldColor == 0 ? _arrColorScheme[_colorScheme][0] : _arrColorScheme[_colorScheme][1]);
+
         	canvas.drawRect(new Rect(0, 0, getWidth(), getHeight()), _paint);
-        	if(ico._selected){
+        	if(ico != null && ico._selected){
         		_paint.setColor(_arrColorScheme[_colorScheme][2]);
         		canvas.drawRect(new Rect(0, 0, getWidth(), getHeight()), _paint);
         	}

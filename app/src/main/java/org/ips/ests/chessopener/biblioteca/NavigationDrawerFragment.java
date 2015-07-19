@@ -66,7 +66,7 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
     private RecyclerView mDrawerList;
     private View mFragmentContainerView;
 
-    private int mCurrentSelectedPosition = 0;
+    public static int mCurrentSelectedPosition = 0;
     private boolean mFromSavedInstanceState;
     private boolean mUserLearnedDrawer;
 

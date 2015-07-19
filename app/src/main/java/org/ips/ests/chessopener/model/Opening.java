@@ -7,7 +7,7 @@ import java.util.Locale;
  * Created by hsousa on 12/07/15.
  */
 public class Opening implements Serializable {
-    public static final String OPENING_TAG = "opening";
+    public static final String OPENING_BUNDLE_KEY = "opening";
 
     private static final long serialVersionUID = -2163051469151804394L;
 
@@ -33,11 +33,26 @@ public class Opening implements Serializable {
 
 
     public String getYoutubeVideoURL() {
-        return String.format(Locale.US, YOUTUBE_VIDEO, youtubeId);
+        return constructYoutubeURL(YOUTUBE_VIDEO);
     }
 
     public String getYoutubeThumbURL() {
-        return String.format(Locale.US, YOUTUBE_THUMB, youtubeId);
+        return constructYoutubeURL(YOUTUBE_THUMB);
+    }
+
+    /**
+     * Constructs an URL based on the requested type from the id
+     *
+     * @param youtubeType
+     * @return
+     */
+    private String constructYoutubeURL(String youtubeType) {
+        String rc = "";
+
+        if (youtubeId != null && youtubeId.length() > 0) {
+            rc = String.format(Locale.US, youtubeType, youtubeId);
+        }
+        return rc;
     }
 
 

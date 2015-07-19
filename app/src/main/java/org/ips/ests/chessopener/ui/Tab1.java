@@ -30,19 +30,17 @@ public class Tab1 extends Fragment implements IUpdateableFragment {
         tvDescription = (TextView) v.findViewById(R.id.tv_description);
         if (savedInstanceState != null) {
             Bundle args = getArguments();
-            Opening opening = (Opening) args.getSerializable(Opening.OPENING_TAG);
-            System.out.println(opening.getDescription());
-            tvDescription.setText(Html.fromHtml(opening.getDescription()));
+            Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
+            update(opening);
         } else {
-            System.out.println(Start.openings.get(0).getDescription());
-            tvDescription.setText(Html.fromHtml(Start.openings.get(0).getDescription()));
+            update(Start.openings.get(0));
         }
         return v;
     }
 
     public static Fragment newInstance(Opening opening) {
         Bundle args = new Bundle();
-        args.putSerializable(Opening.OPENING_TAG, opening);
+        args.putSerializable(Opening.OPENING_BUNDLE_KEY, opening);
         Fragment tab1 = new Tab1();
         tab1.setArguments(args);
 
@@ -51,10 +49,6 @@ public class Tab1 extends Fragment implements IUpdateableFragment {
 
     @Override
     public void update(Opening opening) {
-
-        System.out.println(opening.getDescription());
-
-//        tvDescription.setText(Html.fromHtml(getString(R.string.nice_html)));
         tvDescription.setText(Html.fromHtml(opening.getDescription()));
         tvDescription.setMovementMethod(LinkMovementMethod.getInstance());
     }

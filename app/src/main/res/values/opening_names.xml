@@ -15,8 +15,8 @@
 
     <string-array name="openings_names">
         <item id="0">Sicilian defense</item>
-        <item id="1">Alekhine defense</item>
-        <item id="2">Caro-Kann</item>
+        <item id="1">Alekhine\'s defense</item>
+        <item id="2">Caro-Kann defense</item>
         <item id="3">Latvian Gambit</item>
         <item id="4">Ponziani Opening</item>
         <item id="5">Blackmar-Diemer Gambit</item>

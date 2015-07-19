@@ -28,49 +28,55 @@ import org.ips.ests.chessopener.model.Opening;
  */
 public class Tab3 extends Fragment implements IUpdateableFragment {
 
+    Button btnVideo;
+    ImageView iv;
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.tab_3, container, false);
+
+        btnVideo = (Button) v.findViewById(R.id.btnVideo);
+        iv = (ImageView) v.findViewById(R.id.thumbVideo);
+
+        if (savedInstanceState != null) {
+            Bundle args = getArguments();
+            Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
+            update(opening);
+        } else {
+            update(Start.openings.get(0));
+        }
+
         return v;
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        Button btnVideo = (Button) getActivity().findViewById(R.id.btnVideo);
-        btnVideo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=G0ctAe7bGzs")));
-            }
-        });
-
-        String imageUrl = "http://www.thechesswebsite.com/wp-content/uploads/2012/07/sicilian-big.jpg";
-        ImageView iv = (ImageView) getActivity().findViewById(R.id.thumbVideo);
-
-        Glide.with(this)
-                .load(imageUrl)
-                .fitCenter()
-                .placeholder(R.drawable.failed_to_load)
-                .into(iv);
     }
 
     public static Fragment newInstance(Opening opening) {
         Bundle args = new Bundle();
-        args.putSerializable(Opening.OPENING_TAG, opening);
+        args.putSerializable(Opening.OPENING_BUNDLE_KEY, opening);
         Fragment tab3 = new Tab3();
         tab3.setArguments(args);
         return tab3;
     }
 
     @Override
-    public void update(Opening opening) {
+    public void update(final Opening opening) {
 
-        // TODO
-        System.out.println(opening.getHistory());
+        if (opening.getYoutubeThumbURL().length() > 0) {
 
-//        tvDescription.setText(Html.fromHtml(getString(R.string.nice_html)));
-//        tvHistory.setText(Html.fromHtml(opening.getHistory()));
-//        tvHistory.setMovementMethod(LinkMovementMethod.getInstance());
+            btnVideo.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(opening.getYoutubeVideoURL())));
+                }
+            });
+
+        } else {
+            btnVideo.setClickable(false);
+        }
+
+
+        Glide.with(this)
+                .load(opening.getYoutubeThumbURL())
+                .fitCenter()
+                .placeholder(R.drawable.failed_to_load)
+                .into(iv);
     }
 }

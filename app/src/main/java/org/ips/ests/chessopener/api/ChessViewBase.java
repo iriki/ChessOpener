@@ -20,10 +20,6 @@ import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TableRow.LayoutParams;
-//import com.larvalabs.svgandroid.SVG;
-//import com.larvalabs.svgandroid.SVGParseException;
-//import com.larvalabs.svgandroid.SVGParser;
-
 
 /**
  * 
@@ -382,8 +378,9 @@ public class ChessViewBase{
 					tmpCache._selectedPos = bSelectedPosition;
 					tmpCache._selected = bSelected;	
 				}
-	
+
 				_arrImages[getFieldIndex(i)].setICO(tmpCache);
+
 				_arrImages[getFieldIndex(i)].invalidate();
 				
 			} // cache check				

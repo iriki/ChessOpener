@@ -10,16 +10,23 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import org.ips.ests.chessopener.R;
+import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.api.chess.Move;
 import org.ips.ests.chessopener.api.chess.PGNEntry;
 import org.ips.ests.chessopener.api.chess.UI;
+import org.ips.ests.chessopener.biblioteca.BibliotecaActivity;
+import org.ips.ests.chessopener.model.Opening;
+import org.ips.ests.chessopener.utils.OpeningUtils;
+import org.ips.ests.chessopener.utils.UiUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
@@ -48,7 +55,8 @@ import android.widget.ViewSwitcher;
  */
 public class ChessView extends UI {
 	private ChessViewBase _view;
-	
+
+    private Button _btnCurrentOpening;
 	private Activity _parent;
 	private ImageButton _butPlay;
 	private ViewAnimator _viewAnimator;
@@ -164,7 +172,28 @@ public class ChessView extends UI {
 //		_hScrollHistory = (HorizontalScrollView)_parent.findViewById(R.id.HScrollViewHistory);
 //		_layoutHistory = (RelativeLayout)_parent.findViewById(R.id.LayoutHistory);
 //		_vScrollHistory = (ScrollView)_parent.findViewById(R.id.VScrollViewHistory);
-		
+
+        _btnCurrentOpening = (Button)_parent.findViewById(R.id.ButtonCurrentOpening);
+        _btnCurrentOpening.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO:
+//                UiUtils.doToast(_parent, ((Button)v).getText().toString());
+                Opening opening = OpeningUtils.findOpeningFromString(((Button)v).getText().toString(), Start.openings);
+                if (opening != null) {
+                    Bundle args = new Bundle();
+                    args.putSerializable(Opening.OPENING_BUNDLE_KEY, opening);
+
+                    Intent i = new Intent(_parent, BibliotecaActivity.class);
+                    i.putExtras(args);
+                    _parent.startActivity(i);
+
+                } else {
+                    UiUtils.doToast(_parent, "opneing not in database");
+                }
+            }
+        });
+
 //		_butPlay = (ImageButton)_parent.findViewById(R.id.ButtonPlay);
 		//_butPlay.setFocusable(false);
 		if (_butPlay != null) {
@@ -507,7 +536,7 @@ public class ChessView extends UI {
 				jumptoMove(i+1);
 				
 			//if(_arrPGN.get(i)._sAnnotation.length() > 0){
-			//Utils.doToast(_arrPGN.get(i)._sMove + " :" + _arrPGN.get(i)._sAnnotation);
+			//UiUtils.doToast(_arrPGN.get(i)._sMove + " :" + _arrPGN.get(i)._sAnnotation);
 			
 			//}
 			updateState();
@@ -807,7 +836,7 @@ public class ChessView extends UI {
 	@Override
 	public void setMessage(String sMsg)
 	{
-		Utils.doToast(_parent, sMsg);
+		UiUtils.doToast(_parent, sMsg);
 		//_tvMessage.setText(sMsg);
 		//m_textMessage.setText(sMsg);
 	}
@@ -821,7 +850,7 @@ public class ChessView extends UI {
 	@Override
 	public void setMessage(int res){
 		//_tvMessage.setText(res);
-		Utils.doToast(_parent, _parent.getString(res));
+		UiUtils.doToast(_parent, _parent.getString(res));
 	}
 	
 	public void setPlayMode(int mode){
@@ -874,6 +903,7 @@ public class ChessView extends UI {
 		editor.putLong("clockWhiteMillies", _lClockWhite);
 		editor.putLong("clockBlackMillies", _lClockBlack);
 	}
+
 	public void OnResume(SharedPreferences prefs){
 		super.OnResume();
 		
@@ -928,7 +958,7 @@ public class ChessView extends UI {
 				BufferedReader br = new BufferedReader(new InputStreamReader(in));
 	
 				StringBuffer sb = new StringBuffer("");
-				String line = "";
+				String line;
 	
 				while ((line = br.readLine()) != null) {
 					sb.append(line + "\n");
@@ -1056,11 +1086,17 @@ public class ChessView extends UI {
 		//
 		String sECO = getECOInfo(0, _jArrayECO);
 		Log.i("ChessView-ECO", sECO == null ? "No ECO" : sECO);
-		if(sECO != null && (_sPrevECO != null && _sPrevECO.equals(sECO) == false) || _sPrevECO == null){
+		if(sECO != null && (_sPrevECO != null && !_sPrevECO.equals(sECO)) || _sPrevECO == null){
 			if(sECO != null && sECO.trim().length() > 0){
-				Utils.doToast(_parent, sECO);
+                _btnCurrentOpening.setEnabled(true);
+                _btnCurrentOpening.setText(sECO);
+//				UiUtils.doToast(_parent, sECO);
 			}
-		}
+            //TODO: disable button when no opening
+//		} else {
+//            _btnCurrentOpening.setEnabled(false);
+//            _btnCurrentOpening.setText("No Opening");
+        }
 		_sPrevECO = sECO;
 	}
 	

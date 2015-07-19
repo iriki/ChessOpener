@@ -60,12 +60,12 @@ public class ChessBoardActivity extends Activity {
 
 		// NOTE: Should be called before Activity.setContentView() or it will
 		// throw!
-		SharedPreferences prefs = getSharedPreferences("ChessPlayer", MODE_PRIVATE);
-		if (prefs.getBoolean("fullScreen", true)) {
-			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-					WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		}
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+//		SharedPreferences prefs = getSharedPreferences("ChessPlayer", MODE_PRIVATE);
+//		if (prefs.getBoolean("fullScreen", true)) {
+//			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//					WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//		}
+//		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
 		_wakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK,
@@ -86,6 +86,7 @@ public class ChessBoardActivity extends Activity {
 		_fGameRating = 2.5F;
 
 		// _dlgSave = null;
+		newGame();
 	}
 
 	/**
