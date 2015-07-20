@@ -16,8 +16,8 @@ import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -128,7 +128,7 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
         List<NavigationItem> items = new ArrayList<>();
 
         for (Opening opening : Start.openings) {
-            items.add(new NavigationItem(opening.getName(), getResources().getDrawable(R.drawable.ic_menu_check)));
+            items.add(new NavigationItem(opening.getName(), getResources().getDrawable(R.drawable.ic_rotated_board)));
         }
 
         return items;

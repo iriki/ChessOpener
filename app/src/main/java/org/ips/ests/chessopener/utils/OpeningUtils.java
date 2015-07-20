@@ -26,7 +26,7 @@ public class OpeningUtils {
         String[] histories = context.getResources().getStringArray(R.array.openings_history);
         String[] names = context.getResources().getStringArray(R.array.openings_names);
         String[] youtubeIds = context.getResources().getStringArray(R.array.openings_youtube_id);
-        String[] imageUrls = context.getResources().getStringArray(R.array.openings_names);
+        String[] imageUrls = context.getResources().getStringArray(R.array.openings_image_url);
 
         if(description.length != histories.length
                 && histories.length != names.length

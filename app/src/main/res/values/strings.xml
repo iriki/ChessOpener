@@ -11,6 +11,7 @@
     <string name="tab_video">Video</string>
     <string name="button_new">New</string>
 
+    <string name="no_description">No Description Available</string>
     <string name="button_no_opening">No Opening</string>
     <string name="toast_opening_not_in_db">Opening doesn\'t exist in the database</string>
 

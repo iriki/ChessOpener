@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.ips.ests.chessopener.R;
-import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 import org.ips.ests.chessopener.model.Opening;
 
@@ -21,25 +20,16 @@ import org.ips.ests.chessopener.model.Opening;
  * in two-pane mode (on tablets) or a {@link LibraryActivity}
  * on handsets.
  */
-public class Tab2 extends Fragment implements IUpdateableFragment {
+public class Tab2 extends BaseTab {
 
     TextView tvHistory;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.tab_2, container, false);
-        tvHistory = (TextView) v.findViewById(R.id.tv_history);
-        if (savedInstanceState != null) {
-            Bundle args = getArguments();
-            Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
-            update(opening);
-        } else if (getArguments() != null && getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY) != null) {
-            Opening opening = (Opening) getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY);
-            update(opening);
-        } else {
-            update(Start.openings.get(0));
-        }
-        return v;
+        view = inflater.inflate(R.layout.tab_2, container, false);
+        tvHistory = (TextView) view.findViewById(R.id.tv_history);
+
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     public static Fragment newInstance(Opening opening) {

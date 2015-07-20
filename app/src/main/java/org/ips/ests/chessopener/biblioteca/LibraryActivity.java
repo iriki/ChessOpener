@@ -1,6 +1,5 @@
 package org.ips.ests.chessopener.biblioteca;
 
-import android.content.res.Configuration;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -31,7 +30,6 @@ public class LibraryActivity extends AppCompatActivity implements NavigationDraw
      * Flag that indicates whether we're in Tablet or Phone mode
      */
     public static boolean isDrawerLocked = false;
-
 
     private ViewPager pager;
     private ViewPagerAdapter adapter;
@@ -112,11 +110,6 @@ public class LibraryActivity extends AppCompatActivity implements NavigationDraw
 
         // Hack to make the NavDrawer select the opening coming from the Intent
         mNavigationDrawerFragment.onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
-
-        Configuration conf = getResources().getConfiguration();
-        System.out.println("screenLayout: " + conf.screenLayout + ", widthDP = " + conf.screenWidthDp);
-        System.out.println("smallestScreenWidthDp: " + conf.smallestScreenWidthDp);
-
 
     }
 

@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 
 import org.ips.ests.chessopener.R;
-import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 import org.ips.ests.chessopener.model.Opening;
 
@@ -24,30 +23,19 @@ import org.ips.ests.chessopener.model.Opening;
  * in two-pane mode (on tablets) or a {@link LibraryActivity}
  * on handsets.
  */
-public class Tab3 extends Fragment implements IUpdateableFragment {
+public class Tab3 extends BaseTab {
 
     Button btnVideo;
     ImageView iv;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.tab_3, container, false);
+        view = inflater.inflate(R.layout.tab_3, container, false);
 
-        btnVideo = (Button) v.findViewById(R.id.btnVideo);
-        iv = (ImageView) v.findViewById(R.id.thumbVideo);
+        btnVideo = (Button) view.findViewById(R.id.btnVideo);
+        iv = (ImageView) view.findViewById(R.id.thumbVideo);
 
-        if (savedInstanceState != null) {
-            Bundle args = getArguments();
-            Opening opening = (Opening) args.getSerializable(Opening.OPENING_BUNDLE_KEY);
-            update(opening);
-        } else if (getArguments() != null && getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY) != null) {
-            Opening opening = (Opening) getArguments().getSerializable(Opening.OPENING_BUNDLE_KEY);
-            update(opening);
-        } else {
-            update(Start.openings.get(0));
-        }
-
-        return v;
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     public static Fragment newInstance(Opening opening) {
