@@ -6,7 +6,7 @@
     <string name="activity_library_name">Openings Library</string>
     <string name="activity_chessboard_name">Chess Board</string>
 
-    <string name="tab_description">Description</string>
+    <string name="tab_description">Intro</string>
     <string name="tab_history">History</string>
     <string name="tab_video">Video</string>
     <string name="button_new">New</string>
