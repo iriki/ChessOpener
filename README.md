@@ -2,6 +2,8 @@
 
 **Chess Opener** is a game of chess where you can learn how to identify opening moves in chess.
 
+![](app/src/main/res/drawable/wallpaper.png)
+
 ## Motivation
 
 It was made as a project for "Aplicações Multimedia" course, with the help of Professor Miguel Boavida.
