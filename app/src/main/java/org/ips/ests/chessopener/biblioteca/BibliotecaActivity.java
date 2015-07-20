@@ -1,13 +1,18 @@
 package org.ips.ests.chessopener.biblioteca;
 
+import android.content.res.Configuration;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import org.ips.ests.chessopener.R;
 import org.ips.ests.chessopener.Start;
@@ -16,8 +21,7 @@ import org.ips.ests.chessopener.ui.SlidingTabLayout;
 import org.ips.ests.chessopener.ui.ViewPagerAdapter;
 import org.ips.ests.chessopener.utils.OpeningUtils;
 
-public class BibliotecaActivity extends ActionBarActivity
-        implements NavigationDrawerCallbacks {
+public class BibliotecaActivity extends AppCompatActivity implements NavigationDrawerCallbacks {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -25,12 +29,18 @@ public class BibliotecaActivity extends ActionBarActivity
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private Toolbar mToolbar;
 
-    ViewPager pager;
-    ViewPagerAdapter adapter;
+    /**
+     * Flag that indicates whether we're in Tablet or Phone mode
+     */
+    public static boolean isDrawerLocked = false;
+
+
+    private ViewPager pager;
+    private ViewPagerAdapter adapter;
     /** The tabs of the ViewPager */
-    SlidingTabLayout tabs;
+    private SlidingTabLayout tabs;
     /** The titles of the Tabs */
-    CharSequence Titles[];
+    private CharSequence Titles[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +58,22 @@ public class BibliotecaActivity extends ActionBarActivity
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.fragment_drawer);
 
+
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
         mNavigationDrawerFragment.setUserData("Chess Opener", "GNU GPL Licence v2",
                 BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
+
+        // If we're on Tablet mode, disable the DrawerIndicator and locks NavDrawer
+        LinearLayout layoutContent = (LinearLayout) findViewById(R.id.landscape_layout);
+        if (layoutContent != null) {
+            mNavigationDrawerFragment.getDrawerLayout().setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
+            mNavigationDrawerFragment.getDrawerLayout().setScrimColor(Color.TRANSPARENT);
+            isDrawerLocked = true;
+            mNavigationDrawerFragment.openDrawer();
+            mNavigationDrawerFragment.getActionBarDrawerToggle().setDrawerIndicatorEnabled(false);
+        }
 
         // If we have an Opening object coming from the bundle instantiate it, if not, use the
         // first opening from the array.
@@ -94,6 +115,10 @@ public class BibliotecaActivity extends ActionBarActivity
         // Hack to make the NavDrawer select the opening coming from the Intent
         mNavigationDrawerFragment.onNavigationDrawerItemSelected(OpeningUtils.findPositionFromString(opening.getName(), Start.openings));
 
+        Configuration conf = getResources().getConfiguration();
+        System.out.println("screenLayout: " + conf.screenLayout + ", widthDP = " + conf.screenWidthDp);
+        System.out.println("smallestScreenWidthDp: " + conf.smallestScreenWidthDp);
+
 
     }
 
@@ -115,7 +140,7 @@ public class BibliotecaActivity extends ActionBarActivity
 
     @Override
     public void onBackPressed() {
-        if (mNavigationDrawerFragment.isDrawerOpen())
+        if (mNavigationDrawerFragment.isDrawerOpen() && !isDrawerLocked)
             mNavigationDrawerFragment.closeDrawer();
         else
             super.onBackPressed();

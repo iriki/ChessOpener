@@ -64,7 +64,7 @@ public class ChessView extends UI {
 	private ProgressBar _progressPlay;
 	private TextView _tvClockMe, _tvClockOpp, _tvTitleMe, _tvTitleOpp, _tvAnnotate, _tvEngine, _tvAnnotateGuess;
 	private int _dpadPos;
-	private int _playMode;
+	public static int _playMode;
 	private String _sPrevECO;
 	private HorizontalScrollView _hScrollHistory;
 	private ScrollView _vScrollHistory;
@@ -143,7 +143,7 @@ public class ChessView extends UI {
 		_parent = activity;
 		_view = new ChessViewBase(activity);
 		
-		_playMode = HUMAN_PC;
+		//_playMode = HUMAN_PC;
 		_bAutoFlip = false;
 		_bShowMoves = false;
 		_bShowLastMove = true;
@@ -684,7 +684,7 @@ public class ChessView extends UI {
 		setLevelMode(prefs.getInt("levelMode", LEVEL_TIME));
 		_selectedLevel = prefs.getInt("level", 2);
 		_selectedLevelPly = prefs.getInt("levelPly", 2);
-		_playMode = prefs.getInt("playMode", HUMAN_PC);
+		//_playMode = prefs.getInt("playMode", HUMAN_PC);
 		
 		if(prefs.getBoolean("onLoadJumpToLastMove", false)){
 			

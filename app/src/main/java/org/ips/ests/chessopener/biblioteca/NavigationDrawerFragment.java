@@ -120,16 +120,16 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
         selectItem(position);
     }
 
+    /**
+     * Populates the left menu with all the openings in the database
+     * @return
+     */
     public List<NavigationItem> getMenu() {
-        List<NavigationItem> items = new ArrayList<NavigationItem>();
+        List<NavigationItem> items = new ArrayList<>();
 
         for (Opening opening : Start.openings) {
             items.add(new NavigationItem(opening.getName(), getResources().getDrawable(R.drawable.ic_menu_check)));
         }
-
-//        items.add(new NavigationItem("item 1", getResources().getDrawable(R.drawable.ic_menu_check)));
-//        items.add(new NavigationItem("item 2", getResources().getDrawable(R.drawable.ic_menu_check)));
-//        items.add(new NavigationItem("item 3", getResources().getDrawable(R.drawable.ic_menu_check)));
 
         return items;
     }
@@ -189,7 +189,7 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
 
     private void selectItem(int position) {
         mCurrentSelectedPosition = position;
-        if (mDrawerLayout != null) {
+        if (mDrawerLayout != null && !BibliotecaActivity.isDrawerLocked) {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }
         if (mCallbacks != null) {
@@ -240,10 +240,6 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
         ((TextView) mFragmentContainerView.findViewById(R.id.txtUserEmail)).setText(email);
         ((TextView) mFragmentContainerView.findViewById(R.id.txtUsername)).setText(user);
         avatarContainer.setImageDrawable(new RoundImage(avatar));
-    }
-
-    public View getGoogleDrawer() {
-        return mFragmentContainerView.findViewById(R.id.googleDrawer);
     }
 
     public static class RoundImage extends Drawable {

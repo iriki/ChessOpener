@@ -38,7 +38,7 @@
             android:layout_margin="28dp"
             android:background="@drawable/flat_selector"
             android:padding="8dp"
-            android:text="Biblioteca de Aberturas" />
+            android:text="@string/button_openings_library" />
 
         <Button
             android:id="@+id/button_training"
@@ -49,7 +49,7 @@
             android:layout_margin="28dp"
             android:background="@drawable/flat_selector"
             android:padding="8dp"
-            android:text="Treino Individual" />
+            android:text="@string/button_player_vs_player" />
 
         <Button
             android:id="@+id/button_game"
@@ -60,6 +60,6 @@
             android:layout_margin="28dp"
             android:background="@drawable/flat_selector"
             android:padding="8dp"
-            android:text="Jogar 1v1 ou 1vPC" />
+            android:text="@string/button_player_vs_android" />
     </RelativeLayout>
 </RelativeLayout>

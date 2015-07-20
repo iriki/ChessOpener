@@ -15,8 +15,10 @@ import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.model.Opening;
 
 /**
- * A fragment representing (...)
- * This fragment is either contained in a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
+ * A fragment representing the Introduction of a Opening.
+ * It is comprised of an image with the general Opening and a brief description.
+ *
+ * It is either contained in a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
  * in two-pane mode (on tablets) or a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
  * on handsets.
  */

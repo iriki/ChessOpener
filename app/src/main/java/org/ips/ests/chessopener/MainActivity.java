@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import org.ips.ests.chessopener.api.ChessView;
+import org.ips.ests.chessopener.api.GameControl;
 import org.ips.ests.chessopener.biblioteca.BibliotecaActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,11 +24,26 @@ public class MainActivity extends AppCompatActivity {
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
 		setSupportActionBar(toolbar);
 
-		Button b = (Button) findViewById(R.id.button_game);
-		b.setOnClickListener(new View.OnClickListener() {
+
+        Button pvp = (Button) findViewById(R.id.button_training);
+        pvp.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                ChessView._playMode = GameControl.HUMAN_HUMAN;
+                Intent myIntent = new Intent(MainActivity.this, ChessBoardActivity.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+
+
+
+
+		Button pva = (Button) findViewById(R.id.button_game);
+		pva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChessView._playMode = GameControl.HUMAN_PC;
                 Intent myIntent = new Intent(MainActivity.this, ChessBoardActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
@@ -37,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 Intent myIntent = new Intent(MainActivity.this, BibliotecaActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
