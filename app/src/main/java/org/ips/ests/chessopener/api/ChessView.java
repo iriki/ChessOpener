@@ -9,13 +9,12 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.ips.ests.chessopener.ChessBoardActivity;
 import org.ips.ests.chessopener.R;
 import org.ips.ests.chessopener.Start;
 import org.ips.ests.chessopener.api.chess.Move;
 import org.ips.ests.chessopener.api.chess.PGNEntry;
 import org.ips.ests.chessopener.api.chess.UI;
-import org.ips.ests.chessopener.biblioteca.BibliotecaActivity;
+import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 import org.ips.ests.chessopener.model.Opening;
 import org.ips.ests.chessopener.utils.OpeningUtils;
 import org.ips.ests.chessopener.utils.UiUtils;
@@ -32,13 +31,10 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -46,7 +42,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.ViewAnimator;
 import android.widget.ViewSwitcher;
@@ -178,7 +173,7 @@ public class ChessView extends UI {
                     Bundle args = new Bundle();
                     args.putSerializable(Opening.OPENING_BUNDLE_KEY, opening);
 
-                    Intent i = new Intent(_parent, BibliotecaActivity.class);
+                    Intent i = new Intent(_parent, LibraryActivity.class);
                     i.putExtras(args);
                     _parent.startActivity(i);
 

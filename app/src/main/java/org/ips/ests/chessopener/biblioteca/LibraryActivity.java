@@ -6,12 +6,10 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import org.ips.ests.chessopener.R;
@@ -21,7 +19,7 @@ import org.ips.ests.chessopener.ui.SlidingTabLayout;
 import org.ips.ests.chessopener.ui.ViewPagerAdapter;
 import org.ips.ests.chessopener.utils.OpeningUtils;
 
-public class BibliotecaActivity extends AppCompatActivity implements NavigationDrawerCallbacks {
+public class LibraryActivity extends AppCompatActivity implements NavigationDrawerCallbacks {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -45,7 +43,7 @@ public class BibliotecaActivity extends AppCompatActivity implements NavigationD
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_biblioteca);
+        setContentView(R.layout.activity_library);
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(mToolbar);
 

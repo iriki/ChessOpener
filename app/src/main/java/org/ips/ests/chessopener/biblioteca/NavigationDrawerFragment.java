@@ -189,7 +189,7 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
 
     private void selectItem(int position) {
         mCurrentSelectedPosition = position;
-        if (mDrawerLayout != null && !BibliotecaActivity.isDrawerLocked) {
+        if (mDrawerLayout != null && !LibraryActivity.isDrawerLocked) {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }
         if (mCallbacks != null) {

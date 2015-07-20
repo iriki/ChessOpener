@@ -60,15 +60,6 @@ public class ChessBoardActivity extends AppCompatActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// NOTE: Should be called before Activity.setContentView() or it will
-		// throw!
-//		SharedPreferences prefs = getSharedPreferences("ChessPlayer", MODE_PRIVATE);
-//		if (prefs.getBoolean("fullScreen", true)) {
-//			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//					WindowManager.LayoutParams.FLAG_FULLSCREEN);
-//		}
-//		requestWindowFeature(Window.FEATURE_NO_TITLE);
-
 		PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
 		_wakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK,
 				"DoNotDimScreen");
@@ -88,13 +79,9 @@ public class ChessBoardActivity extends AppCompatActivity {
 		_lGameID = 0;
 		_fGameRating = 2.5F;
 
-		// _dlgSave = null;
 		newGame();
 	}
 
-	/**
-		 * 
-		 */
 	@Override
 	protected void onResume() {
 		Log.i("main", "onResume");
@@ -189,7 +176,6 @@ public class ChessBoardActivity extends AppCompatActivity {
 		if (_wakeLock.isHeld()) {
 			_wakeLock.release();
 		}
-		// Debug.stopMethodTracing();
 
 		if (_lGameID > 0) {
 			ContentValues values = new ContentValues();
@@ -283,20 +269,6 @@ public class ChessBoardActivity extends AppCompatActivity {
 		t.show();
 	}
 
-	private void copyToClipBoard(String s) {
-		ClipboardManager cm = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-		cm.setText(s);
-	}
-
-	private String fromClipBoard() {
-		ClipboardManager cm = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-		if (cm.hasText()) {
-			return cm.getText().toString();
-		}
-		doToast(getString(R.string.err_no_clip_text));
-		return null;
-	}
-
 	private void loadFEN(String sFEN) {
 		if (sFEN != null) {
 			Log.i("loadFEN", sFEN);
@@ -377,32 +349,6 @@ public class ChessBoardActivity extends AppCompatActivity {
 		}
 	}
 
-	//
-	public void saveGame() {
-		String sEvent = _chessView.getPGNHeadProperty("Event");
-		if (sEvent == null)
-			sEvent = "event ?";
-		String sWhite = _chessView.getWhite();
-		if (sWhite == null)
-			sWhite = "white ?";
-		String sBlack = _chessView.getBlack();
-		if (sBlack == null)
-			sBlack = "black ?";
-
-		Date dd = _chessView.getDate();
-		if (dd == null)
-			dd = Calendar.getInstance().getTime();
-
-		Calendar cal = Calendar.getInstance();
-		cal.setTime(dd);
-
-//		if (_dlgSave == null)
-//			_dlgSave = new SaveGameDlg(this);
-//		_dlgSave.setItems(sEvent, sWhite, sBlack, cal,
-//				_chessView.exportFullPGN(), _fGameRating, _lGameID > 0);
-//		_dlgSave.show();
-	}
-
 	public void saveGame(ContentValues values, boolean bCopy) {
 
 		SharedPreferences.Editor editor = getSharedPreferences("ChessPlayer",
@@ -434,43 +380,6 @@ public class ChessBoardActivity extends AppCompatActivity {
 				c.moveToFirst();
 				_lGameID = c.getLong(c.getColumnIndex(PGNColumns._ID));
 			}
-		}
-	}
-
-	public void setLevelMode(int iLevelMode) {
-		_chessView.setLevelMode(iLevelMode);
-	}
-
-	public void setLevel(int iLevel) {
-		_chessView.setLevel(iLevel);
-	}
-
-	public void setLevelPly(int iLevelPly) {
-		_chessView.setLevelPly(iLevelPly);
-	}
-
-	public void setPlayMode(int mode) {
-		_chessView.setPlayMode(mode);
-	}
-
-	public void setAutoFlip(boolean b) {
-		_chessView.setAutoFlip(b);
-	}
-
-	public void setShowMoves(boolean b) {
-		_chessView.setShowMoves(b);
-	}
-
-	public void flipBoard() {
-		_chessView.flipBoard();
-	}
-
-	public void soundNotification(String sSpeech) {
-		if (_speech != null) {
-			_speech.speak(sSpeech, TextToSpeech.QUEUE_FLUSH, null);
-		}
-		if (_ringNotification != null) {
-			_ringNotification.play();
 		}
 	}
 }

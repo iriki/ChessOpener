@@ -12,12 +12,13 @@ import android.widget.TextView;
 
 import org.ips.ests.chessopener.R;
 import org.ips.ests.chessopener.Start;
+import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 import org.ips.ests.chessopener.model.Opening;
 
 /**
  * A fragment representing (...)
- * This fragment is either contained in a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
- * in two-pane mode (on tablets) or a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
+ * This fragment is either contained in a {@link LibraryActivity}
+ * in two-pane mode (on tablets) or a {@link LibraryActivity}
  * on handsets.
  */
 public class Tab2 extends Fragment implements IUpdateableFragment {

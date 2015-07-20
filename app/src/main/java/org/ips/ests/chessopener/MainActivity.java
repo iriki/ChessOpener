@@ -11,7 +11,7 @@ import android.widget.Button;
 
 import org.ips.ests.chessopener.api.ChessView;
 import org.ips.ests.chessopener.api.GameControl;
-import org.ips.ests.chessopener.biblioteca.BibliotecaActivity;
+import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent myIntent = new Intent(MainActivity.this, BibliotecaActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, LibraryActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
         });

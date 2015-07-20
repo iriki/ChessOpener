@@ -5,25 +5,23 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
 import org.ips.ests.chessopener.R;
 import org.ips.ests.chessopener.Start;
+import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 import org.ips.ests.chessopener.model.Opening;
 
 /**
  * A fragment representing (...)
- * This fragment is either contained in a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
- * in two-pane mode (on tablets) or a {@link org.ips.ests.chessopener.biblioteca.BibliotecaActivity}
+ * This fragment is either contained in a {@link LibraryActivity}
+ * in two-pane mode (on tablets) or a {@link LibraryActivity}
  * on handsets.
  */
 public class Tab3 extends Fragment implements IUpdateableFragment {
