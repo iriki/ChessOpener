@@ -21,6 +21,6 @@ Arranjar icones para o new, back e front - DONE
 - actualizar site com novos imagens -> DONE
 - adicionar de utilizador TABLET! :D -> DONE
 - terminar ao manual tecnico -> DONE
-- powerpoint
+- powerpoint -> DONE
 
 - fazer video (e enviar para o play)
