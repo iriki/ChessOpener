@@ -11,8 +11,6 @@ Van't Kruijs Opening - DONE
 Arranjar icones para o new, back e front - DONE
 
 
-- fazer video (e enviar para o play)
-- actualizar site com novos imagens -> DONE
 
 - about dialog na APP
 - imagem de inicio nos fragmentos
@@ -20,9 +18,10 @@ Arranjar icones para o new, back e front - DONE
 - strings internacionalizacao
 
 - actualizar manual de utilizador com indicacao que app esta internacionzliada em 2 linguas.
-- ter mais um botao no site a dizer "Get it" para ir ao google play
+- ter mais um botao no site a dizer "Get it" para ir ao google play -> DONE
+- actualizar site com novos imagens -> DONE
 - powerpoint
 - adicionar ao manual tecnico, de utilizador e na Google play a versao TABLET! :D
-
+- fazer video (e enviar para o play)
 
 
