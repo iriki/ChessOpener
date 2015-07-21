@@ -19,8 +19,8 @@ Arranjar icones para o new, back e front - DONE
 - actualizar manual de utilizador com indicacao que app esta internacionzliada em 2 linguas. -> DONE
 - ter mais um botao no site a dizer "Get it" para ir ao google play -> DONE
 - actualizar site com novos imagens -> DONE
-
 - adicionar de utilizador TABLET! :D -> DONE
+
 - terminar ao manual tecnico 
 - fazer video (e enviar para o play)
 - powerpoint
