@@ -7,15 +7,16 @@ Van't Kruijs Opening - DONE
 - King's Pawn game - é igual à king's pawn opening
 - confirmar que as nossas aberturas tem os mesmo nomes no ECO.json e alterar no nosso em consonancia - DONE
 - encontrar uma imagem a substituir o avatar.png (o que tem o homem da capa) - DONE
-- Arranjar icones para o new, back e front - DONE
+
+Arranjar icones para o new, back e front - DONE
 
 
 - fazer video (e enviar para o play)
-- actualizar site com novos imagens
+- actualizar site com novos imagens -> site praticamente terminado falta print com o about box
 
 - about dialog na APP
-- imagem de inicio nos fragmentos - DONE
-- mudar o visto na lista para o nosso cavalo avatar - DONE
+- imagem de inicio nos fragmentos
+- mudar o visto na lista para o nosso cavalo avatar
 - strings internacionalizacao
 
 - actualizar manual de utilizador com indicacao que app esta internacionzliada em 2 linguas.
