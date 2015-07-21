@@ -13,6 +13,9 @@ import org.ips.ests.chessopener.api.ChessView;
 import org.ips.ests.chessopener.api.GameControl;
 import org.ips.ests.chessopener.biblioteca.LibraryActivity;
 
+import org.ips.ests.chessopener.utils.PreferenceUtils;
+import org.ips.ests.chessopener.utils.UiUtils;
+
 public class MainActivity extends AppCompatActivity {
 
 	@Override
@@ -52,14 +55,18 @@ public class MainActivity extends AppCompatActivity {
 		Button btnBiblioteca = (Button) findViewById(R.id.button_library);
 		btnBiblioteca.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
+			@Override
+			public void onClick(View v) {
 
-                Intent myIntent = new Intent(MainActivity.this, LibraryActivity.class);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
+				Intent myIntent = new Intent(MainActivity.this, LibraryActivity.class);
+				MainActivity.this.startActivity(myIntent);
+			}
+		});
 
+		if (PreferenceUtils.isFirstUsage(this)) {
+            PreferenceUtils.setFirstUsage(this, false);
+			UiUtils.showAboutDialog(this);
+		}
 	}
 
 	@Override
@@ -77,7 +84,14 @@ public class MainActivity extends AppCompatActivity {
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
+
+
+	} else if (id == R.id.action_about) {
+			UiUtils.showAboutDialog(this);
 		}
+
 		return super.onOptionsItemSelected(item);
 	}
+
+
 }

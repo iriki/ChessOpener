@@ -20,9 +20,22 @@
     <string name="button_player_vs_android">Player Vs Android</string>
 
 
+    <string name="about">
+                            <![CDATA[
+Chess Opener is an Open Source GNU GPL V2 Licence software.<br />
+It consists in a chess game where you can learn chess openings while you play.<br />
+You will have a library of chess openings so you can learn more about them. It will have a description, a bit of the moves history and a video that explains the moves.<br />
+It has 2 game modes. PvP and PvE. In PvE you can practice against a AI and try the opening moves.
+In PvP you can challenge one friend to play with you and use the openings to beat them.<br /><br />
 
-
-
+Libraries used:<br />
+- several Wikipedia chess openings information.<br />
+- Jcarolus\' Chess<br />
+- Android Support Library v4<br />
+- Bumptech\'s Glide image loading library<br />
+- Wikimedia creative commons images<br />
+]]>
+</string>
 
     <!-- Strings da API -->
     <string name="state_play">in play</string>
