@@ -12,7 +12,7 @@ Arranjar icones para o new, back e front - DONE
 
 
 - fazer video (e enviar para o play)
-- actualizar site com novos imagens -> site praticamente terminado falta print com o about box
+- actualizar site com novos imagens -> DONE
 
 - about dialog na APP
 - imagem de inicio nos fragmentos
