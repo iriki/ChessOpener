@@ -20,5 +20,22 @@ Informação e bibliotecas de terceiros usados:<br />
 ]]>
 
     </string>
+    <string name="action_settings">Opções</string>
+    <string name="activity_chessboard_name">Tabuleiro de Xadrez</string>
+    <string name="activity_library_name">Biblioteca de Aberturas</string>
+    <string name="alert_cancel">Cancelar</string>
+    <string name="alert_no">Não</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_yes">Sim</string>
+    <string name="button_new">Novo</string>
+    <string name="button_no_opening">Nenhuma Abertura</string>
+    <string name="button_ok">OK</string>
+    <string name="button_player_vs_android">Jogador Vs Android</string>
+    <string name="button_player_vs_player">Jogador Vs Jogador</string>
+    <string name="msg_illegal_move">Jogada ilegal</string>
+    <string name="msg_wait">Por favor aguarde...</string>
+    <string name="no_description">Sem descrição</string>
+    <string name="title_activity_library">Actividade Biblioteca</string>
+    <string name="toast_opening_not_in_db">Abertura não existente na base de dados</string>
 
 </resources>
